@@ -31,7 +31,7 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 2. Run it with `--check-urls` to catch dead external links.
 3. For each **volatile** claim, re-open the cited primary source and confirm the figure, name and status still match. Update the doc body and the reference's `accessed` date.
 4. Re-run `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` to regenerate `viz.html`.
-5. Append a dated entry to the bundle `log.md` and update `last_verified` above.
+5. Append a dated entry to [log.md](/log.md) and update `last_verified` above.
 6. File or update a dated verification report (see [the 2026-06-25 report](/references/verification-report-2026-06-25.md)) when a full claim-by-claim pass is done.
 
 # Open follow-ups

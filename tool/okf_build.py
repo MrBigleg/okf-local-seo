@@ -44,7 +44,7 @@ def parse_frontmatter(text):
 
 
 def collect(bundle):
-    concepts, errors = [], []
+    concepts, errors, reserved = [], [], set()
     for root, _, files in os.walk(bundle):
         for fn in sorted(files):
             if not fn.endswith(".md"):
@@ -54,7 +54,9 @@ def collect(bundle):
             with open(path, encoding="utf-8") as f:
                 text = f.read()
             if fn in RESERVED:
-                # index.md may carry frontmatter ONLY at bundle root (okf_version)
+                # reserved navigation files (index.md, log.md): valid link targets,
+                # but not knowledge nodes. Record the id so links to them resolve.
+                reserved.add(rel[:-3])
                 continue
             fm, body = parse_frontmatter(text)
             if fm is None:
@@ -74,7 +76,7 @@ def collect(bundle):
                 "body": body,
                 "links": links,
             })
-    return concepts, errors
+    return concepts, errors, reserved
 
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -101,6 +103,7 @@ header input,header select{padding:6px 10px;border-radius:6px;border:1px solid #
 .body pre code{background:none;color:inherit}
 .backlinks{margin-top:18px;font-size:13px}.backlinks a{display:block;color:#0f3460;margin:3px 0;cursor:pointer}
 a.xlink{color:#0f3460;cursor:pointer;text-decoration:underline}
+a.navlink{color:#5a6b8c;cursor:default;text-decoration:none}
 .hint{color:#8a98b5;font-size:13px}
 </style></head><body>
 <header>
@@ -150,7 +153,9 @@ function render(c){
     (c.tags&&c.tags.length?`<div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>`:"")+
     `<div class="body">${b}</div>`+
     (backlinks.length?`<div class="backlinks"><strong>Cited by</strong>${backlinks.map(o=>`<a class="xlink" data-id="${o.id}">${o.title}</a>`).join("")}</div>`:"");
-  document.querySelectorAll(".xlink").forEach(a=>a.onclick=()=>{const id=a.getAttribute("data-id");if(byId[id])select(id);});
+  document.querySelectorAll(".xlink").forEach(a=>{const id=a.getAttribute("data-id");
+    if(byId[id]){a.onclick=()=>select(id);}
+    else{a.classList.remove("xlink");a.classList.add("navlink");}});  // reserved/non-node target
 }
 function select(id){cy.nodes().removeClass("sel");const n=cy.getElementById(id);n.addClass("sel");if(byId[id])render(byId[id]);}
 cy.on("tap","node",e=>select(e.target.id()));
@@ -180,7 +185,7 @@ def main():
     name = args.name or os.path.basename(bundle.rstrip("/"))
     out = args.out or os.path.join(bundle, "viz.html")
 
-    concepts, errors = collect(bundle)
+    concepts, errors, reserved = collect(bundle)
     print(f"OKF bundle: {bundle}")
     print(f"  concepts: {len(concepts)}")
     types = {}
@@ -189,8 +194,9 @@ def main():
     for t, n in sorted(types.items()):
         print(f"    - {t}: {n}")
 
-    # broken-link report (soft — OKF tolerates these)
-    ids = {c["id"] for c in concepts}
+    # broken-link report (soft — OKF tolerates these).
+    # Reserved navigation files are valid targets even though they aren't nodes.
+    ids = {c["id"] for c in concepts} | reserved
     broken = [(c["id"], l) for c in concepts for l in c["links"] if l not in ids]
     if broken:
         print(f"  broken links (allowed, FYI): {len(broken)}")

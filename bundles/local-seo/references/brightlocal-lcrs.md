@@ -3,6 +3,11 @@ type: Reference
 title: BrightLocal Local Consumer Review Survey
 description: Annual survey of consumer review behaviour; source for rating thresholds.
 resource: https://www.brightlocal.com/research/local-consumer-review-survey/
+publisher: BrightLocal
+published: annual survey (see source for current edition date)
+accessed: 2026-06-25
+confidence: high
+scope: Self-reported consumer review behaviour (primarily US/UK respondents).
 tags: [reference, reviews, consumer-behaviour]
 timestamp: 2026-06-25T00:00:00Z
 ---

@@ -19,7 +19,7 @@ YAML frontmatter (`---` delimited) + markdown body.
 
 Frontmatter keys:
 
-- `type` — **REQUIRED**, non-empty string. Not centrally registered; pick descriptive values (this repo uses `Ranking Dimension`, `Maps Analysis`, `Detection Method`, `Playbook`, `Reference`, `Concept`). Consumers must tolerate unknown types.
+- `type` — **REQUIRED**, non-empty string. Not centrally registered by OKF; consumers must tolerate unknown types. This repo uses a **controlled vocabulary** (see "Type vocabulary" below) and the verifier warns on values outside it.
 - `title` — recommended display name.
 - `description` — recommended one-line summary (used in index snippets / search).
 - `resource` — optional canonical URI of the underlying asset (omit for abstract concepts).
@@ -27,7 +27,35 @@ Frontmatter keys:
 - `timestamp` — optional ISO-8601 last-modified.
 - Producers MAY add any extra keys; consumers MUST preserve unknown keys and MUST NOT reject unknown ones.
 
-Conventional body headings (use when applicable): `# Schema`, `# Examples`, `# Citations`.
+Conventional body headings (use when applicable): `# Schema`, `# Examples`, `# Citations`. Every concept doc in this repo carries a `# Citations` block; the verifier enforces it.
+
+## Type vocabulary (this repo)
+
+OKF leaves `type` open, but this bundle commits to a closed, documented set so the graph stays legible and the viz colour-codes meaningfully. The verifier (`tool/okf_verify.py`) warns on any value outside it.
+
+| Tier | Type | Meaning |
+|---|---|---|
+| Knowledge | `Concept` | Explains an idea, mechanism or practice. |
+| Knowledge | `Ranking Dimension` | A category of signal that influences local ranking/visibility. |
+| Knowledge | `Maps Analysis` | A repeatable analysis technique over maps/GBP data. |
+| Knowledge | `Detection Method` | A heuristic for classifying a site or business. |
+| Knowledge | `Playbook` | An ordered, actionable procedure or checklist. |
+| Source | `Reference` | A pointer to a single external primary source, with provenance frontmatter. |
+| Governance | `Policy` | A maintenance or governance rule for the bundle itself. |
+| Governance | `Report` | A dated record of a verification or audit pass. |
+
+## Reference provenance
+
+`Reference` docs carry provenance frontmatter so a claim can be traced and re-checked:
+
+- `resource` — the **canonical URL** of the source.
+- `publisher` — who published it.
+- `published` — publication/edition date (`n.d.` / `living document` when undated).
+- `accessed` — ISO date the maintainer last opened the source.
+- `confidence` — `high` / `medium` / `low` (qualitative reliability of the claim).
+- `scope` — one line on what the source does and does **not** establish.
+
+The verifier warns when a `Reference` is missing any of these.
 
 ## Cross-linking
 
@@ -56,10 +84,15 @@ The bundle root `index.md` MAY declare `okf_version: "0.1"`.
 
 ## Validate
 
-The canonical validator in this repo is `tool/okf_build.py` — it checks conformance, prints a concept-type breakdown and any broken links, and regenerates `viz.html`:
+Two tools in this repo:
+
+- `tool/okf_build.py` — checks v0.1 conformance, prints a concept-type breakdown and any broken links, and regenerates `viz.html`.
+- `tool/okf_verify.py` — a stricter, dependency-free quality gate. It checks frontmatter + non-empty type, the type vocabulary above, broken internal links (absolute and relative), `# Citations` presence, sequential citation numbering, reference provenance completeness, stale draft markers, orphaned documents, and (with `--check-urls`) external URL reachability. Hard failures exit non-zero.
 
 ```bash
-python3 tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
+python3 tool/okf_build.py  bundles/local-seo --name "Local SEO OKF"
+python3 tool/okf_verify.py bundles/local-seo                 # offline checks
+python3 tool/okf_verify.py bundles/local-seo --check-urls    # also probe external links
 ```
 
 For a quick, dependency-free check of any bundle, this standalone snippet prints `CONFORMANT v0.1: True/False` (point `B` at the bundle):

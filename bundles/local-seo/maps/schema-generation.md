@@ -39,3 +39,13 @@ Generate LocalBusiness JSON-LD from collected data. See [local schema markup](/l
 ```
 
 > Do **not** generate self-serving review markup — Google ignores LocalBusiness review markup from the business itself. Only mark up third-party reviews visible on the page.
+
+# Citations
+
+This method generates markup against the in-bundle [local schema markup](/local-seo/local-schema.md) dimension. Authoritative definitions:
+
+[1] [Schema.org — LocalBusiness](https://schema.org/LocalBusiness)
+
+[2] [Google Search Central — Local Business (LocalBusiness) structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+
+[3] [Google Search Central — Review snippet structured data (self-serving review policy)](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)

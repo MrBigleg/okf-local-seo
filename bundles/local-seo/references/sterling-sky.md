@@ -3,6 +3,11 @@ type: Reference
 title: Sterling Sky review research
 description: Joy Hawkins' agency research on how review recency affects local ranking — the basis for the 18-day rule.
 resource: https://www.sterlingsky.ca/number-of-reviews-impact-ranking/
+publisher: Sterling Sky (Joy Hawkins)
+published: n.d. (see source)
+accessed: 2026-06-25
+confidence: low-medium
+scope: Agency case-study observation (the 18-day rule); a community-recognised pattern, not confirmed Google policy.
 tags: [reference, reviews]
 timestamp: 2026-06-25T00:00:00Z
 ---

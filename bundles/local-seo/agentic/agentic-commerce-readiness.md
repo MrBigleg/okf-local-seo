@@ -14,7 +14,7 @@ This is the actionable counterpart to [Agentic Commerce](/agentic/agentic-commer
 * Retailers should separately verify Merchant Center and, where eligible, claim their Search brand profile.
 * Do not treat a brand profile as another name for a Business Profile; they are different surfaces.
 
-Google's Business Agent is a Search experience for eligible US e-commerce retailers. Customisation requires a US-based store, a verified Merchant Center account, at least **50 approved free listings**, and a claimed brand profile. It uses Merchant Center data, the retailer's website and additional supplied business data.
+Google's Business Agent is a Search experience for eligible US e-commerce retailers. Customisation requires a US-based store, a verified Merchant Center account, at least **50 approved free listings**, and a claimed brand profile. It uses Merchant Center data, the retailer's website and additional supplied business data. See the reference page [Google — Get started with Business Agent](/references/google-business-agent.md).
 
 # 2. Publish structured offers
 

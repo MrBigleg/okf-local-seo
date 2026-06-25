@@ -3,6 +3,11 @@ type: Reference
 title: Ahrefs AI Overview brand-correlation study
 description: 75,000-brand analysis of what correlates with appearing in Google AI Overviews.
 resource: https://ahrefs.com/blog/ai-overview-brand-correlation/
+publisher: Ahrefs
+published: n.d. (see source)
+accessed: 2026-06-25
+confidence: medium
+scope: Correlation study across AI Overviews generally (~75,000 brands); not controlled and not local-specific.
 tags: [reference, ai-search, brand-mentions]
 timestamp: 2026-06-25T00:00:00Z
 ---

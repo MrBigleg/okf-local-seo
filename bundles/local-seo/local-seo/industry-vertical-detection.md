@@ -22,3 +22,11 @@ Detect the vertical from page signals and GBP category patterns, then route to i
 # Why it matters
 
 The vertical changes the correct schema subtype, the citation directories worth pursuing, and the review-response rules (e.g. HIPAA constraints for healthcare). When the vertical is unclear, present the top two detected verticals with supporting signals and confirm before applying industry-specific recommendations.
+
+# Citations
+
+A heuristic detection method derived from observable page and GBP-category signals; not an externally published taxonomy. The schema subtypes it routes to are defined by:
+
+[1] [Schema.org — LocalBusiness (subtype hierarchy)](https://schema.org/LocalBusiness)
+
+[2] [Google Business Profile Help — Categories](https://support.google.com/business/answer/3038177?hl=en)

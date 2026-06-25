@@ -31,6 +31,8 @@ Public specifications, launch partners and early production integrations demonst
 
 The durable requirement is structured, current and actionable data: identity, offers, price, availability, fulfilment and a safe way to authorise an action. See [Agentic Commerce Readiness](/agentic/agentic-commerce-readiness.md) and [Real-Time Local Inventory](/agentic/real-time-local-inventory.md).
 
+Per-protocol provenance (publisher, first-public date, canonical spec) lives in the reference page [Agentic commerce protocols](/references/agentic-commerce-protocols.md).
+
 # Citations
 
 [1] [Google — New tech and tools for retailers to succeed in an agentic shopping era](https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/)

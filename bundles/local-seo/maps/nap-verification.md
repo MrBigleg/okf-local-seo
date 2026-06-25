@@ -20,3 +20,13 @@ Check listing consistency across Google, Bing Places, Apple, and OSM. Extends th
 3. Compare: exact match, partial match, missing, or conflicting.
 4. Flag discrepancies — Critical (name mismatch), High (address mismatch), Medium (phone mismatch).
 5. Recommend claiming unclaimed profiles.
+
+# Citations
+
+This is a derived method built on the in-bundle [NAP consistency & citations](/local-seo/nap-citations.md) dimension. The platform endpoints it relies on:
+
+[1] [Bing Maps / Bing Places for Business](https://www.bingplaces.com/)
+
+[2] [Apple Business Connect](https://businessconnect.apple.com/)
+
+[3] [OpenStreetMap Nominatim search documentation](https://nominatim.org/release-docs/latest/)

@@ -30,3 +30,13 @@ A short, high-leverage checklist for the first pass on a new local client. Pair 
 1. Build a local digital-PR strategy targeting brand mentions and "best of" lists (mentions correlate strongly with AI visibility — see [local links & authority](/local-seo/local-authority-links.md)).
 2. Develop unique, non-swappable content for each location page.
 3. Establish presence on the third-party sources AI assistants commonly cite — review sites, directories, and community platforms.
+
+# Citations
+
+This playbook operationalises claims sourced in the bundle's reference set:
+
+[1] [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md) — low Apple Business Connect adoption (~16%).
+
+[2] [Sterling Sky review research](/references/sterling-sky.md) — the 18-day review-recency rule.
+
+[3] [Ahrefs AI Overview brand-correlation study](/references/ahrefs-ai-overviews.md) — brand mentions correlate with AI visibility.

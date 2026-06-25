@@ -3,6 +3,11 @@ type: Reference
 title: Whitespark Local Search Ranking Factors
 description: Whitespark's annual local search ranking-factors study; used here for the relative importance of factors, not exact weights.
 resource: https://whitespark.ca/local-search-ranking-factors/
+publisher: Whitespark
+published: annual study (see source for current edition date)
+accessed: 2026-06-25
+confidence: medium
+scope: Relative importance of local pack / local organic ranking factors; exact weightings are not public.
 tags: [reference, ranking-factors]
 timestamp: 2026-06-25T00:00:00Z
 ---

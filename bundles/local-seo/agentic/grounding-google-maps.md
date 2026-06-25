@@ -1,5 +1,5 @@
 ---
-type: Reference
+type: Concept
 title: Grounding with Google Maps
 description: Google's developer services for adding Google Maps place, route, weather and review context to AI applications.
 tags: [google-maps, ai, grounding, developer]
@@ -38,6 +38,8 @@ Places API (New) can return AI-powered place summaries through `generativeSummar
 # Why it matters
 
 These services let developers build location-aware applications with identifiable source material instead of relying only on a model's internal knowledge. They are developer products, not evidence that every consumer Maps answer uses the same API path. See [Ask Maps](/agentic/ask-maps.md).
+
+Source provenance for these products lives in the reference page [Google — Maps grounding for AI](/references/google-maps-grounding.md).
 
 # Citations
 

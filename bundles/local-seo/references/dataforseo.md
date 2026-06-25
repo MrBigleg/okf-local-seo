@@ -3,6 +3,11 @@ type: Reference
 title: DataForSEO
 description: SEO data API powering Tier 1+ maps intelligence — Maps SERP, My Business Info, and Reviews endpoints.
 resource: https://dataforseo.com/
+publisher: DataForSEO
+published: living document (product documentation)
+accessed: 2026-06-24
+confidence: high
+scope: Commercial SEO data API; capabilities and endpoint names per vendor documentation.
 tags: [reference, api, maps]
 timestamp: 2026-06-24T00:00:00Z
 ---

@@ -27,6 +27,8 @@ Ask Maps can synthesise constraints that do not fit neatly into a short keyword 
 
 Google has not published a separate set of Ask Maps ranking factors. Treat recommendations about profile completeness, media and review detail as data-quality practices, not guaranteed optimisation levers. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
 
+Source provenance for this concept lives in the reference page [Google — Ask Maps announcement](/references/google-ask-maps.md).
+
 # Citations
 
 [1] [Google — How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)

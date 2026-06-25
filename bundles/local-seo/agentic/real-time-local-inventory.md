@@ -1,5 +1,5 @@
 ---
-type: Ranking Dimension
+type: Concept
 title: Real-Time Local Inventory
 description: Store-level product availability, price and pickup data that makes local retail results actionable.
 tags: [local-seo, retail, inventory, agentic, ai-search]
@@ -20,7 +20,7 @@ Lastmile Retail reported results from a consumer survey conducted with Greg Ster
 * **40%** reported insufficient product information on company websites when searching online to buy locally.
 * **37%** reported being unable to confirm whether a product was available at a particular store; the same proportion reported inaccurate inventory information.
 
-These findings are specific to the reported US survey and high-dollar purchase scenario. They should not be generalised to all markets or purchase values.
+These findings are specific to the reported US survey and high-dollar purchase scenario. They should not be generalised to all markets or purchase values. Provenance is recorded in the reference page [Lastmile Retail — High-dollar local purchase survey](/references/lastmile-high-dollar-survey.md).
 
 # Minimum data
 

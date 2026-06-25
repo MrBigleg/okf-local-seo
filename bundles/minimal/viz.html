@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minimal OKF — OKF</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#1a1a2e}
+header{padding:14px 20px;background:#0f3460;color:#fff;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+header h1{font-size:18px;margin:0;font-weight:600}
+header input,header select{padding:6px 10px;border-radius:6px;border:1px solid #2a4a7a;background:#16213e;color:#fff;font-size:13px}
+#wrap{display:flex;height:calc(100vh - 52px)}
+#cy{flex:1;background:#f4f6fb}
+#panel{width:420px;max-width:46vw;overflow:auto;padding:22px 26px;border-left:1px solid #dde3ee;background:#fff}
+#panel h2{margin:0 0 4px;font-size:20px}
+.meta{color:#5a6b8c;font-size:13px;margin-bottom:14px}
+.tag{display:inline-block;background:#e8eefb;color:#0f3460;border-radius:12px;padding:2px 9px;font-size:11px;margin:2px 4px 2px 0}
+.body{border-top:1px solid #eef1f7;margin-top:14px;padding-top:14px}
+.body table{border-collapse:collapse;width:100%;margin:10px 0}.body th,.body td{border:1px solid #dde3ee;padding:5px 8px;font-size:13px;text-align:left}
+.body code{background:#f4f6fb;padding:1px 5px;border-radius:4px;font-size:12px}
+.body pre{background:#16213e;color:#e8eefb;padding:12px;border-radius:8px;overflow:auto}
+.body pre code{background:none;color:inherit}
+.backlinks{margin-top:18px;font-size:13px}.backlinks a{display:block;color:#0f3460;margin:3px 0;cursor:pointer}
+a.xlink{color:#0f3460;cursor:pointer;text-decoration:underline}
+.hint{color:#8a98b5;font-size:13px}
+</style></head><body>
+<header>
+  <h1>Minimal OKF</h1>
+  <input id="search" placeholder="Search title, id, tag…" size="22">
+  <select id="typeFilter"></select>
+  <select id="layout">
+    <option value="cose">cose</option><option value="concentric">concentric</option>
+    <option value="breadthfirst">breadthfirst</option><option value="circle">circle</option><option value="grid">grid</option>
+  </select>
+  <span class="hint">2 concepts · click a node</span>
+</header>
+<div id="wrap"><div id="cy"></div>
+<div id="panel"><p class="hint">Select a concept in the graph to read it here.</p></div></div>
+<script>
+const DATA = [{"id": "guide/concept-anatomy", "type": "Reference", "title": "Concept anatomy", "description": "A concept document is YAML frontmatter plus a markdown body; only type is required.", "resource": "", "tags": ["okf", "tutorial"], "body": "A **concept** is one markdown file. It has two parts.\n\n# Frontmatter\n\nThe block between the `---` fences at the top is YAML. The only required key is `type` (a short, descriptive string). Everything else is optional but recommended: `title`, `description`, `tags`, `resource`, `timestamp`.\n\n# Body\n\nEverything after the frontmatter is plain markdown \u2014 headings, lists, tables, code. Favour structure over freeform prose; it helps both human readers and agents.\n\n# Where to go next\n\nSee [cross-linking](/guide/cross-linking.md) for how this concept connects to others.\n", "links": ["guide/cross-linking"]}, {"id": "guide/cross-linking", "type": "Reference", "title": "Cross-linking", "description": "Concepts link to each other with bundle-relative markdown links, forming a graph.", "resource": "", "tags": ["okf", "tutorial"], "body": "Concepts relate to each other through ordinary markdown links.\n\n# Bundle-relative links (preferred)\n\nStart the path with `/`, relative to the bundle root:\n\n```markdown\nSee [concept anatomy](/guide/concept-anatomy.md).\n```\n\nThis renders as: see [concept anatomy](/guide/concept-anatomy.md).\n\n# Why it matters\n\nThe directory tree only expresses parent/child. Links express every other relationship \u2014 and a consumer can build a graph from them. Broken links are allowed; they simply mark knowledge not yet written.\n", "links": ["guide/concept-anatomy", "guide/concept-anatomy"]}];
+const byId = {}; DATA.forEach(c => byId[c.id] = c);
+const palette = {};
+const colors = ["#0f3460","#e94560","#16a085","#8e44ad","#d35400","#2980b9","#27ae60","#c0392b","#7f8c8d"];
+DATA.forEach(c => { if(!(c.type in palette)) palette[c.type] = colors[Object.keys(palette).length % colors.length]; });
+
+const elements = [];
+DATA.forEach(c => elements.push({data:{id:c.id,label:c.title,type:c.type}}));
+const seen = new Set();
+DATA.forEach(c => c.links.forEach(t => { if(byId[t]){const k=c.id+"->"+t; if(!seen.has(k)){seen.add(k);elements.push({data:{id:k,source:c.id,target:t}});}}}));
+
+const cy = cytoscape({container:document.getElementById("cy"),elements,
+  style:[
+    {selector:"node",style:{"background-color":ele=>palette[ele.data("type")]||"#888","label":"data(label)","font-size":"10px","color":"#1a1a2e","text-wrap":"wrap","text-max-width":"110px","text-valign":"bottom","text-margin-y":"3px","width":"22px","height":"22px"}},
+    {selector:"edge",style:{"width":1.2,"line-color":"#b8c4dd","target-arrow-color":"#b8c4dd","target-arrow-shape":"triangle","curve-style":"bezier","arrow-scale":0.8}},
+    {selector:".faded",style:{"opacity":0.15}},
+    {selector:".sel",style:{"border-width":3,"border-color":"#e94560"}}
+  ],
+  layout:{name:"cose",animate:false,padding:30}});
+
+const tf = document.getElementById("typeFilter");
+tf.innerHTML = '<option value="">all types</option>' + Object.keys(palette).map(t=>`<option>${t}</option>`).join("");
+
+function render(c){
+  let b = marked.parse(c.body);
+  b = b.replace(/href="(\/[^"]+)\.md"/g,'class="xlink" data-id="$1" href="javascript:void(0)"').replace(/data-id="\//g,'data-id="');
+  const backlinks = DATA.filter(o=>o.links.includes(c.id));
+  document.getElementById("panel").innerHTML =
+    `<h2>${c.title}</h2><div class="meta"><span class="tag" style="background:${palette[c.type]};color:#fff">${c.type}</span> ${c.id}</div>`+
+    (c.description?`<p>${c.description}</p>`:"")+
+    (c.resource?`<p class="hint">resource: <a href="${c.resource}" target="_blank">${c.resource}</a></p>`:"")+
+    (c.tags&&c.tags.length?`<div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>`:"")+
+    `<div class="body">${b}</div>`+
+    (backlinks.length?`<div class="backlinks"><strong>Cited by</strong>${backlinks.map(o=>`<a class="xlink" data-id="${o.id}">${o.title}</a>`).join("")}</div>`:"");
+  document.querySelectorAll(".xlink").forEach(a=>a.onclick=()=>{const id=a.getAttribute("data-id");if(byId[id])select(id);});
+}
+function select(id){cy.nodes().removeClass("sel");const n=cy.getElementById(id);n.addClass("sel");if(byId[id])render(byId[id]);}
+cy.on("tap","node",e=>select(e.target.id()));
+
+document.getElementById("search").oninput=e=>{const q=e.target.value.toLowerCase();cy.nodes().forEach(n=>{const c=byId[n.id()];const hit=!q||c.title.toLowerCase().includes(q)||c.id.toLowerCase().includes(q)||(c.tags||[]).join(" ").toLowerCase().includes(q);n.toggleClass("faded",!hit);});};
+tf.onchange=e=>{const t=e.target.value;cy.nodes().forEach(n=>n.toggleClass("faded",t&&byId[n.id()].type!==t));};
+document.getElementById("layout").onchange=e=>cy.layout({name:e.target.value,animate:false,padding:30}).run();
+</script></body></html>

@@ -16,6 +16,10 @@ description: A vendor-neutral OKF knowledge bundle covering local SEO, Google Bu
 
 * [Playbooks](/playbooks/) - Repeatable, step-by-step local SEO procedures.
 
+# Agentic & AI Search
+
+* [Agentic & AI search](/agentic/) - Ask Maps, agentic commerce, Maps grounding, GEO, real-time inventory, and human-in-the-loop GBP ops.
+
 # References
 
 * [References](/references/) - External sources and studies cited throughout this bundle.

@@ -1,31 +1,32 @@
 ---
 type: Concept
 title: Ask Maps
-description: Google's Gemini-powered conversational search layer in Google Maps that reasons over a situation, not just a query.
+description: Google's Gemini-powered conversational experience in Google Maps for complex, place-based questions and actions.
 tags: [local-seo, ai-search, google-maps, agentic]
 timestamp: 2026-06-25T00:00:00Z
 ---
 
-> **Draft — pending fact-check & citation URLs.**
+Ask Maps is Google's Gemini-powered conversational experience in Google Maps. A user taps the **Ask Maps** button, asks a complex place-based question, and receives a conversational answer with a customised map.
 
-Ask Maps is Google's Gemini-powered conversational layer in Google Maps, reached from an **Ask Maps** entry point under the Maps search bar. Instead of matching a short phrase like "Italian restaurant near me", it interprets a richer situation — timing, party size, route context, ambience, dietary needs, and booking intent.
+Google announced Ask Maps on 12 March 2026. It began rolling out on Android and iOS in the United States and India, with desktop availability described as coming soon. This rollout status was checked on 25 June 2026.
+
+# What it uses
+
+Google says Ask Maps can draw on:
+
+* information from more than 300 million places;
+* reviews and other local knowledge from a community of more than 500 million contributors;
+* places the user has searched for or saved in Maps; and
+* route context, directions and estimated arrival times.
+
+The experience can also help a user act on a result, such as making a restaurant reservation, saving a place, sharing it or starting navigation.
 
 # What changes for a business
 
-Traditional Maps search matches a query to places. Ask Maps reasons over who is going, where from, what constraints matter, whether the place is open, and whether an action (booking, navigation) can happen immediately — turning Maps from a directory into a local concierge.
+Ask Maps can synthesise constraints that do not fit neatly into a short keyword query: location, timing, route, atmosphere, availability and personal preferences. This increases the importance of complete, current and mutually consistent source data across the [Google Business Profile](/local-seo/gbp-signals.md), [reviews](/local-seo/reviews-reputation.md), menus, photos and first-party website.
 
-# What it reasons over
-
-* Place facts from the [Google Business Profile](/local-seo/gbp-signals.md)
-* Community [reviews](/local-seo/reviews-reputation.md) and review themes
-* User search history, stated preferences, and curated lists
-* Photos, menus, and other media
-
-# Why it matters
-
-Visibility now depends on being legible to a model, not just ranking for a keyword. Specific categories, structured menus/services, authentic media, and rich review themes are what let Ask Maps include a business in a synthesised recommendation. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
+Google has not published a separate set of Ask Maps ranking factors. Treat recommendations about profile completeness, media and review detail as data-quality practices, not guaranteed optimisation levers. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
 
 # Citations
 
-[1] Google Maps Help — Ask Maps (confirm canonical URL).
-[2] Near Media / industry commentary on Ask Maps and AI features in Maps.
+[1] [Google — How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)

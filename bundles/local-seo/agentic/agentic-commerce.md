@@ -1,31 +1,46 @@
 ---
 type: Concept
 title: Agentic Commerce
-description: Commerce where an AI agent doesn't just recommend but can select, reserve, order, or initiate checkout on the user's behalf.
+description: Commerce in which an AI agent can help discover, select and transact with a business under explicit user authority.
 tags: [local-seo, ai-search, commerce, agentic]
 timestamp: 2026-06-25T00:00:00Z
 ---
 
-> **Draft — pending fact-check & citation URLs.**
+Agentic commerce describes commerce in which an AI agent can move beyond recommendation into actions such as building a cart, initiating checkout or completing an authorised purchase. For local businesses, the practical shift is from being merely discoverable to exposing reliable data and transaction capabilities that an agent can use.
 
-Agentic commerce is commerce where an AI agent does more than recommend — it can select, reserve, order, build a cart, or initiate checkout for the user. In local search, the conversion event can happen inside [Ask Maps](/agentic/ask-maps.md) or another assistant surface *before* the user ever reaches a website.
+# The protocol landscape
 
-# The protocol layer
+As of 25 June 2026, several distinct open protocols exist. They are not one universal, fully adopted stack.
 
-Industry coverage frames agentic commerce as an emerging protocol stack rather than a single feature:
+| Protocol | Scope | Primary backing and status |
+|---|---|---|
+| Universal Commerce Protocol (UCP) | Discovery, catalogue, cart, checkout, identity linking and order management | Launched in January 2026; co-developed by Google and several retailers and platforms, with public specifications and reference implementations. |
+| Agent Payments Protocol (AP2) | Verifiable authority, payment instructions and accountability for agent-led payments | Announced by Google in September 2025 with more than 60 participating organisations; public specification available. |
+| Agentic Commerce Protocol (ACP) | Programmatic checkout between buyers, agents and businesses | Open-sourced in September 2025 and developed by OpenAI and Stripe; first implemented for an in-chat checkout experience. |
+| x402 | HTTP-native, programmatic stablecoin payments | Developed by Coinbase as an open protocol. AP2 also documents an A2A x402 extension for agent-based crypto payments. |
 
-* A **commerce protocol** for merchant capability discovery, cart operations, pricing, and checkout state.
-* A **payments protocol** for authorisation, accountability, and human-presence signals.
-* **Signed mandates** that carry verifiable intent, cart, and payment authorisation.
-* **Security/verification** layers for replay prevention and context binding.
+# Signed mandates
 
-The detail and adoption status of these are moving fast — treat specifics as time-sensitive and verify against primary sources.
+Cryptographically signed mandates are a mechanism within AP2, not a separate commerce protocol. AP2 uses tamper-evident digital credentials to record checkout and payment authority for both human-present and delegated transactions.
 
-# What it means for a local business
+# Adoption should not be overstated
 
-The website shifts from a visual brochure to a structured, machine-readable data node. The operational consequence is captured in [Agentic Commerce Readiness](/agentic/agentic-commerce-readiness.md): a business an agent cannot read, trust, and act on is effectively invisible to AI discovery and booking.
+Public specifications, launch partners and early production integrations demonstrate that these protocols exist. They do not establish universal merchant, wallet or payment-network adoption. A business should select a protocol only when a target channel or integration partner supports it, then preserve ordinary web and API fallbacks.
+
+# Local-business implication
+
+The durable requirement is structured, current and actionable data: identity, offers, price, availability, fulfilment and a safe way to authorise an action. See [Agentic Commerce Readiness](/agentic/agentic-commerce-readiness.md) and [Real-Time Local Inventory](/agentic/real-time-local-inventory.md).
 
 # Citations
 
-[1] Industry analyses of agentic-commerce architecture and protocols, 2026 (confirm sources).
-[2] Google Cloud materials on agentic commerce for retail (confirm URL).
+[1] [Google — New tech and tools for retailers to succeed in an agentic shopping era](https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/)
+
+[2] [Universal Commerce Protocol — Specification and ecosystem](https://ucp.dev/)
+
+[3] [Google Cloud — Powering AI commerce with the Agent Payments Protocol](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol)
+
+[4] [OpenAI — Instant Checkout and the Agentic Commerce Protocol](https://openai.com/index/buy-it-in-chatgpt/)
+
+[5] [Agentic Commerce Protocol — Open specification](https://www.agenticcommerce.dev/)
+
+[6] [Coinbase Developer Platform — x402 overview](https://docs.cdp.coinbase.com/x402/welcome)

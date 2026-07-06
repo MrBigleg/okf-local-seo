@@ -5,6 +5,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Local SEO & reviews
 
 * [Whitespark Local Search Ranking Factors](/references/whitespark-2026.md) - Annual ranking-factors study. Used qualitatively — exact weightings are not public.
+* [SOCi 2025 Consumer Behavior Index](/references/soci-cbi-2025.md) - US consumer survey behind the 91% reviews and 65% respond-to-reviews figures.
 * [Sterling Sky review research](/references/sterling-sky.md) - Joy Hawkins' agency research; the 18-day rule on review recency.
 * [BrightLocal Local Consumer Review Survey](/references/brightlocal-lcrs.md) - Consumer review behaviour and rating thresholds.
 * [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md) - Adoption and awareness of Apple Business Connect.
@@ -22,6 +23,17 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Google — Maps grounding for AI](/references/google-maps-grounding.md) - Full grounding, Grounding Lite, and Places API AI summaries.
 * [Google — Get started with Business Agent](/references/google-business-agent.md) - Eligibility and data sources for Business Agent.
 * [Lastmile Retail high-dollar purchase survey](/references/lastmile-high-dollar-survey.md) - Consumer demand for real-time local availability.
+
+# Google Business Profile (primary sources)
+
+* [Google — Tips to improve your local ranking](/references/google-local-ranking.md) - Relevance, distance and prominence, as Google defines them.
+* [Google — Verify your business on Google](/references/google-gbp-verification.md) - The six verification methods, auto-assignment, and timelines.
+* [Google — Manage Google Updates](/references/google-manage-google-updates.md) - hasGoogleUpdated, diffMask, and patch-based accept/reject.
+
+# Policy & enforcement
+
+* [FTC — Consumer Reviews and Testimonials Rule](/references/ftc-consumer-review-rule.md) - 16 CFR Part 465, the gating Q&A, and the December 2025 warning letters.
+* [US DOJ — B.E.S.T. GDR / Premium Home Service complaint](/references/doj-best-gdr-2026.md) - The May 2026 fake-listings enforcement action; press release and filed complaint.
 
 # Tooling
 

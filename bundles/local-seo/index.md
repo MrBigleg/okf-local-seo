@@ -8,6 +8,10 @@ description: A vendor-neutral OKF knowledge bundle covering local SEO, Google Bu
 
 * [Local SEO overview](/local-seo/) - The six ranking dimensions, business-type and industry detection, and AI-search impact for local search.
 
+# Google Business Profile
+
+* [Google Business Profile](/gbp/) - GBP depth: what the profile is, descriptions, reviews, posts, verification, spam and fake listings, profile shielding, and review gating.
+
 # Maps Intelligence
 
 * [Maps overview](/maps/) - Geo-grid rank tracking, GBP profile auditing, review intelligence, and cross-platform NAP across Google, Bing, Apple, and OSM.

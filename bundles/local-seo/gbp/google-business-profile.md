@@ -12,13 +12,16 @@ The profile is the single biggest lever on local pack visibility — that rankin
 
 # From Google My Business to Google Business Profile
 
-The product has been renamed several times. The lineage runs through Google Local Business Center, Google Places and Google+ Local pages before settling as **Google My Business (GMB)** in 2014. On **4 November 2021** Google announced the current name, **Google Business Profile**, alongside a shift in how profiles are managed:
+The product has been renamed several times. Every date below is taken from Google's own announcement of that change:
 
-* single-location businesses were moved to managing the profile directly in Google Search and the Google Maps app, rather than a separate dashboard;
-* the standalone GMB mobile app was retired in 2022; and
-* the old web console was repositioned for multi-location businesses as Business Profile Manager.
+| Date | Change | Google's wording |
+|------|--------|------------------|
+| 20 April 2010 | Google Local Business Center becomes **Google Places**. | "Today the Local Business Center is becoming Google Places." |
+| 30 May 2012 | **Google+ Local** launches as the consumer-facing local surface; owners "continue to manage your local listing information via Google Places for Business". | "We're rolling out Google+ Local, a simple way to discover and share local information." |
+| 11 June 2014 | **Google My Business (GMB)** launches, "upgrading current users of Places for Business and the Google+ Dashboard to this new experience". | "Help your business shine with Google My Business." |
+| 4 November 2021 | GMB becomes **Google Business Profile**. | "To keep things simple, 'Google My Business' is being renamed 'Google Business Profile.'" |
 
-The rename dates above rest on contemporaneous trade-press coverage of Google's announcement; Google's original blog post is no longer online. The practical consequence is current, though: "GMB" and "GBP" refer to the same product, and management now happens in Search and Maps themselves.
+The 2021 announcement also changed how profiles are managed: single-location businesses claim, verify and manage the profile directly in Google Search and the Google Maps app; the standalone GMB mobile app was retired in 2022; and the old web console was repositioned for multi-location businesses as **Business Profile Manager**. "GMB" and "GBP" refer to the same product — management now happens in Search and Maps themselves.
 
 # Google's three local ranking factors
 
@@ -44,4 +47,10 @@ Distance is fixed per search, so the controllable levers are relevance and promi
 
 [2] [Google — Get started with Google Business Profile](https://support.google.com/business/answer/7039811)
 
-[3] [9to5Google — Google renames 'My Business' to 'Business Profile' (4 November 2021)](https://9to5google.com/2021/11/04/google-business-profile/)
+[3] [Google — Connect with local holiday shoppers (4 November 2021 rename announcement)](/references/google-gbp-rename-2021.md)
+
+[4] [Google — Introducing Google Places (20 April 2010)](https://googleblog.blogspot.com/2010/04/introducing-google-places.html)
+
+[5] [Google — Local, now with a dash of Zagat and a sprinkle of Google+ (30 May 2012)](https://blog.google/products/google-plus/localnow-with-dash-of-zagat-and/)
+
+[6] [Google — Help your business shine with Google My Business (11 June 2014)](https://smallbusiness.googleblog.com/2014/06/help-your-business-shine-with-google-my.html)

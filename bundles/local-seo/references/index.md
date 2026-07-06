@@ -29,6 +29,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Google — Tips to improve your local ranking](/references/google-local-ranking.md) - Relevance, distance and prominence, as Google defines them.
 * [Google — Verify your business on Google](/references/google-gbp-verification.md) - The six verification methods, auto-assignment, and timelines.
 * [Google — Manage Google Updates](/references/google-manage-google-updates.md) - hasGoogleUpdated, diffMask, and patch-based accept/reject.
+* [Google — GMB to GBP rename announcement](/references/google-gbp-rename-2021.md) - The 4 November 2021 blog.google post; primary source for the rename.
 
 # Policy & enforcement
 

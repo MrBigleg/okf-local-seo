@@ -45,7 +45,8 @@ def parse_frontmatter(text):
 
 def collect(bundle):
     concepts, errors, reserved = [], [], set()
-    for root, _, files in os.walk(bundle):
+    for root, dirs, files in os.walk(bundle):
+        dirs.sort()
         for fn in sorted(files):
             if not fn.endswith(".md"):
                 continue

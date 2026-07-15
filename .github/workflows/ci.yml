@@ -1,0 +1,27 @@
+name: OKF quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Verify canonical bundle
+        run: python tool/okf_verify.py bundles/local-seo
+      - name: Probe external URLs
+        run: python tool/okf_verify.py bundles/local-seo --check-urls
+      - name: Regenerate graph
+        run: python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
+      - name: Require committed generated output
+        run: git diff --exit-code -- bundles/local-seo/viz.html

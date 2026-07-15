@@ -1,81 +1,71 @@
-# okf-local-seo
+# Local SEO OKF
 
-A portable, agent-readable **local SEO & maps intelligence** knowledge base in [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) — plain markdown with YAML frontmatter, organised as a hierarchy of cross-linked concepts.
+A public, agent-readable Local SEO and maps-intelligence knowledge base in
+[Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf).
+The canonical knowledge is plain Markdown with YAML frontmatter, maintained in
+public so practitioners and agents can inspect sources and propose corrections.
 
-No database, no SDK, no lock-in. If you can `cat` a file you can read it; if you can `git clone` it you can ship it. Humans, agents, and static-site tools all read the same files.
+RankinMaps consumes a pinned, validated snapshot of this repository. General
+Local SEO knowledge belongs here; RankinMaps product documentation, private
+operations, admin material, and customer Second Brains do not.
 
-> **Status:** private review → public. Human-review the content (see *Provenance* below) before flipping the repo public.
+## Repository layout
 
-## What's inside
-
-```
+```text
 okf-local-seo/
-├── bundle/                     # the OKF bundle (the actual knowledge)
-│   ├── index.md                # root listing (declares okf_version: 0.1)
-│   ├── log.md                  # dated changelog
-│   ├── local-seo/              # ranking dimensions + detection + AI-search
-│   ├── maps/                   # geo-grid, GBP audit, reviews, NAP, schema, tiers
-│   ├── references/             # primary sources (each claim is cited)
-│   └── playbooks/              # repeatable procedures
-├── okf_build.py                # validator + viz.html generator (no dependencies)
-├── LICENSE                     # MIT — Copyright (c) 2026 Craig Burton
-└── README.md
+├── bundles/local-seo/          # canonical Local SEO OKF bundle
+│   ├── index.md                # root map (OKF v0.1)
+│   ├── log.md                  # dated editorial changelog
+│   ├── maintenance.md          # ownership and freshness policy
+│   ├── agentic/                # AI, Maps, and commerce changes
+│   ├── gbp/                    # Google Business Profile guidance
+│   ├── local-seo/              # ranking and on-page concepts
+│   ├── maps/                   # maps analysis and capability tiers
+│   ├── playbooks/              # repeatable procedures
+│   ├── references/             # evidence and provenance
+│   └── viz.html                # generated interactive graph
+├── bundles/minimal/            # small teaching bundle
+├── docs/                       # producer and consumer documentation
+└── tool/                       # dependency-free build and verification tools
 ```
 
-25 concepts, fully conformant to OKF v0.1.
+## Read and use the bundle
 
-## Use it
+Start with [`bundles/local-seo/index.md`](bundles/local-seo/index.md), follow a
+section index, then load only the concepts needed for the task. This progressive
+disclosure pattern keeps agent context small. Each substantive concept carries
+citations, while reference pages record publisher, publication/access dates,
+confidence, and scope.
 
-**As an agent context source.** Point any LLM/agent at `bundle/`. The frontmatter (`type`, `tags`, `resource`) gives agents fields to filter on; the per-folder `index.md` files allow progressive disclosure — an agent can see what's available before loading everything into context.
+Open [`bundles/local-seo/viz.html`](bundles/local-seo/viz.html) locally for the
+self-contained interactive graph. The files can also be mounted directly in an
+agent workspace, imported into a documentation system, or cloned as ordinary
+Git content.
 
-**As a docs site.** MkDocs / Hugo / Docusaurus read markdown + frontmatter natively — point one at `bundle/`.
-
-**As an interactive graph.** Open `bundle/viz.html` in any browser — a self-contained, force-directed graph of every concept and cross-link. No backend.
-
-**In Obsidian / Notion.** Open `bundle/` as a vault; the `/absolute/path.md` cross-links work as-is.
-
-## Validate & regenerate the viewer
+## Validate a change
 
 ```bash
-python3 okf_build.py bundle --name "Local SEO OKF"
+python tool/okf_verify.py bundles/local-seo
+python tool/okf_verify.py bundles/local-seo --check-urls
+python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
+git diff --exit-code -- bundles/local-seo/viz.html
 ```
 
-Prints a conformance check (OKF v0.1), a concept-type breakdown, and any broken links (allowed — they may be not-yet-written knowledge), then rewrites `bundle/viz.html`. Re-run it whenever the bundle grows.
+The first command is the hard structural and provenance gate. URL probing is a
+review signal because publishers sometimes block automated requests. The graph
+must be regenerated whenever concept content or links change.
 
-## Grow it
+## Contribute
 
-1. Add a `.md` file under the right folder in `bundle/`. Minimum frontmatter:
+Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+before proposing a change. Every factual update must identify its source and
+scope; volatile product claims require a current primary source. Automation may
+open a weekly draft maintenance PR, but a human must verify and approve claims
+before merge.
 
-   ```markdown
-   ---
-   type: Playbook
-   title: Review response templates
-   description: One-line summary.
-   tags: [local-seo, reviews]
-   timestamp: 2026-06-25T00:00:00Z
-   ---
-   # Body…
-   ```
-
-   Only `type` is required.
-2. Cross-link with bundle-relative links: `[reviews](/local-seo/reviews-reputation.md)`.
-3. Update the folder's `index.md` and add a `log.md` line.
-4. Re-run `okf_build.py`.
-
-## Agentic-tool integration (notes for the PoC)
-
-Because the bundle is just files, an agent tool can consume it without bespoke parsing:
-
-- **Retrieval:** load `bundle/index.md` first, then fetch only the concept files an agent needs (progressive disclosure keeps context small).
-- **Filtering:** parse frontmatter `type`/`tags` to route or scope retrieval.
-- **Citation:** each concept ends with a `# Citations` block of primary-source links, so an agent can surface sources with its answer.
-- **Freshness:** `timestamp` per concept and `bundle/log.md` give you change signals.
-
-## Provenance & verification
-
-The structure and topic map were *inspired by* the local-SEO and maps skills in the MIT-licensed [`AgriciDaniel/claude-seo`](https://github.com/AgriciDaniel/claude-seo) repo. The concept docs here are **independently rewritten** and every figure has been **checked against its primary source**; unverifiable figures were dropped. Sources include Whitespark, Sterling Sky, BrightLocal, Ahrefs, Seer Interactive, and Google Search Central — see `bundle/references/`.
-
-**Before going public:** sanity-check the content (the source repo carried March 2026-dated stats) and confirm the exact live URL of Google's AI-features documentation, which is flagged in `bundle/references/google-ai-optimization-guide.md`.
+The structure and initial topic map were inspired by the MIT-licensed
+[`AgriciDaniel/claude-seo`](https://github.com/AgriciDaniel/claude-seo) project.
+The content here was independently rewritten and source-checked.
 
 ## License
 

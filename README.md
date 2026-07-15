@@ -63,10 +63,7 @@ scope; volatile product claims require a current primary source. Automation may
 open a weekly draft maintenance PR, but a human must verify and approve claims
 before merge.
 
-The structure and initial topic map were inspired by the MIT-licensed
-[`AgriciDaniel/claude-seo`](https://github.com/AgriciDaniel/claude-seo) project.
-The content here was independently rewritten and source-checked.
-
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Craig Burton.
+MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Craig Burton. Third-party
+attributions are recorded in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

@@ -1,5 +1,8 @@
 # Knowledge Base Update Log
 
+## 2026-07-15
+* **Publication governance**: Prepared the repository for public contribution with explicit public-only boundaries, evidence rules, pull-request templates, CI verification, and a weekly human-reviewed maintenance queue. No Local SEO claims changed in this governance update.
+
 ## 2026-07-06
 * **Ambiguity clearance**: Resolved all three open verification items. The GMB→GBP rename is now cited to [Google's own live 4 November 2021 announcement](/references/google-gbp-rename-2021.md) (found under ads-commerce on blog.google); the pre-2014 product lineage now carries exact dates from Google's live 2010/2012/2014 posts; the SOCi 65% figure is fixed to its citable press-release scope (younger consumers). The [verification report](/references/verification-report-2026-07-06.md) follow-up list is now empty.
 * **Update**: Added the [Google Business Profile section](/gbp/) — 8 documents covering [GBP fundamentals and ranking factors](/gbp/google-business-profile.md), the [business description](/gbp/business-description.md), [reviews](/gbp/reviews.md), [Google Posts](/gbp/google-posts.md), [verification](/gbp/verification.md), [spam & fake listings](/gbp/spam-and-fake-listings.md), [profile shielding](/gbp/profile-shielding.md) and [review gating](/gbp/review-gating.md).

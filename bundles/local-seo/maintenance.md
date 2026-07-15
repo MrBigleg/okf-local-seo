@@ -3,8 +3,8 @@ type: Policy
 title: Maintenance Policy
 description: Ownership, review cadence and freshness tiers for keeping fast-moving claims in this bundle accurate.
 owner: CTB Marketing (bundle maintainer)
-last_verified: 2026-06-25
-review_cadence: quarterly (volatile claims monthly — see tiers)
+last_verified: 2026-07-06
+review_cadence: weekly queue (volatile claims monthly — see tiers)
 tags: [governance, maintenance, policy]
 timestamp: 2026-06-25T00:00:00Z
 ---
@@ -16,6 +16,7 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 * **Owner:** CTB Marketing (bundle maintainer).
 * The owner is accountable for the scheduled reviews below and for re-running `tool/okf_verify.py` before any export or release.
 * Each reference doc records its own `accessed` date in frontmatter; each concept records a `timestamp`. The `last_verified` date in this file is the date of the most recent full pass.
+* A scheduled workflow opens a weekly draft review report. It is a queue for human research, never approval or evidence by itself.
 
 # Freshness tiers
 
@@ -33,6 +34,7 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 4. Re-run `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` to regenerate `viz.html`.
 5. Append a dated entry to [log.md](/log.md) and update `last_verified` above.
 6. File or update a dated verification report (see [the 2026-06-25 report](/references/verification-report-2026-06-25.md)) when a full claim-by-claim pass is done.
+7. Require human approval before merging any factual update; automation must never auto-merge knowledge claims.
 
 # Open follow-ups
 

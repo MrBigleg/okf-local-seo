@@ -12,6 +12,7 @@ Goes beyond tool/okf_build.py conformance. Checks, per bundle:
     * non-sequential citation numbering ([1], [2], ... with no gaps/dupes)
     * stale draft markers (TODO, TBD, FIXME, XXX, DRAFT, "pending fact-check",
       "before publish")
+    * `audience: internal` content in this public-only repository
 
   WARNINGS (do not fail the build):
     * `type` outside the controlled vocabulary
@@ -143,6 +144,8 @@ def main():
                 hard.append(f"{rel}: frontmatter missing non-empty 'type'")
             elif dtype not in TYPE_VOCAB:
                 warn.append(f"{rel}: type '{dtype}' is outside the controlled vocabulary")
+            if str(fm.get("audience", "")).strip().lower() == "internal":
+                hard.append(f"{rel}: audience 'internal' is forbidden in the public bundle")
 
             # --- reference provenance ---
             if dtype == "Reference":

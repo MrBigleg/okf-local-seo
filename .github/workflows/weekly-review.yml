@@ -1,0 +1,52 @@
+name: Weekly knowledge review
+
+on:
+  schedule:
+    - cron: "30 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-knowledge-review
+  cancel-in-progress: false
+
+jobs:
+  prepare-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Generate the dated review report
+        run: python tool/weekly_review.py bundles/local-seo
+      - name: Capture URL-health signals
+        run: python tool/okf_verify.py bundles/local-seo --check-urls | tee weekly-url-check.txt
+      - name: Create or refresh a draft review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          date="$(date -u +%F)"
+          branch="automation/weekly-okf-review-${date}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add reviews/weekly/ weekly-url-check.txt
+          if git diff --cached --quiet; then
+            echo "No weekly review changes."
+            exit 0
+          fi
+          git commit -m "chore: prepare Local SEO review ${date}"
+          git push --force-with-lease origin "$branch"
+          if ! gh pr view "$branch" >/dev/null 2>&1; then
+            gh pr create --draft --base main --head "$branch" \
+              --title "Weekly Local SEO knowledge review — ${date}" \
+              --body "Automated maintenance report only. A human must verify sources, edit affected concepts, update log.md, and mark this ready before merge."
+          fi

@@ -1,0 +1,33 @@
+name: Knowledge correction or update
+description: Report a stale, inaccurate, or missing Local SEO claim.
+title: "[Knowledge]: "
+labels: [knowledge-review]
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: Affected OKF page
+      description: Provide the bundle-relative path or GitHub link.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed correction
+      description: Explain what is wrong or missing, including relevant scope.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Link official documentation, policy, specification, or original research.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: This report contains no credentials, private customer data, or confidential material.
+          required: true

@@ -20,6 +20,7 @@ you can check for yourself.
 You can read it. You can give it to an AI agent. Or you can copy the pattern
 and build a knowledge base around your own work.
 
+<img width="1466" height="918" alt="image" src="https://github.com/user-attachments/assets/fe2064c2-3881-43d6-b132-df0eb6d6bb3d" />
 
 
 ## What this gives you

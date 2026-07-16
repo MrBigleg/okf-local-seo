@@ -4,13 +4,16 @@ I have spent years working in Local SEO and Digital Marketing and I'm methodical
 research, working methods, things that changed, and things people repeat even
 though the evidence does not support them.
 
-The biggest problem is information overload and stale understanding, keeping information
-organised, sourced, current, and useful to me as a hands on SEO. 
+The biggest problem is information overload and stale understanding. Keeping
+information organised, sourced, current, and useful to me as a hands-on SEO
+is a constant job.
 
-Recently with AI being able to much better handle long context, research and verification tasks, organising. 
-Understanding data became more manageable and my "second brain" has become indispensable.
-Sharing is caring and since OKF became a standard that I think will revolutionise A2A and ARD discovery.
-I wanted to create a next gen shared space for Local SEOs to share knowledge efficiently in the AI age.
+AI recently got much better at handling long context, research, and
+verification tasks, so organising and understanding that data became easier,
+and my "second brain" turned into something I actually rely on. Sharing is
+caring, and I think OKF is becoming a real standard for A2A and ARD
+discovery. I wanted to build a next-gen shared space where Local SEOs can
+pool knowledge efficiently in the AI age.
 
 This repository is an attempt to create that. It is a public Local SEO knowledge base written
 in [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf):
@@ -22,6 +25,17 @@ and build a knowledge base around your own work.
 
 <img width="1466" height="918" alt="image" src="https://github.com/user-attachments/assets/fe2064c2-3881-43d6-b132-df0eb6d6bb3d" />
 
+## Use this for free
+
+You do not need an account for any of this:
+
+- Browse this knowledge base as an [interactive graph](https://www.rank-in-maps.com/knowledge-graph).
+- Clone this repo and read the Markdown directly.
+
+If you'd rather have an AI agent read it for you, Rank-in-Maps also offers a
+free way to connect Claude, ChatGPT, or any [MCP](https://modelcontextprotocol.io)
+client to this knowledge base. Setup steps are in the
+[MCP connector guide](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp).
 
 ## What this gives you
 
@@ -67,7 +81,7 @@ English: give the agent a map first, not the entire library.
 | Read or clone this bundle | Learning, research, and public Local SEO workflows | Nothing beyond keeping your copy updated |
 | Build your own OKF bundle | Your own knowledge, your own rules, full control | Sources, review, updates, and where the files live |
 | Connect the files to your agent | Private local workflows without a managed service | Agent access, permissions, and any MCP or search layer you add |
-| Use the official Rank-in-Maps connector | A supported connection to Rank-in-Maps knowledge and private workflows | Your account, the agent you connect, and the actions you approve |
+| Use the official Rank-in-Maps connector | A ready-made, free way to query this knowledge base from your own AI client | Your account and the agent you connect |
 
 The open route is genuinely open. You do not need Rank-in-Maps to use this
 format or recreate the approach.
@@ -75,13 +89,12 @@ format or recreate the approach.
 If you want the supported route, the
 [official Rank-in-Maps MCP connector](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp)
 connects compatible AI clients to the knowledge and tools available to your
-Rank-in-Maps account. A paid option is available for private workflows. Access
-depends on your account and the tools currently enabled; your MCP client's
-tool list is the source of truth.
+Rank-in-Maps account. Access depends on your account and the tools currently
+enabled; your MCP client's tool list is the source of truth.
 
-MCP and OKF are not the same thing. **OKF organises the knowledge. MCP is one
-way to let an AI use it.** You can replace the connector and keep the files.
-That portability is the point.
+MCP and OKF are not the same thing: OKF organises the knowledge, and MCP is
+one way to let an AI use it. You can swap out the connector and keep the
+files, which is the whole point of keeping this in plain Markdown.
 
 ## Recreate this with your own knowledge
 
@@ -120,8 +133,8 @@ rather than quietly maintaining a different copy. Its product documentation,
 private operations, and customer knowledge stay outside this public
 repository.
 
-That separation matters. Open knowledge should be inspectable. Private
-business knowledge should remain private.
+That separation matters: open knowledge should be inspectable, and private
+business knowledge should stay private.
 
 ## Read this bundle
 
@@ -179,10 +192,10 @@ claims need a current primary source. Automation may prepare a weekly draft
 maintenance pull request, but it does not decide what is true. A person must
 verify and approve every claim before it is merged.
 
-AI is a remarkable collaborator. It is not an accountable editor. Humans stay
-in the loop here.
+AI can help draft and flag changes here, but it doesn't get the final say.
+A person checks and approves every factual claim before it's merged.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Craig Burton. Third-party
+MIT, see [LICENSE](LICENSE). Copyright (c) 2026 Craig Burton. Third-party
 attributions are recorded in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

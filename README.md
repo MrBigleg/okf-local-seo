@@ -1,6 +1,6 @@
 # Local SEO OKF
 
-I have spent years working in Local SEO and Digital Marketing and I', methodical about collaiting information: Google documentation,
+I have spent years working in Local SEO and Digital Marketing and I'm methodical about collating information: Google documentation,
 research, working methods, things that changed, and things people repeat even
 though the evidence does not support them.
 
@@ -8,11 +8,11 @@ The biggest problem is information overload and stale understanding, keeping inf
 organised, sourced, current, and useful to me as a hands on SEO. 
 
 Recently with AI being able to much better handle long context, research and verification tasks, organising. 
-Understanding data became more manageble and my "second brain" has become indespensible.
+Understanding data became more manageable and my "second brain" has become indispensable.
 Sharing is caring and since OKF became a standard that I think will revolutionise A2A and ARD discovery.
-I wanted to create a next gen shared space for Local SEOs to share knowledge efficietnlty in the AI age.  
+I wanted to create a next gen shared space for Local SEOs to share knowledge efficiently in the AI age.
 
-This repository is am attempt to create that. It is a public Local SEO knowledge base written
+This repository is an attempt to create that. It is a public Local SEO knowledge base written
 in [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf):
 plain Markdown files, small indexes, links between related ideas, and sources
 you can check for yourself.
@@ -67,15 +67,15 @@ English: give the agent a map first, not the entire library.
 | Read or clone this bundle | Learning, research, and public Local SEO workflows | Nothing beyond keeping your copy updated |
 | Build your own OKF bundle | Your own knowledge, your own rules, full control | Sources, review, updates, and where the files live |
 | Connect the files to your agent | Private local workflows without a managed service | Agent access, permissions, and any MCP or search layer you add |
-| Use the official RankinMaps connector | A supported connection to RankinMaps knowledge and private workflows | Your account, the agent you connect, and the actions you approve |
+| Use the official Rank-in-Maps connector | A supported connection to Rank-in-Maps knowledge and private workflows | Your account, the agent you connect, and the actions you approve |
 
-The open route is genuinely open. You do not need RankinMaps to use this
+The open route is genuinely open. You do not need Rank-in-Maps to use this
 format or recreate the approach.
 
 If you want the supported route, the
-[official RankinMaps MCP connector](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp)
+[official Rank-in-Maps MCP connector](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp)
 connects compatible AI clients to the knowledge and tools available to your
-RankinMaps account. A paid option is available for private workflows. Access
+Rank-in-Maps account. A paid option is available for private workflows. Access
 depends on your account and the tools currently enabled; your MCP client's
 tool list is the source of truth.
 
@@ -114,8 +114,8 @@ The detailed guides are here:
   and conformance rules.
 - [The minimal bundle](bundles/minimal/) is the smallest working example.
 
-RankinMaps uses the same pattern at a larger scale. This public repository is
-the canonical Local SEO source. RankinMaps pulls a pinned, validated snapshot
+Rank-in-Maps uses the same pattern at a larger scale. This public repository is
+the canonical Local SEO source. Rank-in-Maps pulls a pinned, validated snapshot
 rather than quietly maintaining a different copy. Its product documentation,
 private operations, and customer knowledge stay outside this public
 repository.

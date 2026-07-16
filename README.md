@@ -87,7 +87,7 @@ The open route is genuinely open. You do not need Rank-in-Maps to use this
 format or recreate the approach.
 
 If you want the supported route, the
-[official Rank-in-Maps MCP connector](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp)
+[official Rank-in-Maps MCP connector](https://www.rank-in-maps.com/tools/learn/rank-in-maps-mcp) (in private testing - coming soon)
 connects compatible AI clients to the knowledge and tools available to your
 Rank-in-Maps account. Access depends on your account and the tools currently
 enabled; your MCP client's tool list is the source of truth.

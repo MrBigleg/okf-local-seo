@@ -1,19 +1,26 @@
 # Local SEO OKF
 
-I have spent years collecting Local SEO knowledge: Google documentation,
+I have spent years working in Local SEO and Digital Marketing and I', methodical about collaiting information: Google documentation,
 research, working methods, things that changed, and things people repeat even
 though the evidence does not support them.
 
-The problem was never a lack of information. It was keeping that information
-organised, sourced, current, and useful to both people and AI.
+The biggest problem is information overload and stale understanding, keeping information
+organised, sourced, current, and useful to me as a hands on SEO. 
 
-This repository is my answer. It is a public Local SEO knowledge base written
+Recently with AI being able to much better handle long context, research and verification tasks, organising. 
+Understanding data became more manageble and my "second brain" has become indespensible.
+Sharing is caring and since OKF became a standard that I think will revolutionise A2A and ARD discovery.
+I wanted to create a next gen shared space for Local SEOs to share knowledge efficietnlty in the AI age.  
+
+This repository is am attempt to create that. It is a public Local SEO knowledge base written
 in [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf):
 plain Markdown files, small indexes, links between related ideas, and sources
 you can check for yourself.
 
 You can read it. You can give it to an AI agent. Or you can copy the pattern
 and build a knowledge base around your own work.
+
+
 
 ## What this gives you
 

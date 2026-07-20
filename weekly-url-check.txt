@@ -1,0 +1,8 @@
+Probing 66 external URLs ...
+OKF verify: /home/runner/work/okf-local-seo/okf-local-seo/bundles/local-seo
+  documents: 63  external URLs: 66
+
+  WARNINGS (1):
+    ! URL 403: https://openai.com/index/buy-it-in-chatgpt/
+
+RESULT: PASS  (warnings only)

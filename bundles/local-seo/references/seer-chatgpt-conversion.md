@@ -9,11 +9,14 @@ accessed: 2026-06-25
 confidence: low
 scope: Single-client case study; directional only, not a benchmark.
 tags: [reference, ai-search, conversion]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: case-study-how-traffic-from-chatgpt
+    resource: https://www.seerinteractive.com/insights/case-study-6-learnings-about-how-traffic-from-chatgpt-converts
+    title: "Case study: how traffic from ChatGPT converts"
 ---
 
 Seer Interactive case study on how AI-assistant traffic converts. Verified figures: **ChatGPT traffic converted at ~15.9% vs ~1.76% for Google organic** on the site studied. Important caveat carried through to our docs: this is **one client's data**, so treat it as directional, not a benchmark. Cited in [AI search impact on local](/local-seo/ai-search-local.md).
-
-# Citations
-
-[1] [Case study: how traffic from ChatGPT converts](https://www.seerinteractive.com/insights/case-study-6-learnings-about-how-traffic-from-chatgpt-converts)

@@ -3,7 +3,14 @@ type: Ranking Dimension
 title: GBP Signals
 description: Google Business Profile is the leading driver of local pack visibility; the primary category is the most important single setting.
 tags: [local-seo, gbp, ranking-factors]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: whitespark-2026
+    resource: /references/whitespark-2026.md
+    title: Whitespark Local Search Ranking Factors
 ---
 
 Your Google Business Profile is the single biggest lever on local pack visibility (the top-three map results), per Whitespark's ranking-factors study. We don't quote a precise weighting — Whitespark's exact percentages aren't published — but its relative ranking is consistent and well-established.
@@ -32,7 +39,3 @@ When auditing from the website alone, look for a Maps embed, a place reference, 
 # Related
 
 Live profile completeness is scored in [GBP profile audit](/maps/gbp-profile-audit.md). For the hands-on first pass, see the [GBP optimisation checklist](/playbooks/gbp-optimisation-checklist.md).
-
-# Citations
-
-[1] [Whitespark Local Search Ranking Factors](/references/whitespark-2026.md)

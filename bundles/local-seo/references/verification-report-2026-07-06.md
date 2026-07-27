@@ -2,10 +2,27 @@
 type: Report
 title: Verification report — 2026-07-06
 description: Claim-by-claim fact-check of the new gbp/ section against primary sources, completed 6 July 2026.
-verified_on: 2026-07-06
-verifier: CTB Marketing (bundle maintainer)
 tags: [governance, verification, gbp]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: tips-to-improve-your-local-ranking
+    resource: https://support.google.com/business/answer/7091
+    title: Tips to improve your local ranking on Google
+  - id: verify-your-business-on-google
+    resource: https://support.google.com/business/answer/7107242
+    title: Verify your business on Google
+  - id: manage-google-updates
+    resource: https://developers.google.com/my-business/content/accept-or-reject-updates
+    title: Manage Google Updates
+  - id: doj-press-release-b-e-s
+    resource: https://www.justice.gov/opa/pr/department-justice-files-complaint-against-best-gdr-llc-doing-business-premium-home-service
+    title: "DOJ press release — B.E.S.T. GDR, LLC (11 May 2026)"
+  - id: ftc-consumer-reviews-and-testimonials-rule
+    resource: https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers
+    title: FTC — Consumer Reviews and Testimonials Rule Q&A
 ---
 
 Checked against primary sources on 6 July 2026, before the `gbp/` section was written. Each row records the claim as it arrived from internal notes, the verification result, and the primary source consulted. See the [maintenance policy](/maintenance.md) for review cadence.
@@ -46,15 +63,3 @@ None. Three items initially flagged here were resolved on 6 July 2026:
 * **GMB→GBP announcement primary source** — resolved. Google's announcement is live at blog.google under ads-commerce ("Connect with local holiday shoppers", 4 November 2021); the trade-press citation was replaced. See [the rename reference](/references/google-gbp-rename-2021.md).
 * **Pre-2014 product lineage dates** — resolved. Google's original announcements for Places (2010), Google+ Local (2012) and Google My Business (2014) are all live on Google-owned domains; the lineage is now stated with exact dates and quoted wording.
 * **SOCi 65% figure scope** — resolved by policy: the bundle's truth of record is the citable primary release, which presents the figure in the context of younger audiences, and the bundle cites it with exactly that scope. The full CBI report is gated; nothing gated is treated as citable. If SOCi publishes an ungated statement with a different scope, update [the SOCi reference](/references/soci-cbi-2025.md) first, then the citing documents.
-
-# Citations
-
-[1] [Tips to improve your local ranking on Google](https://support.google.com/business/answer/7091)
-
-[2] [Verify your business on Google](https://support.google.com/business/answer/7107242)
-
-[3] [Manage Google Updates](https://developers.google.com/my-business/content/accept-or-reject-updates)
-
-[4] [DOJ press release — B.E.S.T. GDR, LLC (11 May 2026)](https://www.justice.gov/opa/pr/department-justice-files-complaint-against-best-gdr-llc-doing-business-premium-home-service)
-
-[5] [FTC — Consumer Reviews and Testimonials Rule Q&A](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers)

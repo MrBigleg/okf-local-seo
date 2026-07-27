@@ -3,7 +3,29 @@ type: Concept
 title: Google Business Profile
 description: The free Google listing that controls how a business appears on Search and Maps, ranked by relevance, distance and prominence.
 tags: [local-seo, gbp, ranking-factors]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-local-ranking
+    resource: /references/google-local-ranking.md
+    title: Google — Tips to improve your local ranking on Google
+  - id: google-get-started-with-google-business
+    resource: https://support.google.com/business/answer/7039811
+    title: Google — Get started with Google Business Profile
+  - id: google-gbp-rename-2021
+    resource: /references/google-gbp-rename-2021.md
+    title: Google — Connect with local holiday shoppers (4 November 2021 rename announcement)
+  - id: google-introducing-google-places-20-april
+    resource: https://googleblog.blogspot.com/2010/04/introducing-google-places.html
+    title: Google — Introducing Google Places (20 April 2010)
+  - id: google-local-now-with-a-dash
+    resource: https://blog.google/products/google-plus/localnow-with-dash-of-zagat-and/
+    title: "Google — Local, now with a dash of Zagat and a sprinkle of Google+ (30 May 2012)"
+  - id: google-help-your-business-shine-with
+    resource: https://smallbusiness.googleblog.com/2014/06/help-your-business-shine-with-google-my.html
+    title: Google — Help your business shine with Google My Business (11 June 2014)
 ---
 
 A Google Business Profile (GBP) is the free listing through which a business manages how it appears on Google Search and Google Maps. Google's own framing: "With a Business Profile on Google, you can manage how your business shows up on Maps and Search at no charge." Eligibility requires in-person contact with customers — a storefront customers visit, or a service-area business that travels to them; online-only businesses are not eligible.
@@ -40,17 +62,3 @@ Distance is fixed per search, so the controllable levers are relevance and promi
 * **Relevance** — primary category first, then completeness: services, attributes, hours, [business description](/gbp/business-description.md) and regular [posts](/gbp/google-posts.md). See [GBP signals](/local-seo/gbp-signals.md) for the relative weighting evidence.
 * **Prominence** — [reviews](/gbp/reviews.md) (count, rating, recency — see [reviews & reputation](/local-seo/reviews-reputation.md)), links, and consistent citations ([NAP & citations](/local-seo/nap-citations.md)).
 * **Trust** — a [verified](/gbp/verification.md) profile that is actively monitored ([profile shielding](/gbp/profile-shielding.md)) and clean of policy violations ([spam & fake listings](/gbp/spam-and-fake-listings.md)).
-
-# Citations
-
-[1] [Google — Tips to improve your local ranking on Google](/references/google-local-ranking.md)
-
-[2] [Google — Get started with Google Business Profile](https://support.google.com/business/answer/7039811)
-
-[3] [Google — Connect with local holiday shoppers (4 November 2021 rename announcement)](/references/google-gbp-rename-2021.md)
-
-[4] [Google — Introducing Google Places (20 April 2010)](https://googleblog.blogspot.com/2010/04/introducing-google-places.html)
-
-[5] [Google — Local, now with a dash of Zagat and a sprinkle of Google+ (30 May 2012)](https://blog.google/products/google-plus/localnow-with-dash-of-zagat-and/)
-
-[6] [Google — Help your business shine with Google My Business (11 June 2014)](https://smallbusiness.googleblog.com/2014/06/help-your-business-shine-with-google-my.html)

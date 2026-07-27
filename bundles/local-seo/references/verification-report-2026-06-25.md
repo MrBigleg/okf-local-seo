@@ -2,10 +2,11 @@
 type: Report
 title: Verification report — 2026-06-25
 description: Claim-by-claim fact-check of the agentic section against primary sources, completed 25 June 2026.
-verified_on: 2026-06-25
-verifier: CTB Marketing (bundle maintainer)
 tags: [governance, verification, agentic]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
 ---
 
 Checked against primary sources on 25 June 2026. Each row records the original draft claim, the verification result, and the primary source consulted. See the [maintenance policy](/maintenance.md) for review cadence.

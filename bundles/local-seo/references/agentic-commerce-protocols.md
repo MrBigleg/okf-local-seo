@@ -9,7 +9,26 @@ accessed: 2026-06-25
 confidence: high for existence; low for universal adoption
 scope: Existence, backers and stated scope of each protocol. Does NOT establish universal merchant, wallet or payment-network adoption.
 tags: [reference, commerce, agentic, protocols]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: universal-commerce-protocol-specification-and-ecosystem
+    resource: https://ucp.dev/
+    title: Universal Commerce Protocol — Specification and ecosystem
+  - id: agent-payments-protocol-ap2-specification
+    resource: https://ap2-protocol.org/
+    title: Agent Payments Protocol (AP2) — Specification
+  - id: google-cloud-announcing-the-agent-payments
+    resource: https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
+    title: Google Cloud — Announcing the Agent Payments Protocol (AP2)
+  - id: agentic-commerce-protocol-open-specification
+    resource: https://www.agenticcommerce.dev/
+    title: Agentic Commerce Protocol — Open specification
+  - id: coinbase-developer-platform-x402-overview
+    resource: https://docs.cdp.coinbase.com/x402/welcome
+    title: Coinbase Developer Platform — x402 overview
 ---
 
 Primary sources for the open protocols referenced by [Agentic Commerce](/agentic/agentic-commerce.md) and [Agentic Commerce Readiness](/agentic/agentic-commerce-readiness.md). These are distinct, independently governed specifications — not one universal, fully adopted stack.
@@ -31,15 +50,3 @@ Primary sources for the open protocols referenced by [Agentic Commerce](/agentic
 # What they do not establish
 
 Universal adoption is not demonstrated. A business should adopt a protocol only when a target channel or integration partner supports it, and should preserve ordinary web and API fallbacks.
-
-# Citations
-
-[1] [Universal Commerce Protocol — Specification and ecosystem](https://ucp.dev/)
-
-[2] [Agent Payments Protocol (AP2) — Specification](https://ap2-protocol.org/)
-
-[3] [Google Cloud — Announcing the Agent Payments Protocol (AP2)](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol)
-
-[4] [Agentic Commerce Protocol — Open specification](https://www.agenticcommerce.dev/)
-
-[5] [Coinbase Developer Platform — x402 overview](https://docs.cdp.coinbase.com/x402/welcome)

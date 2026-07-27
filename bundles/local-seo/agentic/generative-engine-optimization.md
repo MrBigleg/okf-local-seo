@@ -3,10 +3,21 @@ type: Concept
 title: Generative Engine Optimization
 description: Improving the visibility and attribution of source content in answers synthesised by generative search systems.
 tags: [seo, ai-search, local-seo, geo]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: aggarwal-et-al-geo-generative-engine
+    resource: https://arxiv.org/abs/2311.09735
+    title: "Aggarwal et al. — GEO: Generative Engine Optimization"
+    last_modified: 2024-06-28
+  - id: google-3-updates-that-make-contributing
+    resource: https://blog.google/products-and-platforms/products/maps/contributor-updates/
+    title: Google — 3 updates that make contributing to Maps easier
 ---
 
-Generative Engine Optimization (GEO) is the practice of improving the visibility of source content in responses produced by generative engines. The term was formalised in the 2023 paper *GEO: Generative Engine Optimization*, which describes generative engines as systems that retrieve and synthesise information from multiple sources.
+Generative Engine Optimization (GEO) is the practice of improving the visibility of source content in responses produced by generative engines. The term was formalised in the 2023 paper *GEO: Generative Engine Optimization* (Aggarwal et al.), later accepted to KDD 2024 — a peer-reviewed venue, not merely an arXiv preprint — which describes generative engines as systems that retrieve and synthesise information from multiple sources.
 
 # Applying GEO to local search
 
@@ -36,9 +47,3 @@ The practices overlap. Both depend on accessible, accurate and well-structured s
 In April 2026, Google introduced Gemini-generated draft captions for contributor photos in Maps. The model analyses selected images and suggests captions that contributors can edit or remove. At launch, caption suggestions were available in English on iOS in the United States, with wider Android and international availability planned.
 
 This update shows that Maps is adding machine-generated textual context to contributed media. It does not prove that captions are a ranking factor.
-
-# Citations
-
-[1] [Aggarwal et al. — GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735)
-
-[2] [Google — 3 updates that make contributing to Maps easier](https://blog.google/products-and-platforms/products/maps/contributor-updates/)

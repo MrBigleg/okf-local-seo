@@ -15,6 +15,15 @@ header input,header select{padding:6px 10px;border-radius:6px;border:1px solid #
 #panel h2{margin:0 0 4px;font-size:20px}
 .meta{color:#5a6b8c;font-size:13px;margin-bottom:14px}
 .tag{display:inline-block;background:#e8eefb;color:#0f3460;border-radius:12px;padding:2px 9px;font-size:11px;margin:2px 4px 2px 0}
+.trust{display:inline-block;border-radius:12px;padding:2px 9px;font-size:11px;margin:2px 4px 2px 0;border:1px solid}
+.trust.human-reviewed{background:#e6f7ef;color:#1b7a4f;border-color:#a8dcc3}
+.trust.machine-confirmed{background:#eef2fb;color:#3a5a94;border-color:#c2d0ea}
+.trust.unverified{background:#f4f5f7;color:#6b7280;border-color:#d5d9e0}
+.trust.stale{background:#fdf0e6;color:#a4501a;border-color:#f0c9a8}
+.trust.status{background:#fdf6e3;color:#8a6d1f;border-color:#e8d9a8}
+.sources{border-top:1px solid #eef1f7;margin-top:14px;padding-top:10px;font-size:13px}
+.sources ol{margin:6px 0 0;padding-left:20px}
+.sources li{margin:3px 0}
 .body{border-top:1px solid #eef1f7;margin-top:14px;padding-top:14px}
 .body table{border-collapse:collapse;width:100%;margin:10px 0}.body th,.body td{border:1px solid #dde3ee;padding:5px 8px;font-size:13px;text-align:left}
 .body code{background:#f4f6fb;padding:1px 5px;border-radius:4px;font-size:12px}
@@ -22,6 +31,7 @@ header input,header select{padding:6px 10px;border-radius:6px;border:1px solid #
 .body pre code{background:none;color:inherit}
 .backlinks{margin-top:18px;font-size:13px}.backlinks a{display:block;color:#0f3460;margin:3px 0;cursor:pointer}
 a.xlink{color:#0f3460;cursor:pointer;text-decoration:underline}
+a.navlink{color:#5a6b8c;cursor:default;text-decoration:none}
 .hint{color:#8a98b5;font-size:13px}
 </style></head><body>
 <header>
@@ -32,19 +42,23 @@ a.xlink{color:#0f3460;cursor:pointer;text-decoration:underline}
     <option value="cose">cose</option><option value="concentric">concentric</option>
     <option value="breadthfirst">breadthfirst</option><option value="circle">circle</option><option value="grid">grid</option>
   </select>
-  <span class="hint">2 concepts · click a node</span>
+  <span class="hint">3 concepts · click a node</span>
 </header>
 <div id="wrap"><div id="cy"></div>
 <div id="panel"><p class="hint">Select a concept in the graph to read it here.</p></div></div>
 <script>
-const DATA = [{"id": "guide/concept-anatomy", "type": "Reference", "title": "Concept anatomy", "description": "A concept document is YAML frontmatter plus a markdown body; only type is required.", "resource": "", "tags": ["okf", "tutorial"], "body": "A **concept** is one markdown file. It has two parts.\n\n# Frontmatter\n\nThe block between the `---` fences at the top is YAML. The only required key is `type` (a short, descriptive string). Everything else is optional but recommended: `title`, `description`, `tags`, `resource`, `timestamp`.\n\n# Body\n\nEverything after the frontmatter is plain markdown \u2014 headings, lists, tables, code. Favour structure over freeform prose; it helps both human readers and agents.\n\n# Where to go next\n\nSee [cross-linking](/guide/cross-linking.md) for how this concept connects to others.\n", "links": ["guide/cross-linking"]}, {"id": "guide/cross-linking", "type": "Reference", "title": "Cross-linking", "description": "Concepts link to each other with bundle-relative markdown links, forming a graph.", "resource": "", "tags": ["okf", "tutorial"], "body": "Concepts relate to each other through ordinary markdown links.\n\n# Bundle-relative links (preferred)\n\nStart the path with `/`, relative to the bundle root:\n\n```markdown\nSee [concept anatomy](/guide/concept-anatomy.md).\n```\n\nThis renders as: see [concept anatomy](/guide/concept-anatomy.md).\n\n# Why it matters\n\nThe directory tree only expresses parent/child. Links express every other relationship \u2014 and a consumer can build a graph from them. Broken links are allowed; they simply mark knowledge not yet written.\n", "links": ["guide/concept-anatomy", "guide/concept-anatomy"]}];
+const DATA = [{"id": "guide/concept-anatomy", "type": "Concept", "title": "Concept anatomy", "description": "A concept document is YAML frontmatter plus a markdown body; only type is required.", "resource": "", "tags": ["okf", "tutorial"], "body": "A **concept** is one markdown file. It has two parts.\n\n# Frontmatter\n\nThe block between the `---` fences at the top is YAML. The only required key is `type` (a short, descriptive string). A concept carrying nothing but `type` is already fully conformant.[^okf-spec]\n\nEverything else is optional. The recommended basics are `title`, `description`, `tags` and `resource`:\n\n```yaml\n---\ntype: Concept\ntitle: Concept anatomy\ndescription: One sentence describing this concept.\ntags: [okf, tutorial]\nresource: https://example.com/the-underlying-asset   # omit for abstract ideas\n---\n```\n\nOn top of those, v0.2 adds three optional families \u2014 provenance, trust and lifecycle. They are covered in [trust and freshness](/guide/trust-and-freshness.md).\n\n# Body\n\nEverything after the frontmatter is plain markdown \u2014 headings, lists, tables, code. Favour structure over freeform prose; it helps both human readers and agents.\n\nThree headings carry conventional meaning: `# Schema`, `# Examples`, and `# Computation`. No section is required. In v0.1 a `# Citations` list was the convention for provenance; in v0.2 that moves into `sources` frontmatter instead.\n\n# Where to go next\n\nSee [cross-linking](/guide/cross-linking.md) for how this concept connects to others, and [trust and freshness](/guide/trust-and-freshness.md) for how a reader judges whether to believe it.\n", "links": ["guide/trust-and-freshness", "guide/cross-linking", "guide/trust-and-freshness"], "sources": [{"id": "okf-spec", "resource": "https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf", "title": "Open Knowledge Format specification (v0.2)"}], "trust": "unverified", "status": "stable", "stale_after": ""}, {"id": "guide/cross-linking", "type": "Concept", "title": "Cross-linking", "description": "Concepts link to each other with bundle-relative markdown links, forming a graph.", "resource": "", "tags": ["okf", "tutorial"], "body": "Concepts relate to each other through ordinary markdown links.\n\n# Bundle-relative links (preferred)\n\nStart the path with `/`, relative to the bundle root:\n\n```markdown\nSee [concept anatomy](/guide/concept-anatomy.md).\n```\n\nThis renders as: see [concept anatomy](/guide/concept-anatomy.md).\n\n# Why it matters\n\nThe directory tree only expresses parent/child. Links express every other relationship \u2014 and a consumer can build a graph from them. Broken links are allowed; they simply mark knowledge not yet written.\n\n# Links as lineage\n\nA `sources` entry may point at another concept in the same bundle instead of an external URL:\n\n```yaml\nsources:\n  - id: anatomy\n    resource: /guide/concept-anatomy.md\n    title: Concept anatomy\n```\n\nThat is a derivation edge, so a consumer can walk into that concept's own `sources` and let credibility propagate.[^okf-spec] OKF has no dedicated lineage field; the link *is* the lineage.\n", "links": ["guide/concept-anatomy", "guide/concept-anatomy"], "sources": [{"id": "okf-spec", "resource": "https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf", "title": "Open Knowledge Format specification (v0.2)"}], "trust": "unverified", "status": "stable", "stale_after": ""}, {"id": "guide/trust-and-freshness", "type": "Concept", "title": "Trust and freshness", "description": "The v0.2 provenance, trust and lifecycle families let a reader judge where a concept came from and whether it is still current.", "resource": "", "tags": ["okf", "tutorial", "trust"], "body": "OKF v0.2 adds three optional frontmatter families that answer three questions: where did this come from, how much should I trust it, and is it still current.[^okf-spec] All of them are optional, and every one of them is absent from a plain v0.1 concept.\n\n# Provenance: `sources`\n\n`sources` lists the material a concept derives from. Only `resource` is required inside an entry, but give each one an `id` when the body cites it:\n\n```yaml\nsources:\n  - id: okf-spec\n    resource: https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf\n    title: Open Knowledge Format specification (v0.2)\n```\n\nTo attribute one specific claim, use a markdown footnote whose label is the `id`:\n\n```markdown\nOnly `type` is required.[^okf-spec]\n```\n\nThe label is the join key. It is keyed rather than positional (`sources[0]`) because agents rewrite these documents constantly, and a positional index misattributes silently the moment the list is reordered.\n\n# Trust: `generated` and `verified`\n\nWho *wrote* a concept need not be who *confirmed* it, so the two are recorded separately:\n\n```yaml\ngenerated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }\nverified:  { by: human:someone,    at: 2026-07-27T00:00:00Z }\n```\n\nIdentities follow one actor convention: `human:<id>` for a person, `process:<id>` for an automated process, and `<producer>/<version>` for an agent or tool.\n\nA consumer derives a **trust tier** from `verified` alone:\n\n| `verified` | Tier |\n|---|---|\n| absent | unverified |\n| non-`human:` actors only | machine-confirmed |\n| includes a `human:<id>` actor | human-reviewed |\n\nNote what this document does *not* claim. It carries no `verified` key, so a consumer reads it as **unverified** \u2014 the honest signal for a teaching example nobody has fact-checked. Absence carries meaning, and an unverified concept is never rejected for it.\n\n# Lifecycle: `status` and `stale_after`\n\n```yaml\nstatus: stable        # draft | stable | deprecated; absent means stable\nstale_after: 2027-01-27\n```\n\n`stale_after` is an absolute date, not a relative TTL, so deciding whether a concept is stale stays a plain date comparison that does not depend on when it was read.\n\n# What replaced what\n\nTwo v0.1 habits are retired in v0.2. A `timestamp` key becomes `generated.at`, and a `# Citations` body list becomes `sources`. A v0.2 consumer should still read both legacy forms when it meets an older bundle. See [concept anatomy](/guide/concept-anatomy.md) for the rest of the document shape.[^anatomy]\n", "links": ["guide/concept-anatomy", "guide/concept-anatomy"], "sources": [{"id": "okf-spec", "resource": "https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf", "title": "Open Knowledge Format specification (v0.2)"}, {"id": "anatomy", "resource": "/guide/concept-anatomy.md", "title": "Concept anatomy"}], "trust": "unverified", "status": "stable", "stale_after": ""}];
 const byId = {}; DATA.forEach(c => byId[c.id] = c);
 const palette = {};
 const colors = ["#0f3460","#e94560","#16a085","#8e44ad","#d35400","#2980b9","#27ae60","#c0392b","#7f8c8d"];
 DATA.forEach(c => { if(!(c.type in palette)) palette[c.type] = colors[Object.keys(palette).length % colors.length]; });
 
+const TODAY = new Date().toISOString().slice(0,10);
+const TRUST_LABEL = {"human-reviewed":"human-reviewed","machine-confirmed":"machine-confirmed","unverified":"unverified"};
+
 const elements = [];
-DATA.forEach(c => elements.push({data:{id:c.id,label:c.title,type:c.type}}));
+DATA.forEach(c => elements.push({data:{id:c.id,label:c.title,type:c.type,trust:c.trust,
+  stale:(c.stale_after&&TODAY>=c.stale_after)?1:0}}));
 const seen = new Set();
 DATA.forEach(c => c.links.forEach(t => { if(byId[t]){const k=c.id+"->"+t; if(!seen.has(k)){seen.add(k);elements.push({data:{id:k,source:c.id,target:t}});}}}));
 
@@ -53,6 +67,9 @@ const cy = cytoscape({container:document.getElementById("cy"),elements,
     {selector:"node",style:{"background-color":ele=>palette[ele.data("type")]||"#888","label":"data(label)","font-size":"10px","color":"#1a1a2e","text-wrap":"wrap","text-max-width":"110px","text-valign":"bottom","text-margin-y":"3px","width":"22px","height":"22px"}},
     {selector:"edge",style:{"width":1.2,"line-color":"#b8c4dd","target-arrow-color":"#b8c4dd","target-arrow-shape":"triangle","curve-style":"bezier","arrow-scale":0.8}},
     {selector:".faded",style:{"opacity":0.15}},
+    // §5.3 trust tiers: unverified reads as hollow, stale gets an amber ring.
+    {selector:'node[trust="unverified"]',style:{"border-width":2,"border-color":"#9aa8c4","border-opacity":0.9,"background-opacity":0.35}},
+    {selector:"node[stale=1]",style:{"border-width":3,"border-color":"#d35400"}},
     {selector:".sel",style:{"border-width":3,"border-color":"#e94560"}}
   ],
   layout:{name:"cose",animate:false,padding:30}});
@@ -66,12 +83,25 @@ function render(c){
   const backlinks = DATA.filter(o=>o.links.includes(c.id));
   document.getElementById("panel").innerHTML =
     `<h2>${c.title}</h2><div class="meta"><span class="tag" style="background:${palette[c.type]};color:#fff">${c.type}</span> ${c.id}</div>`+
+    `<div class="meta"><span class="trust ${c.trust}">${TRUST_LABEL[c.trust]||c.trust}</span>`+
+      (c.status&&c.status!=="stable"?`<span class="trust status">${c.status}</span>`:"")+
+      (c.stale_after&&TODAY>=c.stale_after?`<span class="trust stale">stale since ${c.stale_after}</span>`:"")+
+    `</div>`+
     (c.description?`<p>${c.description}</p>`:"")+
     (c.resource?`<p class="hint">resource: <a href="${c.resource}" target="_blank">${c.resource}</a></p>`:"")+
     (c.tags&&c.tags.length?`<div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>`:"")+
     `<div class="body">${b}</div>`+
+    (c.sources&&c.sources.length?`<div class="sources"><strong>Sources</strong><ol>`+
+      c.sources.map(s=>{const r=String(s.resource||"");
+        const inner = r.startsWith("/")&&r.endsWith(".md")
+          ? `<a class="xlink" data-id="${r.slice(1,-3)}">${s.title||r}</a>`
+          : `<a href="${r}" target="_blank">${s.title||r}</a>`;
+        return `<li>${inner}${s.note?` — ${s.note}`:""}</li>`;}).join("")+
+      `</ol></div>`:"")+
     (backlinks.length?`<div class="backlinks"><strong>Cited by</strong>${backlinks.map(o=>`<a class="xlink" data-id="${o.id}">${o.title}</a>`).join("")}</div>`:"");
-  document.querySelectorAll(".xlink").forEach(a=>a.onclick=()=>{const id=a.getAttribute("data-id");if(byId[id])select(id);});
+  document.querySelectorAll(".xlink").forEach(a=>{const id=a.getAttribute("data-id");
+    if(byId[id]){a.onclick=()=>select(id);}
+    else{a.classList.remove("xlink");a.classList.add("navlink");}});  // reserved/non-node target
 }
 function select(id){cy.nodes().removeClass("sel");const n=cy.getElementById(id);n.addClass("sel");if(byId[id])render(byId[id]);}
 cy.on("tap","node",e=>select(e.target.id()));

@@ -3,7 +3,20 @@ type: Concept
 title: GBP Spam & Fake Listings
 description: How fake-listing operations work, what enforcement now looks like, and why legitimacy signals protect real businesses.
 tags: [local-seo, gbp, spam, trust]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: doj-best-gdr-2026
+    resource: /references/doj-best-gdr-2026.md
+    title: "US DOJ — complaint against B.E.S.T. GDR, LLC d/b/a Premium Home Service (11 May 2026)"
+  - id: ftc-press-release-and-filed-complaint
+    resource: https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake
+    title: "FTC — press release and filed complaint, United States and State of Illinois v. B.E.S.T. GDR, LLC"
+  - id: google-maps-prohibited-and-restricted-content
+    resource: /references/google-review-policy.md
+    title: Google Maps — Prohibited and restricted content
 ---
 
 Fake listings are profiles for businesses that don't exist as presented: invented names, addresses the operator doesn't occupy, and phone numbers that route elsewhere. They work because local search rewards apparent proximity and apparent reputation — both of which can be fabricated at scale for far less than the cost of being a real local business. The victims are consumers, and equally the legitimate businesses whose [visibility](/local-seo/gbp-signals.md) they displace.
@@ -37,11 +50,3 @@ The enforcement story is also the optimisation story in reverse. Everything a fa
 * **A real web footprint** — [local schema](/local-seo/local-schema.md), a matching website, and photos of a premises that exists.
 
 For a legitimate business, the practical defence against fake competitors is to report them through Google's redressal channels and to be conspicuously verifiable yourself; for the profile-integrity side of the same problem, see [profile shielding](/gbp/profile-shielding.md).
-
-# Citations
-
-[1] [US DOJ — complaint against B.E.S.T. GDR, LLC d/b/a Premium Home Service (11 May 2026)](/references/doj-best-gdr-2026.md)
-
-[2] [FTC — press release and filed complaint, United States and State of Illinois v. B.E.S.T. GDR, LLC](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake)
-
-[3] [Google Maps — Prohibited and restricted content](https://support.google.com/contributionpolicy/answer/7400114)

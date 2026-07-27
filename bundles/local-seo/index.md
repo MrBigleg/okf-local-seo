@@ -1,5 +1,5 @@
 ---
-okf_version: "0.1"
+okf_version: "0.2"
 title: CTB Local SEO Knowledge Base
 description: A vendor-neutral OKF knowledge bundle covering local SEO, Google Business Profile, and maps intelligence.
 ---

@@ -3,7 +3,17 @@ type: Detection Method
 title: Industry Vertical Detection
 description: Detect the industry vertical from page and GBP signals to route to industry-specific local SEO checks.
 tags: [local-seo, detection]
-timestamp: 2026-06-24T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: schema-org-localbusiness-subtype-hierarchy
+    resource: /references/schema-org-localbusiness.md
+    title: Schema.org — LocalBusiness (subtype hierarchy)
+  - id: google-business-profile-help-categories
+    resource: /references/google-gbp-categories-description.md
+    title: Google Business Profile Help — Categories
 ---
 
 Detect the vertical from page signals and GBP category patterns, then route to industry-specific checks (see [local schema markup](/local-seo/local-schema.md)). If no vertical is detected, use the generic `LocalBusiness` path.
@@ -23,10 +33,6 @@ Detect the vertical from page signals and GBP category patterns, then route to i
 
 The vertical changes the correct schema subtype, the citation directories worth pursuing, and the review-response rules (e.g. HIPAA constraints for healthcare). When the vertical is unclear, present the top two detected verticals with supporting signals and confirm before applying industry-specific recommendations.
 
-# Citations
+# Provenance
 
 A heuristic detection method derived from observable page and GBP-category signals; not an externally published taxonomy. The schema subtypes it routes to are defined by:
-
-[1] [Schema.org — LocalBusiness (subtype hierarchy)](https://schema.org/LocalBusiness)
-
-[2] [Google Business Profile Help — Categories](https://support.google.com/business/answer/3038177?hl=en)

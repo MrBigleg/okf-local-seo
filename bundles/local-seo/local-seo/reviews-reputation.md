@@ -3,7 +3,17 @@ type: Ranking Dimension
 title: Reviews & Reputation
 description: Review recency and rating thresholds — steady velocity matters more than a big one-off total.
 tags: [local-seo, reviews, ranking-factors]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: sterling-sky
+    resource: /references/sterling-sky.md
+    title: Sterling Sky review research
+  - id: brightlocal-lcrs
+    resource: /references/brightlocal-lcrs.md
+    title: BrightLocal Local Consumer Review Survey
 ---
 
 Reviews are a major local ranking and conversion signal, and **recency beats raw count**. Sterling Sky's case-study research describes an **18-day rule**: rankings can start to slip once a business goes roughly two to three weeks without a new review. It's a community-recognised pattern, not confirmed Google policy — but the practical takeaway is sound: keep reviews coming in steadily.
@@ -42,8 +52,3 @@ So the bar for "acceptable" has moved up roughly half a star in two years.
 # Related
 
 Cross-platform velocity, sentiment, and fake-review detection live in [review intelligence](/maps/review-intelligence.md).
-
-# Citations
-
-[1] [Sterling Sky review research](/references/sterling-sky.md)
-[2] [BrightLocal Local Consumer Review Survey](/references/brightlocal-lcrs.md)

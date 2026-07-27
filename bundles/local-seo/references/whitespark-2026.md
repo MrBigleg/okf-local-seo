@@ -9,11 +9,14 @@ accessed: 2026-06-25
 confidence: medium
 scope: Relative importance of local pack / local organic ranking factors; exact weightings are not public.
 tags: [reference, ranking-factors]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: local-search-ranking-factors
+    resource: https://whitespark.ca/local-search-ranking-factors/
+    title: Local Search Ranking Factors
 ---
 
 Whitespark's annual Local Search Ranking Factors study ranks the signals that influence local pack and local organic results. We cite it **qualitatively** — for the *relative* importance of factors (e.g. that Google Business Profile is the leading driver of local pack visibility, and that review and citation signals matter for AI discovery). The precise percentage weightings sit inside Whitespark's full report and are not publicly published, so this bundle does not assert specific percentages.
-
-# Citations
-
-[1] [Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-okf_build.py — validate an OKF v0.1 bundle and generate a self-contained viz.html.
+okf_build.py — validate an OKF v0.2 bundle and generate a self-contained viz.html.
 
 Usage:
     python3 okf_build.py [BUNDLE_DIR] [--name "Display Name"] [--out viz.html]
@@ -14,33 +14,24 @@ import os
 import re
 import sys
 
+# The v0.2 frontmatter families (`sources`, `generated`, `verified`) are nested,
+# so both tools share one YAML-subset parser. They always ship together.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from okf_verify import parse_frontmatter  # noqa: E402
+
 RESERVED = {"index.md", "log.md"}
 LINK_RE = re.compile(r"\[([^\]]+)\]\((/[^)]+\.md)\)")  # bundle-relative links to concepts
 
 
-def parse_frontmatter(text):
-    """Return (frontmatter_dict, body). Minimal YAML: key: value, and key: [a, b]."""
-    if not text.startswith("---"):
-        return None, text
-    end = text.find("\n---", 3)
-    if end == -1:
-        return None, text
-    raw = text[3:end].strip("\n")
-    body = text[end + 4:].lstrip("\n")
-    fm = {}
-    for line in raw.splitlines():
-        if not line.strip() or line.lstrip().startswith("#"):
-            continue
-        if ":" not in line:
-            continue
-        key, _, val = line.partition(":")
-        key, val = key.strip(), val.strip()
-        if val.startswith("[") and val.endswith("]"):
-            items = [v.strip().strip('"').strip("'") for v in val[1:-1].split(",") if v.strip()]
-            fm[key] = items
-        else:
-            fm[key] = val.strip('"').strip("'")
-    return fm, body
+def trust_tier(fm):
+    """Derive the §5.3 trust tier from `verified`, lowest to highest."""
+    ver = fm.get("verified")
+    if not ver:
+        return "unverified"
+    events = ver if isinstance(ver, list) else [ver]
+    if any(str(e.get("by", "")).startswith("human:") for e in events if isinstance(e, dict)):
+        return "human-reviewed"
+    return "machine-confirmed"
 
 
 def collect(bundle):
@@ -67,6 +58,13 @@ def collect(bundle):
                 errors.append(f"{rel}: frontmatter missing required 'type'")
             cid = rel[:-3]  # strip .md
             links = [m.group(2)[1:-3] for m in LINK_RE.finditer(body)]  # strip leading '/' and '.md'
+            srcs = [s for s in (fm.get("sources") or []) if isinstance(s, dict)]
+            # `sources` entries pointing into the bundle are provenance edges too,
+            # so the graph keeps the citation links it used to read from
+            # the v0.1 "# Citations" body block.
+            links += [str(s["resource"])[1:-3] for s in srcs
+                      if str(s.get("resource", "")).startswith("/")
+                      and str(s.get("resource", "")).endswith(".md")]
             concepts.append({
                 "id": cid,
                 "type": fm.get("type", "Concept"),
@@ -76,6 +74,10 @@ def collect(bundle):
                 "tags": fm.get("tags", []) if isinstance(fm.get("tags", []), list) else [fm.get("tags")],
                 "body": body,
                 "links": links,
+                "sources": srcs,
+                "trust": trust_tier(fm),
+                "status": fm.get("status", "stable"),
+                "stale_after": fm.get("stale_after", ""),
             })
     return concepts, errors, reserved
 
@@ -97,6 +99,15 @@ header input,header select{padding:6px 10px;border-radius:6px;border:1px solid #
 #panel h2{margin:0 0 4px;font-size:20px}
 .meta{color:#5a6b8c;font-size:13px;margin-bottom:14px}
 .tag{display:inline-block;background:#e8eefb;color:#0f3460;border-radius:12px;padding:2px 9px;font-size:11px;margin:2px 4px 2px 0}
+.trust{display:inline-block;border-radius:12px;padding:2px 9px;font-size:11px;margin:2px 4px 2px 0;border:1px solid}
+.trust.human-reviewed{background:#e6f7ef;color:#1b7a4f;border-color:#a8dcc3}
+.trust.machine-confirmed{background:#eef2fb;color:#3a5a94;border-color:#c2d0ea}
+.trust.unverified{background:#f4f5f7;color:#6b7280;border-color:#d5d9e0}
+.trust.stale{background:#fdf0e6;color:#a4501a;border-color:#f0c9a8}
+.trust.status{background:#fdf6e3;color:#8a6d1f;border-color:#e8d9a8}
+.sources{border-top:1px solid #eef1f7;margin-top:14px;padding-top:10px;font-size:13px}
+.sources ol{margin:6px 0 0;padding-left:20px}
+.sources li{margin:3px 0}
 .body{border-top:1px solid #eef1f7;margin-top:14px;padding-top:14px}
 .body table{border-collapse:collapse;width:100%;margin:10px 0}.body th,.body td{border:1px solid #dde3ee;padding:5px 8px;font-size:13px;text-align:left}
 .body code{background:#f4f6fb;padding:1px 5px;border-radius:4px;font-size:12px}
@@ -126,8 +137,12 @@ const palette = {};
 const colors = ["#0f3460","#e94560","#16a085","#8e44ad","#d35400","#2980b9","#27ae60","#c0392b","#7f8c8d"];
 DATA.forEach(c => { if(!(c.type in palette)) palette[c.type] = colors[Object.keys(palette).length % colors.length]; });
 
+const TODAY = new Date().toISOString().slice(0,10);
+const TRUST_LABEL = {"human-reviewed":"human-reviewed","machine-confirmed":"machine-confirmed","unverified":"unverified"};
+
 const elements = [];
-DATA.forEach(c => elements.push({data:{id:c.id,label:c.title,type:c.type}}));
+DATA.forEach(c => elements.push({data:{id:c.id,label:c.title,type:c.type,trust:c.trust,
+  stale:(c.stale_after&&TODAY>=c.stale_after)?1:0}}));
 const seen = new Set();
 DATA.forEach(c => c.links.forEach(t => { if(byId[t]){const k=c.id+"->"+t; if(!seen.has(k)){seen.add(k);elements.push({data:{id:k,source:c.id,target:t}});}}}));
 
@@ -136,6 +151,9 @@ const cy = cytoscape({container:document.getElementById("cy"),elements,
     {selector:"node",style:{"background-color":ele=>palette[ele.data("type")]||"#888","label":"data(label)","font-size":"10px","color":"#1a1a2e","text-wrap":"wrap","text-max-width":"110px","text-valign":"bottom","text-margin-y":"3px","width":"22px","height":"22px"}},
     {selector:"edge",style:{"width":1.2,"line-color":"#b8c4dd","target-arrow-color":"#b8c4dd","target-arrow-shape":"triangle","curve-style":"bezier","arrow-scale":0.8}},
     {selector:".faded",style:{"opacity":0.15}},
+    // §5.3 trust tiers: unverified reads as hollow, stale gets an amber ring.
+    {selector:'node[trust="unverified"]',style:{"border-width":2,"border-color":"#9aa8c4","border-opacity":0.9,"background-opacity":0.35}},
+    {selector:"node[stale=1]",style:{"border-width":3,"border-color":"#d35400"}},
     {selector:".sel",style:{"border-width":3,"border-color":"#e94560"}}
   ],
   layout:{name:"cose",animate:false,padding:30}});
@@ -149,10 +167,21 @@ function render(c){
   const backlinks = DATA.filter(o=>o.links.includes(c.id));
   document.getElementById("panel").innerHTML =
     `<h2>${c.title}</h2><div class="meta"><span class="tag" style="background:${palette[c.type]};color:#fff">${c.type}</span> ${c.id}</div>`+
+    `<div class="meta"><span class="trust ${c.trust}">${TRUST_LABEL[c.trust]||c.trust}</span>`+
+      (c.status&&c.status!=="stable"?`<span class="trust status">${c.status}</span>`:"")+
+      (c.stale_after&&TODAY>=c.stale_after?`<span class="trust stale">stale since ${c.stale_after}</span>`:"")+
+    `</div>`+
     (c.description?`<p>${c.description}</p>`:"")+
     (c.resource?`<p class="hint">resource: <a href="${c.resource}" target="_blank">${c.resource}</a></p>`:"")+
     (c.tags&&c.tags.length?`<div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>`:"")+
     `<div class="body">${b}</div>`+
+    (c.sources&&c.sources.length?`<div class="sources"><strong>Sources</strong><ol>`+
+      c.sources.map(s=>{const r=String(s.resource||"");
+        const inner = r.startsWith("/")&&r.endsWith(".md")
+          ? `<a class="xlink" data-id="${r.slice(1,-3)}">${s.title||r}</a>`
+          : `<a href="${r}" target="_blank">${s.title||r}</a>`;
+        return `<li>${inner}${s.note?` — ${s.note}`:""}</li>`;}).join("")+
+      `</ol></div>`:"")+
     (backlinks.length?`<div class="backlinks"><strong>Cited by</strong>${backlinks.map(o=>`<a class="xlink" data-id="${o.id}">${o.title}</a>`).join("")}</div>`:"");
   document.querySelectorAll(".xlink").forEach(a=>{const id=a.getAttribute("data-id");
     if(byId[id]){a.onclick=()=>select(id);}
@@ -168,7 +197,9 @@ document.getElementById("layout").onchange=e=>cy.layout({name:e.target.value,ani
 
 
 def build_html(concepts, name):
-    data = json.dumps([{k: c[k] for k in ("id", "type", "title", "description", "resource", "tags", "body", "links")} for c in concepts])
+    keys = ("id", "type", "title", "description", "resource", "tags", "body", "links",
+            "sources", "trust", "status", "stale_after")
+    data = json.dumps([{k: c[k] for k in keys} for c in concepts])
     return (HTML_TEMPLATE
             .replace("__NAME__", html.escape(name))
             .replace("__COUNT__", str(len(concepts)))
@@ -209,7 +240,7 @@ def main():
         for e in errors:
             print(f"  ✗ {e}")
         sys.exit(1)
-    print("  conformance: OK (OKF v0.1)")
+    print("  conformance: OK (OKF v0.2)")
 
     with open(out, "w", encoding="utf-8") as f:
         f.write(build_html(concepts, name))

@@ -9,7 +9,14 @@ accessed: 2026-06-25
 confidence: high
 scope: Primary announcement of Ask Maps — name, capabilities, data inputs, launch date and rollout regions. Durable UI placement and ranking factors are not specified.
 tags: [reference, google-maps, ai-search, agentic]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: google-how-we-re-reimagining-maps
+    resource: https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/
+    title: Google — How we're reimagining Maps with Gemini
 ---
 
 Google's primary-source announcement for **Ask Maps**, its Gemini-powered conversational experience in Google Maps. This is the single source underpinning the [Ask Maps](/agentic/ask-maps.md) concept doc.
@@ -24,7 +31,3 @@ Google's primary-source announcement for **Ask Maps**, its Gemini-powered conver
 # What it does not establish
 
 Google has not published Ask Maps ranking factors. Profile-completeness and media practices are data-quality measures, not guaranteed optimisation levers. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
-
-# Citations
-
-[1] [Google — How we're reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)

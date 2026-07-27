@@ -9,7 +9,20 @@ accessed: 2026-06-25
 confidence: high
 scope: Developer-product capabilities for Maps grounding. Does NOT establish that every consumer Maps answer uses these API paths.
 tags: [reference, google-maps, ai, grounding, developer]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: google-cloud-grounding-with-google-maps
+    resource: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/grounding-with-google-maps
+    title: Google Cloud — Grounding with Google Maps
+  - id: google-maps-platform-maps-grounding-lite
+    resource: https://developers.google.com/maps/ai/grounding-lite
+    title: Google Maps Platform — Maps Grounding Lite
+  - id: google-maps-platform-ai-powered-place
+    resource: https://developers.google.com/maps/documentation/places/web-service/place-summaries
+    title: Google Maps Platform — AI-powered place summaries
 ---
 
 The Google developer documentation underpinning the [Grounding with Google Maps](/agentic/grounding-google-maps.md) concept doc. Three related products:
@@ -25,11 +38,3 @@ A Google Maps Platform service with Model Context Protocol (MCP) support, exposi
 # Places API (New) AI summaries
 
 `generativeSummary` returns brief (~100-character) place overviews in Place Details, Text Search and Nearby Search, requiring a "Summarized with Gemini" disclosure. As of 25 June 2026, documented for supported place types in English in India and the United States; not guaranteed for every place.
-
-# Citations
-
-[1] [Google Cloud — Grounding with Google Maps](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/grounding-with-google-maps)
-
-[2] [Google Maps Platform — Maps Grounding Lite](https://developers.google.com/maps/ai/grounding-lite)
-
-[3] [Google Maps Platform — AI-powered place summaries](https://developers.google.com/maps/documentation/places/web-service/place-summaries)

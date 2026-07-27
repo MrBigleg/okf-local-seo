@@ -3,10 +3,12 @@ type: Policy
 title: Maintenance Policy
 description: Ownership, review cadence and freshness tiers for keeping fast-moving claims in this bundle accurate.
 owner: CTB Marketing (bundle maintainer)
-last_verified: 2026-07-06
 review_cadence: weekly queue (volatile claims monthly — see tiers)
 tags: [governance, maintenance, policy]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2027-01-06
 ---
 
 This bundle mixes durable principles with fast-moving product facts. This policy says who keeps it current, how often, and how to tell which claims need the closest watch.
@@ -15,7 +17,9 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 
 * **Owner:** CTB Marketing (bundle maintainer).
 * The owner is accountable for the scheduled reviews below and for re-running `tool/okf_verify.py` before any export or release.
-* Each reference doc records its own `accessed` date in frontmatter; each concept records a `timestamp`. The `last_verified` date in this file is the date of the most recent full pass.
+* Each concept records `generated: { by, at }` for its last content change, and `verified: { by, at }` once a dated pass has confirmed it. This file's own `verified` date is the date of the most recent full pass.
+* Each reference doc also records an `accessed` date — the day the maintainer last opened the canonical source. That date is the evidence behind the reference's `verified` entry.
+* A concept with no `verified` entry has not been through a claim-by-claim pass. That is a real signal for readers and agents, so leave it absent rather than asserting a check that did not happen.
 * A scheduled workflow opens a weekly draft review report. It is a queue for human research, never approval or evidence by itself.
 
 # Freshness tiers
@@ -31,10 +35,11 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 1. Run `python tool/okf_verify.py bundles/local-seo` and resolve every hard failure.
 2. Run it with `--check-urls` to catch dead external links.
 3. For each **volatile** claim, re-open the cited primary source and confirm the figure, name and status still match. Update the doc body and the reference's `accessed` date.
-4. Re-run `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` to regenerate `viz.html`.
-5. Append a dated entry to [log.md](/log.md) and update `last_verified` above.
-6. File or update a dated verification report (see [the 2026-06-25 report](/references/verification-report-2026-06-25.md)) when a full claim-by-claim pass is done.
-7. Require human approval before merging any factual update; automation must never auto-merge knowledge claims.
+4. For every doc the pass actually covered, add or update its `verified: { by, at }` and roll `stale_after` forward by the tier cadence below. Leave docs the pass did not cover untouched.
+5. Re-run `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` to regenerate `viz.html`.
+6. Append a dated entry to [log.md](/log.md) and update this file's own `verified` date.
+7. File or update a dated verification report (see [the 2026-06-25 report](/references/verification-report-2026-06-25.md)) when a full claim-by-claim pass is done.
+8. Require human approval before merging any factual update; automation must never auto-merge knowledge claims.
 
 # Open follow-ups
 

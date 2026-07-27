@@ -3,7 +3,20 @@ type: Playbook
 title: Profile Shielding
 description: A generic detect-diff-decide-revert pattern for catching and reversing unauthorised Business Profile edits ("Google updates").
 tags: [local-seo, gbp, monitoring, api]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-manage-google-updates
+    resource: /references/google-manage-google-updates.md
+    title: Google Business Profile APIs — Manage Google Updates
+  - id: google-understand-what-happens-to-your
+    resource: https://support.google.com/business/answer/3038311
+    title: Google — Understand what happens to your Business Profile edits
+  - id: google-business-profile-apis-locations-patch
+    resource: /references/google-locations-patch.md
+    title: Google Business Profile APIs — locations.patch
 ---
 
 A [Google Business Profile](/gbp/google-business-profile.md) is not solely owner-authored. Google updates profiles from other sources — user suggestions and reports among them — to keep customer-facing information current. When that happens the owner gets a notification and an alert in the profile's Edit profile section; the change may already be live. "Profile shielding" is the generic operational pattern for catching these changes quickly and re-asserting the canonical data. It is written here product-neutrally: any scheduler, any alerting channel, any data store.
@@ -26,11 +39,3 @@ Google's Business Profile API documents the mechanics end-to-end ("Manage Google
 * **Expect review latency.** Owner edits are themselves reviewed — usually about ten minutes, but up to 30 days for sensitive fields — so a re-asserted value is not instantly live, and repeated rapid flip-flopping of high-trust fields (name, address, category) invites scrutiny.
 * **Alert on the fields that hurt most.** Primary category, name, address, phone, website and hours deserve immediate alerts; attribute-level drift can batch into a daily digest.
 * **Non-API fallback.** The same loop runs manually at lower frequency: check the Edit profile section for the pending-updates alert on a schedule, compare against the canonical record, and accept or edit back through the editor.
-
-# Citations
-
-[1] [Google Business Profile APIs — Manage Google Updates](/references/google-manage-google-updates.md)
-
-[2] [Google — Understand what happens to your Business Profile edits](https://support.google.com/business/answer/3038311)
-
-[3] [Google Business Profile APIs — locations.patch](https://developers.google.com/my-business/reference/businessinformation/rest/v1/locations/patch)

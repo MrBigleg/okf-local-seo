@@ -3,7 +3,23 @@ type: Playbook
 title: GBP Optimisation Quick-Wins Checklist
 description: The fastest high-impact local SEO fixes to run on a new client engagement.
 tags: [playbook, gbp, local-seo, onboarding]
-timestamp: 2026-06-24T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: brightlocal-apple-business-connect
+    resource: /references/brightlocal-apple-business-connect.md
+    title: BrightLocal Apple Business Connect research
+    note: low Apple Business Connect adoption (~16%).
+  - id: sterling-sky
+    resource: /references/sterling-sky.md
+    title: Sterling Sky review research
+    note: the 18-day review-recency rule.
+  - id: ahrefs-ai-overviews
+    resource: /references/ahrefs-ai-overviews.md
+    title: Ahrefs AI Overview brand-correlation study
+    note: brand mentions correlate with AI visibility.
 ---
 
 A short, high-leverage checklist for the first pass on a new local client. Pair it with the full [local SEO dimensions](/local-seo/) for the deep audit.
@@ -31,12 +47,6 @@ A short, high-leverage checklist for the first pass on a new local client. Pair 
 2. Develop unique, non-swappable content for each location page.
 3. Establish presence on the third-party sources AI assistants commonly cite — review sites, directories, and community platforms.
 
-# Citations
+# Provenance
 
 This playbook operationalises claims sourced in the bundle's reference set:
-
-[1] [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md) — low Apple Business Connect adoption (~16%).
-
-[2] [Sterling Sky review research](/references/sterling-sky.md) — the 18-day review-recency rule.
-
-[3] [Ahrefs AI Overview brand-correlation study](/references/ahrefs-ai-overviews.md) — brand mentions correlate with AI visibility.

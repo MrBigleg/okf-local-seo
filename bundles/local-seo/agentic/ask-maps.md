@@ -3,7 +3,14 @@ type: Concept
 title: Ask Maps
 description: Google's Gemini-powered conversational experience in Google Maps for complex, place-based questions and actions.
 tags: [local-seo, ai-search, google-maps, agentic]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: google-how-we-re-reimagining-maps
+    resource: /references/google-ask-maps.md
+    title: Google — How we’re reimagining Maps with Gemini
 ---
 
 Ask Maps is Google's Gemini-powered conversational experience in Google Maps. A user taps the **Ask Maps** button, asks a complex place-based question, and receives a conversational answer with a customised map.
@@ -28,7 +35,3 @@ Ask Maps can synthesise constraints that do not fit neatly into a short keyword 
 Google has not published a separate set of Ask Maps ranking factors. Treat recommendations about profile completeness, media and review detail as data-quality practices, not guaranteed optimisation levers. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
 
 Source provenance for this concept lives in the reference page [Google — Ask Maps announcement](/references/google-ask-maps.md).
-
-# Citations
-
-[1] [Google — How we’re reimagining Maps with Gemini](https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/)

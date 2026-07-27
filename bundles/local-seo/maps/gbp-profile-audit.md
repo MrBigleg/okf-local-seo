@@ -4,7 +4,14 @@ title: GBP Profile Audit
 description: Score the 25 Google Business Profile fields that affect quality and ranking, with industry weighting.
 tags: [maps, gbp, audit]
 tier: 1
-timestamp: 2026-06-24T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: dataforseo
+    resource: /references/dataforseo.md
+    title: DataForSEO
 ---
 
 Audits the 25 fields that affect GBP quality and ranking. Tier 1 uses live API data; [Tier 0](/maps/capability-tiers.md) falls back to detectable on-page signals. Complements the on-page view in [GBP signals](/local-seo/gbp-signals.md).
@@ -23,7 +30,3 @@ Audits the 25 fields that affect GBP quality and ranking. Tier 1 uses live API d
 2. Extract visible GBP signals (Maps embed, place references, review widgets).
 3. Apply the static checklist from detectable signals.
 4. Mark undetectable fields as "Unknown (requires DataForSEO for live data)".
-
-# Citations
-
-[1] [DataForSEO](/references/dataforseo.md)

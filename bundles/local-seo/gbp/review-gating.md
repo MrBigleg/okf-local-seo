@@ -3,7 +3,20 @@ type: Concept
 title: Review Gating
 description: Where "ask happy customers first" crosses Google's review policy and the FTC Consumer Reviews and Testimonials Rule.
 tags: [local-seo, gbp, reviews, policy, compliance]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-maps-prohibited-and-restricted-content
+    resource: /references/google-review-policy.md
+    title: Google Maps — Prohibited and restricted content
+  - id: ftc-consumer-review-rule
+    resource: /references/ftc-consumer-review-rule.md
+    title: "FTC — Consumer Reviews and Testimonials Rule: Questions and Answers"
+  - id: ftc-press-release-ftc-warns-10
+    resource: https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-warns-10-companies-about-possible-violations-agencys-new-consumer-review-rule
+    title: "FTC — press release: FTC Warns 10 Companies About Possible Violations of the Consumer Review Rule (22 December 2025)"
 ---
 
 Review gating is filtering customers by satisfaction before asking for a public review — typically a "how was your experience?" pre-survey that routes happy customers to Google and unhappy ones to a private feedback form. It sits in genuine tension with mainstream advice to "ask your happy customers for reviews", and since 2024 it carries regulatory as well as platform risk. The generation workflow it constrains is in [reviews on GBP](/gbp/reviews.md); the ranking dimension is in [reviews & reputation](/local-seo/reviews-reputation.md).
@@ -40,11 +53,3 @@ The Q&A also marks the safe edges: making **generalised solicitations to all pur
 | Internal satisfaction surveys, run separately from review requests. | Survey that suppresses the review ask when the score is low. |
 | Respond to negatives and resolve offline; invite an updated review afterwards. | Incentives to remove or revise a negative review. |
 | Incentive-free requests via link or QR code. | Any incentive tied to sentiment; any incentive at all on Google. |
-
-# Citations
-
-[1] [Google Maps — Prohibited and restricted content](https://support.google.com/contributionpolicy/answer/7400114)
-
-[2] [FTC — Consumer Reviews and Testimonials Rule: Questions and Answers](/references/ftc-consumer-review-rule.md)
-
-[3] [FTC — press release: FTC Warns 10 Companies About Possible Violations of the Consumer Review Rule (22 December 2025)](https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-warns-10-companies-about-possible-violations-agencys-new-consumer-review-rule)

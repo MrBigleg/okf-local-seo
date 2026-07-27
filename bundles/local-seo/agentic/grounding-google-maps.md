@@ -3,7 +3,20 @@ type: Concept
 title: Grounding with Google Maps
 description: Google's developer services for adding Google Maps place, route, weather and review context to AI applications.
 tags: [google-maps, ai, grounding, developer]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: google-cloud-grounding-with-google-maps
+    resource: /references/google-maps-grounding.md
+    title: Google Cloud — Grounding with Google Maps
+  - id: google-maps-platform-maps-grounding-lite
+    resource: /references/google-maps-grounding.md
+    title: Google Maps Platform — Maps Grounding Lite
+  - id: google-maps-platform-ai-powered-place
+    resource: /references/google-maps-grounding.md
+    title: Google Maps Platform — AI-powered place summaries
 ---
 
 Grounding with Google Maps connects Gemini models to Google Maps geospatial data. Google states that the service can use information on **more than 250 million places** and can be combined with Google Search grounding or private data sources.
@@ -40,11 +53,3 @@ Places API (New) can return AI-powered place summaries through `generativeSummar
 These services let developers build location-aware applications with identifiable source material instead of relying only on a model's internal knowledge. They are developer products, not evidence that every consumer Maps answer uses the same API path. See [Ask Maps](/agentic/ask-maps.md).
 
 Source provenance for these products lives in the reference page [Google — Maps grounding for AI](/references/google-maps-grounding.md).
-
-# Citations
-
-[1] [Google Cloud — Grounding with Google Maps](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/grounding-with-google-maps)
-
-[2] [Google Maps Platform — Maps Grounding Lite](https://developers.google.com/maps/ai/grounding-lite)
-
-[3] [Google Maps Platform — AI-powered place summaries](https://developers.google.com/maps/documentation/places/web-service/place-summaries)

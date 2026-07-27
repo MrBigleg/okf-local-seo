@@ -68,7 +68,21 @@ People, websites, AI workspaces, or MCP connectors
 
 Each meaningful subject becomes one concept page. The frontmatter says what
 the page is; the body explains it; links connect it to related knowledge; and
-citations show where factual claims came from.
+a `sources` list shows where factual claims came from.
+
+The frontmatter also records who wrote a page and who checked it, so you can
+tell verified knowledge from unverified at a glance:
+
+```yaml
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+```
+
+Pages that no dated verification pass has covered carry no `verified` field at
+all. That gap is deliberate: it is more useful to know what has *not* been
+checked than to have every page assert that it has.
 
 An AI starts at `index.md`, follows the section that matches the task, and
 opens only the pages it needs. This is called progressive disclosure. In plain
@@ -123,8 +137,8 @@ The detailed guides are here:
   files, APIs, databases, wikis, or spreadsheets into a bundle.
 - [Consuming an OKF bundle](docs/CONSUMING-A-BUNDLE.md) explains how an agent
   can navigate, filter, cite, and monitor it.
-- [OKF v0.1 condensed reference](docs/OKF-SPEC-SUMMARY.md) covers the format
-  and conformance rules.
+- [OKF v0.2 condensed reference](docs/OKF-SPEC-SUMMARY.md) covers the format,
+  the trust and provenance fields, and the conformance rules.
 - [The minimal bundle](bundles/minimal/) is the smallest working example.
 
 Rank-in-Maps uses the same pattern at a larger scale. This public repository is
@@ -154,7 +168,7 @@ reader is required.
 ```text
 okf-local-seo/
 ├── bundles/local-seo/          # canonical Local SEO OKF bundle
-│   ├── index.md                # root map (OKF v0.1)
+│   ├── index.md                # root map (OKF v0.2)
 │   ├── log.md                  # dated editorial changelog
 │   ├── maintenance.md          # ownership and freshness policy
 │   ├── agentic/                # AI, Maps, and commerce changes

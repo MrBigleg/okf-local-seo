@@ -3,7 +3,14 @@ type: Ranking Dimension
 title: Local On-Page SEO
 description: Dedicated service pages, visible NAP, and avoiding doorway-page patterns.
 tags: [local-seo, on-page, ranking-factors]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: whitespark-2026
+    resource: /references/whitespark-2026.md
+    title: Whitespark Local Search Ranking Factors
 ---
 
 Dedicated, genuinely useful service pages are among the strongest local on-page signals (Whitespark ranks dedicated service pages near the top of its local organic factors). This is where most local sites win or lose.
@@ -27,7 +34,3 @@ The big risk is **doorway pages** — near-identical templates with only the tow
 | Full | City in title + H1, NAP visible, dedicated service pages, no doorway patterns, clean internal linking. |
 | Partial | Some local signals but missing service pages or doorway-page risk. |
 | Low | Generic title/H1, NAP not visible, thin location pages. |
-
-# Citations
-
-[1] [Whitespark Local Search Ranking Factors](/references/whitespark-2026.md)

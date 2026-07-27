@@ -3,7 +3,18 @@ type: Playbook
 title: Google Posts
 description: Update, Offer and Event posts on a Business Profile — mechanics, cadence, advanced tactics, and the visibility evidence.
 tags: [local-seo, gbp, posts, content]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-create-and-manage-posts-on
+    resource: https://support.google.com/business/answer/7342169
+    title: Google — Create and manage posts on your Business Profile
+  - id: uberall-crate-barrel-case-study-accessed
+    resource: https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time
+    title: Uberall — Crate & Barrel case study (accessed 2026-07-06)
+    last_modified: 2026-04-19
 ---
 
 Posts are the publishing surface of a [Google Business Profile](/gbp/google-business-profile.md): short, dated announcements that appear on the profile itself. On mobile Search and Maps they show in the **Updates** (or Overview) tab; on desktop they show in the **"From the owner"** section. Posts without a date range are archived after six months.
@@ -32,9 +43,3 @@ Google sets no required frequency; the archive rule and the "recent activity" re
 # What posts do for visibility
 
 Google does not document any direct ranking boost from posting. The honest case for posts is: they occupy profile real estate with fresh, owner-controlled content; they carry the only native call-to-action buttons on the profile; and they contribute to the active-profile signal. The strongest public quantified result is a vendor-published case study of a 161-location home-retail brand (US/Canada) that layered weekly posts into centralised profile management and reported **+31% Google Maps views and +6% Google Search views, 2024 versus 2023**, alongside a 95% profile-completeness rate — a correlation from one programme, not a controlled experiment, so treat it as directional.
-
-# Citations
-
-[1] [Google — Create and manage posts on your Business Profile](https://support.google.com/business/answer/7342169)
-
-[2] [Uberall — Crate & Barrel case study (accessed 2026-07-06)](https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time)

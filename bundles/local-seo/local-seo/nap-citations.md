@@ -3,7 +3,14 @@ type: Ranking Dimension
 title: NAP Consistency & Citations
 description: Consistent name/address/phone across sources, and presence on the directories that feed search and AI.
 tags: [local-seo, nap, citations, ranking-factors]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: brightlocal-apple-business-connect
+    resource: /references/brightlocal-apple-business-connect.md
+    title: BrightLocal Apple Business Connect research
 ---
 
 Citations carry less weight for the traditional local pack than they once did, but consistency still matters — and citation-style signals feed AI discovery, which sources business facts from across the web rather than from Google Business Profile directly.
@@ -30,7 +37,3 @@ Citations carry less weight for the traditional local pack than they once did, b
 # Related
 
 Cross-platform NAP across Google, Bing, Apple, and OSM is verified in [maps NAP verification](/maps/nap-verification.md).
-
-# Citations
-
-[1] [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md)

@@ -4,7 +4,14 @@ title: Geo-Grid Rank Tracking
 description: Simulate Google Maps searches from multiple GPS coordinates to show ranking variation and compute Share of Local Voice.
 tags: [maps, geo-grid, rank-tracking, solv]
 tier: 1
-timestamp: 2026-06-24T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: dataforseo
+    resource: /references/dataforseo.md
+    title: DataForSEO
 ---
 
 Geo-grid tracking simulates Maps searches from many GPS coordinates to reveal how rank varies across a geographic area. Requires DataForSEO ([Tier 1+](/maps/capability-tiers.md)).
@@ -22,7 +29,3 @@ Geo-grid tracking simulates Maps searches from many GPS coordinates to reveal ho
 # Cost warning (required)
 
 Before every scan, display the keyword, location, grid size, keyword count, and estimated cost, and confirm before consuming DataForSEO credits.
-
-# Citations
-
-[1] [DataForSEO](/references/dataforseo.md)

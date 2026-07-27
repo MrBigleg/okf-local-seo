@@ -3,7 +3,17 @@ type: Playbook
 title: GBP Business Description
 description: The 750-character "From the business" field — what Google allows, a working formula, and the anti-patterns that get descriptions rejected.
 tags: [local-seo, gbp, content]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-edit-your-business-profile
+    resource: https://support.google.com/business/answer/3039617
+    title: Google — Edit your Business Profile
+  - id: google-guidelines-for-representing-your-business
+    resource: /references/google-gbp-categories-description.md
+    title: Google — Guidelines for representing your business on Google
 ---
 
 The business description is the free-text field on a [Google Business Profile](/gbp/google-business-profile.md), shown in the **"From the business"** section of the profile on Search and Maps. Google's editing help confirms a limit of **750 characters** (accessed 2026-07-06). In some regions and languages Google offers AI-assisted drafting inside the profile editor.
@@ -38,9 +48,3 @@ Reuse the same factual core on the website's homepage or location page and in th
 * **Links, phone numbers, ALL-CAPS, emoji runs** — rejected or flagged as gimmicky character use.
 * **Restating the category list** — the categories, services and attributes fields already carry that data structurally; duplicating them spends characters without adding information.
 * **Unverifiable superlatives** — "the best in town" is neither honest per the guidelines nor useful to a reader.
-
-# Citations
-
-[1] [Google — Edit your Business Profile](https://support.google.com/business/answer/3039617)
-
-[2] [Google — Guidelines for representing your business on Google](https://support.google.com/business/answer/3038177)

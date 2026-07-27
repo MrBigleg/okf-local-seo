@@ -3,7 +3,20 @@ type: Concept
 title: Real-Time Local Inventory
 description: Store-level product availability, price and pickup data that makes local retail results actionable.
 tags: [local-seo, retail, inventory, agentic, ai-search]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: google-merchant-center-local-inventory-ads
+    resource: https://support.google.com/merchants/answer/14615117?hl=en
+    title: Google Merchant Center — Local inventory ads and free local listings overview
+  - id: google-merchant-center-local-inventory-data
+    resource: https://support.google.com/merchants/answer/14819809?hl=en
+    title: Google Merchant Center — Local inventory data specification
+  - id: lastmile-retail-miriam-ellis-data-based
+    resource: /references/lastmile-high-dollar-survey.md
+    title: Lastmile Retail / Miriam Ellis — Data-based Tactics for Increasing High-Dollar Local Purchases
 ---
 
 Real-time local inventory is store-level data showing whether a product is available at a particular location, at what price and under which pickup terms. It helps a shopper or agent distinguish a product that exists in a catalogue from one that can actually be obtained nearby.
@@ -48,11 +61,3 @@ The submitted availability, price and pickup promise should match the physical s
 # Agentic angle
 
 Availability, price and fulfilment are decision inputs for [Agentic Commerce Readiness](/agentic/agentic-commerce-readiness.md). An agent should not reserve or purchase when those inputs are stale or contradictory.
-
-# Citations
-
-[1] [Google Merchant Center — Local inventory ads and free local listings overview](https://support.google.com/merchants/answer/14615117?hl=en)
-
-[2] [Google Merchant Center — Local inventory data specification](https://support.google.com/merchants/answer/14819809?hl=en)
-
-[3] [Lastmile Retail / Miriam Ellis — Data-based Tactics for Increasing High-Dollar Local Purchases](https://www.linkedin.com/pulse/data-based-tactics-increasing-high-dollar-local-purchases-lastmile-ozqte)

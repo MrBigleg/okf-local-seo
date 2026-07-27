@@ -4,7 +4,17 @@ title: Review Intelligence
 description: Cross-platform review velocity, sentiment, rating distribution, and fake-review detection.
 tags: [maps, reviews, velocity, sentiment]
 tier: 1
-timestamp: 2026-06-24T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+status: stable
+stale_after: 2027-01-27
+sources:
+  - id: sterling-sky
+    resource: /references/sterling-sky.md
+    title: Sterling Sky
+  - id: dataforseo
+    resource: /references/dataforseo.md
+    title: DataForSEO
 ---
 
 Cross-platform review analysis across Google, Tripadvisor, and Trustpilot. Extends the on-page view in [reviews & reputation](/local-seo/reviews-reputation.md) with platform data.
@@ -22,8 +32,3 @@ Cross-platform review analysis across Google, Tripadvisor, and Trustpilot. Exten
 # Fake-review detection
 
 Flag reviews matching 2+ of: uniform timing; reviewer accounts with limited history; geographic inconsistencies; exclusively 5-star velocity spikes; near-identical text; sudden volume spikes without corresponding marketing activity.
-
-# Citations
-
-[1] [Sterling Sky](/references/sterling-sky.md)
-[2] [DataForSEO](/references/dataforseo.md)

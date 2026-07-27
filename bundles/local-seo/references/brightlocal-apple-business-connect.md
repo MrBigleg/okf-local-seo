@@ -9,7 +9,14 @@ accessed: 2026-06-25
 confidence: medium
 scope: Survey of business adoption/awareness of Apple Business Connect; figures are approximate.
 tags: [reference, apple, citations]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: are-businesses-using-apple-business-connect
+    resource: https://www.brightlocal.com/research/are-businesses-using-apple-business-connect/
+    title: Are businesses using Apple Business Connect?
 ---
 
 BrightLocal research on Apple Business Connect take-up. Verified figures:
@@ -19,7 +26,3 @@ BrightLocal research on Apple Business Connect take-up. Verified figures:
 * **~59%** are unaware of the tools Apple Business Connect offers.
 
 The low adoption is the point: claiming Apple Maps is a cheap, uncontested win. Cited in [NAP consistency & citations](/local-seo/nap-citations.md).
-
-# Citations
-
-[1] [Are businesses using Apple Business Connect?](https://www.brightlocal.com/research/are-businesses-using-apple-business-connect/)

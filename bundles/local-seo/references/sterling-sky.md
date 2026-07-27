@@ -9,11 +9,14 @@ accessed: 2026-06-25
 confidence: low-medium
 scope: Agency case-study observation (the 18-day rule); a community-recognised pattern, not confirmed Google policy.
 tags: [reference, reviews]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-09-25
+sources:
+  - id: does-the-number-of-google-reviews
+    resource: https://www.sterlingsky.ca/number-of-reviews-impact-ranking/
+    title: Does the number of Google reviews impact ranking?
 ---
 
 Sterling Sky (founded by Joy Hawkins) publishes case-study research on local ranking. We cite it for the **18-day rule** — the observation, drawn from client case studies, that local rankings can weaken once a business goes roughly two to three weeks without a new review. It is a community-recognised pattern, **not** confirmed Google policy. Used in [reviews & reputation](/local-seo/reviews-reputation.md).
-
-# Citations
-
-[1] [Does the number of Google reviews impact ranking?](https://www.sterlingsky.ca/number-of-reviews-impact-ranking/)

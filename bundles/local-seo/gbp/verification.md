@@ -3,7 +3,23 @@ type: Playbook
 title: GBP Verification
 description: The six verification methods, how Google auto-assigns them, review timing, claiming an existing profile, and service-area edge cases.
 tags: [local-seo, gbp, verification]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: google-gbp-verification
+    resource: /references/google-gbp-verification.md
+    title: Google — Verify your business on Google
+  - id: google-verify-your-business-with-a
+    resource: /references/google-gbp-verification.md
+    title: Google — Verify your business with a video recording
+  - id: google-request-ownership-of-a-business
+    resource: https://support.google.com/business/answer/4566671
+    title: Google — Request ownership of a Business Profile
+  - id: google-manage-your-service-areas-for
+    resource: /references/google-gbp-service-areas.md
+    title: Google — Manage your service areas for service-area and hybrid businesses
 ---
 
 Verification proves to Google that you legitimately represent the business, and it gates almost everything else on a [Google Business Profile](/gbp/google-business-profile.md): responding to [reviews](/gbp/reviews.md), publishing [posts](/gbp/google-posts.md), and editing core fields. It is also the front line of Google's defence against [fake listings](/gbp/spam-and-fake-listings.md).
@@ -45,13 +61,3 @@ Video has become the workhorse method, and most rejections are avoidable. The re
 * A **service-area business (SAB)** — one that visits or delivers to customers but doesn't serve them at its own address — must remove the address from the profile and define service areas instead: up to **20 areas**, set by city or postal code, with Google advising boundaries within about **2 hours' driving time** of the base.
 * A **hybrid business** (storefront plus delivery/callouts, e.g. a restaurant that also delivers) keeps its address and hours and adds service areas.
 * Service-area edits can take up to 48 hours to appear. Settle the address/SAB question before verifying rather than after — the address is part of what verification attests to.
-
-# Citations
-
-[1] [Google — Verify your business on Google](/references/google-gbp-verification.md)
-
-[2] [Google — Verify your business with a video recording](https://support.google.com/business/answer/14271705)
-
-[3] [Google — Request ownership of a Business Profile](https://support.google.com/business/answer/4566671)
-
-[4] [Google — Manage your service areas for service-area and hybrid businesses](https://support.google.com/business/answer/9157481)

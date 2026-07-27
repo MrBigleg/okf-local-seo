@@ -3,7 +3,23 @@ type: Playbook
 title: Reviews on GBP
 description: GBP-specific review mechanics — the response flow, a generation workflow with review links and QR codes, and handling problematic reviews.
 tags: [local-seo, gbp, reviews]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: soci-cbi-2025
+    resource: /references/soci-cbi-2025.md
+    title: SOCi 2025 Consumer Behavior Index
+  - id: google-tips-to-get-more-reviews
+    resource: https://support.google.com/business/answer/3474122
+    title: Google — Tips to get more reviews
+  - id: google-maps-prohibited-and-restricted-content
+    resource: /references/google-review-policy.md
+    title: Google Maps — Prohibited and restricted content
+  - id: ftc-consumer-review-rule
+    resource: /references/ftc-consumer-review-rule.md
+    title: "FTC — Consumer Reviews and Testimonials Rule: Questions and Answers"
 ---
 
 This is the operational playbook for reviews on a [Google Business Profile](/gbp/google-business-profile.md). The ranking dimension — recency, thresholds, the 18-day rule — lives in [reviews & reputation](/local-seo/reviews-reputation.md); cross-platform velocity and fake-review detection live in [review intelligence](/maps/review-intelligence.md).
@@ -37,13 +53,3 @@ Google explicitly supports asking for reviews — it provides each verified prof
 * **Genuine negatives** — not removable and not worth fighting: respond with the flow above. A visible, calm owner response is read by prospects as a trust signal.
 * **Suspected fake attacks** — the detection heuristics (timing, account history, text similarity) are in [review intelligence](/maps/review-intelligence.md); report matches through the same flow.
 * **Never pay for removal or revision.** Offering money, discounts or goods for changing or deleting a negative review breaches Google policy, and the FTC has stated that such incentives can be an unfair practice under the FTC Act.
-
-# Citations
-
-[1] [SOCi 2025 Consumer Behavior Index](/references/soci-cbi-2025.md)
-
-[2] [Google — Tips to get more reviews](https://support.google.com/business/answer/3474122)
-
-[3] [Google Maps — Prohibited and restricted content](https://support.google.com/contributionpolicy/answer/7400114)
-
-[4] [FTC — Consumer Reviews and Testimonials Rule: Questions and Answers](/references/ftc-consumer-review-rule.md)

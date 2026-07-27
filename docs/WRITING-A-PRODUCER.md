@@ -8,12 +8,14 @@ A **producer** turns a source — a database, a file tree, an API, a wiki, a spr
 2. **Map** each unit to a concept: choose a descriptive `type`, write a one-line `description`, set `resource` if it points at a real asset.
 3. **Write the body** as structured markdown — headings, tables, lists, fenced code. Structure aids both human reading and agent retrieval.
 4. **Cross-link** related concepts with bundle-relative links: `[text](/folder/concept.md)`. Links express the graph the directory tree can't.
-5. **Generate** the navigation: an `index.md` per directory (root carries `okf_version: "0.1"`) and an optional `log.md`. Then validate.
+5. **Record provenance** on each concept: a `sources` entry per input the concept derives from, and a `generated: { by, at }` naming the producer itself.
+6. **Generate** the navigation: an `index.md` per directory (root carries `okf_version: "0.2"`) and an optional `log.md`. Then validate.
 
-## Two design rules worth keeping
+## Three design rules worth keeping
 
 - **Deterministic extraction.** Re-running a producer on an unchanged source should be a no-op (same bytes out). Keep the mechanical extraction free of an embedded LLM; if you want grounded prose, let an agent enrich the bundle as a separate, reviewable pass.
-- **Frontmatter is the queryable surface; the body is for reading.** Put the few fields you'll filter or route on (`type`, `tags`, `resource`, `timestamp`) in frontmatter; put everything humans and agents actually read in the body.
+- **Frontmatter is the queryable surface; the body is for reading.** Put the few fields you'll filter or route on (`type`, `tags`, `resource`, `generated`, `status`) in frontmatter; put everything humans and agents actually read in the body.
+- **Never write a trust signal you can't support.** A producer writes `generated` (it knows what it produced) and `sources` (it knows what it read). It writes `verified` only when something actually confirmed the content — a machine check is `process:<id>`, and `human:<id>` is reserved for a real human sign-off. Emitting `verified` by default destroys the only signal the field carries.
 
 ## Minimal producer skeleton (Python)
 
@@ -29,17 +31,27 @@ def write_concept(relpath, fm, body):
     y = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip()
     p.write_text(f"---\n{y}\n---\n\n{body.strip()}\n", encoding="utf-8")
 
+NOW = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
 for item in enumerate_source():            # <- your source here
     write_concept(
         f"{item.group}/{item.slug}.md",
         {"type": item.type, "title": item.title,
          "description": item.one_liner,
          "tags": item.tags,
-         "timestamp": dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")},
+         # who produced this content, and when it last meaningfully changed
+         "generated": {"by": "my_producer/1.0", "at": NOW},
+         "status": "draft",                # promote to `stable` after review
+         # what it was derived from; `id` is the join key for [^footnotes]
+         "sources": [{"id": s.key, "resource": s.uri, "title": s.title}
+                     for s in item.inputs]},
         item.markdown_body,                # include bundle-relative [links](/g/other.md)
     )
-# then generate index.md per dir + a root index.md with okf_version: "0.1"
+# then generate index.md per dir + a root index.md with okf_version: "0.2"
 ```
+
+Note the actor string: `my_producer/1.0` follows the `<producer>/<version>` form, so a
+consumer classifies the output as machine-generated. Reserve `human:<id>` for people.
 
 ## Worked examples
 

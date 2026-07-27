@@ -3,7 +3,25 @@ type: Playbook
 title: Human-in-the-Loop GBP Management
 description: A control pattern in which AI drafts Google Business Profile changes and an authorised human approves execution.
 tags: [local-seo, gbp, ai-ops, hitl]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: google-business-profile-apis-create-posts
+    resource: https://developers.google.com/my-business/content/posts-data
+    title: Google Business Profile APIs — Create Posts on Google
+    last_modified: 2026-02-24
+  - id: google-business-profile-apis-work-with
+    resource: https://developers.google.com/my-business/content/review-data
+    title: Google Business Profile APIs — Work with review data
+    last_modified: 2025-08-28
+  - id: google-business-profile-apis-update-a
+    resource: /references/google-locations-patch.md
+    title: Google Business Profile APIs — Update a location
+  - id: google-business-profile-apis-update-food
+    resource: /references/google-food-menus-api.md
+    title: Google Business Profile APIs — Update Food Menus
 ---
 
 Human-in-the-loop (HITL) Business Profile management is a governance pattern: software prepares a proposed change, but an authorised person reviews it before any customer-visible write.
@@ -46,13 +64,3 @@ Product posts cannot currently be created through the documented Posts API.
 * event, offer and call-to-action posts;
 * category, hours, service or attribute corrections supported by the API; and
 * structured menu updates for eligible restaurant locations.
-
-# Citations
-
-[1] [Google Business Profile APIs — Create Posts on Google](https://developers.google.com/my-business/content/posts-data)
-
-[2] [Google Business Profile APIs — Work with review data](https://developers.google.com/my-business/content/review-data)
-
-[3] [Google Business Profile APIs — Update a location](https://developers.google.com/my-business/reference/businessinformation/rest/v1/locations/patch)
-
-[4] [Google Business Profile APIs — Update Food Menus](https://developers.google.com/my-business/content/update-food-menus)

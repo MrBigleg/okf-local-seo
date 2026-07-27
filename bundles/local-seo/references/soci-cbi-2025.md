@@ -9,7 +9,17 @@ accessed: 2026-07-06
 confidence: medium
 scope: US consumer attitudes to reviews and local discovery, February 2025 fieldwork. Vendor-published survey; methodology stated but not independently audited.
 tags: [reference, reviews, consumer-behaviour]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: soci-consumer-behavior-index
+    resource: https://www.soci.ai/insights/consumer-behavior-index
+    title: SOCi Consumer Behavior Index
+  - id: soci-press-release-ai-suggests-humans
+    resource: https://www.prnewswire.com/news-releases/ai-suggests-humans-decide-soci-warns-brands-to-embrace-human-validation-or-get-left-behind-302472784.html
+    title: "SOCi press release — AI Suggests, Humans Decide (4 June 2025)"
 ---
 
 SOCi's 2025 Consumer Behavior Index, announced 4 June 2025. Survey fieldwork 19–24 February 2025; 1,001 adult US respondents distributed evenly across gender, age and geography. Cited in [reviews on GBP](/gbp/reviews.md).
@@ -23,9 +33,3 @@ SOCi's 2025 Consumer Behavior Index, announced 4 June 2025. Survey fieldwork 19�
 # Clarification carried into the bundle
 
 Internal notes attributed both headline figures to all consumers. The 91% figure is all-respondents; the 65% figure is scoped to younger audiences in the primary release, and is cited that way here.
-
-# Citations
-
-[1] [SOCi Consumer Behavior Index](https://www.soci.ai/insights/consumer-behavior-index)
-
-[2] [SOCi press release — AI Suggests, Humans Decide (4 June 2025)](https://www.prnewswire.com/news-releases/ai-suggests-humans-decide-soci-warns-brands-to-embrace-human-validation-or-get-left-behind-302472784.html)

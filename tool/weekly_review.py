@@ -35,6 +35,20 @@ def parsed_date(value: str) -> dt.date | None:
         return None
 
 
+def evidence_date(meta: dict[str, str]) -> dt.date | None:
+    """The most recent date standing behind this page, newest signal first.
+
+    v0.2 records confirmation in `verified` and last content change in
+    `generated`; `accessed` and `timestamp` are the v0.1 fallbacks (§13.1).
+    """
+    for key in ("verified", "generated"):
+        # frontmatter() flattens the inline mapping, so pull `at:` out of the text
+        match = re.search(r"at:\s*(\d{4}-\d{2}-\d{2})", meta.get(key, ""))
+        if match:
+            return dt.date.fromisoformat(match.group(1))
+    return parsed_date(meta.get("accessed", "")) or parsed_date(meta.get("timestamp", ""))
+
+
 def cadence_days(relative: Path, kind: str) -> int:
     if relative.parts and relative.parts[0] == "agentic":
         return 31
@@ -50,10 +64,13 @@ def build_report(bundle: Path, today: dt.date) -> str:
             continue
         meta = frontmatter(path)
         relative = path.relative_to(bundle)
-        last = parsed_date(meta.get("accessed", "")) or parsed_date(meta.get("timestamp", ""))
+        last = evidence_date(meta)
         cadence = cadence_days(relative, meta.get("type", ""))
         age = (today - last).days if last else None
-        if age is None or age >= cadence:
+        # An explicit `stale_after` is the page's own answer; it wins over cadence.
+        stale_after = parsed_date(meta.get("stale_after", ""))
+        due = today >= stale_after if stale_after else (age is None or age >= cadence)
+        if due:
             rows.append((relative, last, cadence, age))
 
     lines = [

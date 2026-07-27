@@ -3,7 +3,28 @@ type: Playbook
 title: Agentic Commerce Readiness
 description: A conservative checklist for making a local business discoverable and safely transactable by supported AI agents.
 tags: [local-seo, commerce, gbp, agentic, checklist]
-timestamp: 2026-06-25T00:00:00Z
+generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+status: stable
+stale_after: 2026-07-25
+sources:
+  - id: google-get-started-with-business-agent
+    resource: /references/google-business-agent.md
+    title: Google — Get started with Business Agent
+  - id: google-business-profile-apis-update-food
+    resource: /references/google-food-menus-api.md
+    title: Google Business Profile APIs — Update Food Menus
+  - id: universal-commerce-protocol-specification-overview
+    resource: https://ucp.dev/specification/overview/
+    title: Universal Commerce Protocol — Specification overview
+    last_modified: 2026-04-08
+  - id: google-hotel-apis-hotel-prices-developer
+    resource: https://developers.google.com/hotels/hotel-prices/dev-guide
+    title: Google Hotel APIs — Hotel Prices Developer's Guide
+    last_modified: 2025-04-14
+  - id: universal-commerce-protocol-protocol-and-industry
+    resource: /references/agentic-commerce-protocols.md
+    title: Universal Commerce Protocol — Protocol and industry roadmap
 ---
 
 This is the actionable counterpart to [Agentic Commerce](/agentic/agentic-commerce.md). Readiness means publishing reliable business, offer and fulfilment data, then exposing transaction capabilities only through channels the business can operate safely.
@@ -46,15 +67,3 @@ Connect the property or central reservation system to the chosen distribution ch
 # 5. Keep a safe fallback
 
 When price, availability, identity or authority cannot be verified, the system should stop before purchase and hand the user to a human or first-party checkout. Readiness is not maximum automation; it is reliable execution within explicit limits.
-
-# Citations
-
-[1] [Google — Get started with Business Agent](https://support.google.com/brandprofile/answer/16410382?hl=en)
-
-[2] [Google Business Profile APIs — Update Food Menus](https://developers.google.com/my-business/content/update-food-menus)
-
-[3] [Universal Commerce Protocol — Specification overview](https://ucp.dev/specification/overview/)
-
-[4] [Google Hotel APIs — Hotel Prices Developer's Guide](https://developers.google.com/hotels/hotel-prices/dev-guide)
-
-[5] [Universal Commerce Protocol — Protocol and industry roadmap](https://ucp.dev/)

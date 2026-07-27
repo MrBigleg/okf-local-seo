@@ -9,7 +9,20 @@ accessed: 2026-07-06
 confidence: high
 scope: Allegations in a filed civil complaint — accurate as statements of what is alleged, not adjudicated findings.
 tags: [reference, gbp, spam, enforcement]
-timestamp: 2026-07-06T00:00:00Z
+generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+status: stable
+stale_after: 2026-10-06
+sources:
+  - id: doj-press-release-11-may-2026
+    resource: https://www.justice.gov/opa/pr/department-justice-files-complaint-against-best-gdr-llc-doing-business-premium-home-service
+    title: DOJ press release (11 May 2026)
+  - id: filed-complaint-pdf-hosted-by-the
+    resource: https://www.ftc.gov/system/files/ftc_gov/pdf/premium_home_service_-_filed_complaint.pdf
+    title: "Filed complaint (PDF, hosted by the FTC)"
+  - id: ftc-press-release-and-case-page
+    resource: https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake
+    title: FTC press release and case page (11 May 2026)
 ---
 
 DOJ press release (11 May 2026, release 26-474) and the filed complaint in the US District Court for the Northern District of Illinois against B.E.S.T. GDR, LLC, d/b/a Premium Home Service, and its founder and CEO Yosef Bernath. Filed on referral from the FTC, jointly with the Illinois Attorney General. Primary source for [spam & fake listings](/gbp/spam-and-fake-listings.md).
@@ -23,11 +36,3 @@ DOJ press release (11 May 2026, release 26-474) and the filed complaint in the U
 # Clarification carried into the bundle
 
 A widely circulated **"~$79 million"** gains figure is not in the press release, the FTC release, or the filed complaint; it originates in investigative journalism (KARE 11). The bundle uses the complaint's own wording ("tens of millions of dollars"). The CEO's name is spelled **Yosef** (one "s") in the filings.
-
-# Citations
-
-[1] [DOJ press release (11 May 2026)](https://www.justice.gov/opa/pr/department-justice-files-complaint-against-best-gdr-llc-doing-business-premium-home-service)
-
-[2] [Filed complaint (PDF, hosted by the FTC)](https://www.ftc.gov/system/files/ftc_gov/pdf/premium_home_service_-_filed_complaint.pdf)
-
-[3] [FTC press release and case page (11 May 2026)](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake)

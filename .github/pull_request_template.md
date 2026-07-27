@@ -12,7 +12,9 @@ Describe the knowledge or tooling change and why it is needed.
 
 - [ ] I have the right to contribute this material under the MIT License.
 - [ ] This PR contains no private, customer, credential, admin, or proprietary material.
-- [ ] Factual claims are cited and their scope is explicit.
+- [ ] Factual claims are listed in the page's `sources` frontmatter and their scope is explicit.
+- [ ] I updated `generated` on any page whose content I changed.
+- [ ] I added or updated `verified` only where I actually re-checked the page against its sources.
 - [ ] I updated the relevant index and `bundles/local-seo/log.md`.
 - [ ] `python tool/okf_verify.py bundles/local-seo` passes.
 - [ ] I regenerated `bundles/local-seo/viz.html` and committed the result.

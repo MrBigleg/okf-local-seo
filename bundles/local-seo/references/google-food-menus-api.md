@@ -5,14 +5,14 @@ description: The structured Food Menus data model and the API endpoints for read
 resource: https://developers.google.com/my-business/content/update-food-menus
 publisher: Google (Business Profile APIs)
 published: living document
-accessed: 2026-07-27
+accessed: 2026-08-01
 confidence: high
 scope: The menu data structure (sections and items, required Name and Price, optional description/nutrition/allergens/cuisines/photo associations) and the getFoodMenus / updateFoodMenus endpoints. Does not establish any AI or vision-based extraction of menu items from photographs — the documentation covers only manual API updates and photo association with already-defined items.
 tags: [reference, gbp, api, agentic]
 generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2026-11-01
 sources:
   - id: google-business-profile-apis-update-food-menus
     resource: https://developers.google.com/my-business/content/update-food-menus

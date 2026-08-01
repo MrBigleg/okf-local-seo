@@ -5,14 +5,14 @@ description: The Business Information API's PATCH endpoint for updating a locati
 resource: https://developers.google.com/my-business/reference/businessinformation/rest/v1/locations/patch
 publisher: Google (Business Profile APIs)
 published: living document
-accessed: 2026-07-27
+accessed: 2026-08-01
 confidence: high
 scope: Confirms the endpoint updates only the fields named in a required updateMask parameter — a targeted patch, not a full-record overwrite. Does not establish a generic revert, undo, or reversion endpoint; none is documented on this page or elsewhere in the Business Information API reference.
 tags: [reference, gbp, api]
 generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2026-11-01
 sources:
   - id: google-business-profile-apis-locations-patch
     resource: https://developers.google.com/my-business/reference/businessinformation/rest/v1/locations/patch

@@ -5,14 +5,14 @@ description: Primary specifications and announcements for the open protocols beh
 resource: https://ucp.dev/
 publisher: Multiple (Google, OpenAI, Stripe, Coinbase) — see per-protocol provenance below
 published: 2025-09 to 2026-01 (per protocol)
-accessed: 2026-06-25
+accessed: 2026-08-01
 confidence: high for existence; low for universal adoption
 scope: Existence, backers and stated scope of each protocol. Does NOT establish universal merchant, wallet or payment-network adoption.
 tags: [reference, commerce, agentic, protocols]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
+stale_after: 2026-11-01
 sources:
   - id: universal-commerce-protocol-specification-and-ecosystem
     resource: https://ucp.dev/

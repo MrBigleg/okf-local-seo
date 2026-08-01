@@ -3,10 +3,10 @@ type: Concept
 title: Real-Time Local Inventory
 description: Store-level product availability, price and pickup data that makes local retail results actionable.
 tags: [local-seo, retail, inventory, agentic, ai-search]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-07-25
+stale_after: 2026-09-01
 sources:
   - id: google-merchant-center-local-inventory-ads
     resource: https://support.google.com/merchants/answer/14615117?hl=en
@@ -45,7 +45,7 @@ Google's local inventory specification supports:
 * store-specific price and sale price;
 * optional quantity;
 * pickup method, including buy, reserve or ship to store; and
-* pickup service level, such as same day or next day.
+* pickup SLA, such as same day or next day.
 
 The submitted availability, price and pickup promise should match the physical store and the landing or checkout experience.
 

@@ -3,10 +3,10 @@ type: Concept
 title: Ask Maps
 description: Google's Gemini-powered conversational experience in Google Maps for complex, place-based questions and actions.
 tags: [local-seo, ai-search, google-maps, agentic]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-07-25
+stale_after: 2026-09-01
 sources:
   - id: google-how-we-re-reimagining-maps
     resource: /references/google-ask-maps.md
@@ -15,7 +15,7 @@ sources:
 
 Ask Maps is Google's Gemini-powered conversational experience in Google Maps. A user taps the **Ask Maps** button, asks a complex place-based question, and receives a conversational answer with a customised map.
 
-Google announced Ask Maps on 12 March 2026. It began rolling out on Android and iOS in the United States and India, with desktop availability described as coming soon. This rollout status was checked on 25 June 2026.
+Google announced Ask Maps on 12 March 2026. Its announcement said the feature was **starting to roll out** on Android and iOS in the United States and India, with desktop "coming soon." The cited announcement remains historical rollout evidence; it does not establish current availability beyond that March status.
 
 # What it uses
 

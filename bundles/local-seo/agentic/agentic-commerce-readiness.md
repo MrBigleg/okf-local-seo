@@ -3,10 +3,10 @@ type: Playbook
 title: Agentic Commerce Readiness
 description: A conservative checklist for making a local business discoverable and safely transactable by supported AI agents.
 tags: [local-seo, commerce, gbp, agentic, checklist]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-07-25
+stale_after: 2026-09-01
 sources:
   - id: google-get-started-with-business-agent
     resource: /references/google-business-agent.md
@@ -58,7 +58,7 @@ Publish branch-level [local inventory](/agentic/real-time-local-inventory.md), p
 
 ## Restaurants
 
-Ensure the ordering channel, point-of-sale system and kitchen workflow share the same menu and order state. Removing an unavailable item should update every active ordering surface. This is an operational requirement; current UCP food specifications were still described as forthcoming on 25 June 2026.
+Ensure the ordering channel, point-of-sale system and kitchen workflow share the same menu and order state. Removing an unavailable item should update every active ordering surface. This is an operational requirement; UCP still described its detailed food specifications as forthcoming on 1 August 2026.
 
 ## Hotels
 

@@ -3,10 +3,10 @@ type: Playbook
 title: Human-in-the-Loop GBP Management
 description: A control pattern in which AI drafts Google Business Profile changes and an authorised human approves execution.
 tags: [local-seo, gbp, ai-ops, hitl]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-07-25
+stale_after: 2026-09-01
 sources:
   - id: google-business-profile-apis-create-posts
     resource: https://developers.google.com/my-business/content/posts-data
@@ -22,6 +22,22 @@ sources:
   - id: google-business-profile-apis-update-food
     resource: /references/google-food-menus-api.md
     title: Google Business Profile APIs — Update Food Menus
+  - id: google-business-profile-apis-upload-media
+    resource: https://developers.google.com/my-business/content/upload-photos
+    title: Google Business Profile APIs — Upload media
+    last_modified: 2025-08-28
+  - id: google-business-profile-apis-attributes
+    resource: https://developers.google.com/my-business/content/attributes
+    title: Google Business Profile APIs — Add attributes
+    last_modified: 2025-08-28
+  - id: google-business-profile-apis-services
+    resource: https://developers.google.com/my-business/content/services
+    title: Google Business Profile APIs — Add services
+    last_modified: 2025-08-28
+  - id: google-business-profile-apis-prerequisites
+    resource: https://developers.google.com/my-business/content/prereqs
+    title: Google Business Profile APIs — Prerequisites
+    last_modified: 2025-08-28
 ---
 
 Human-in-the-loop (HITL) Business Profile management is a governance pattern: software prepares a proposed change, but an authorised person reviews it before any customer-visible write.

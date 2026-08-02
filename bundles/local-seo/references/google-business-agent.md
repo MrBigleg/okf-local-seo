@@ -5,14 +5,14 @@ description: Google's primary-source eligibility and setup guidance for Business
 resource: https://support.google.com/brandprofile/answer/16410382?hl=en
 publisher: Google (Brand Profile Help)
 published: living document
-accessed: 2026-06-25
+accessed: 2026-08-01
 confidence: high
 scope: Business Agent eligibility and data sources for eligible US e-commerce retailers. US-only at time of access.
 tags: [reference, google, commerce, agentic, gbp]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
+stale_after: 2026-11-01
 sources:
   - id: google-get-started-with-business-agent
     resource: https://support.google.com/brandprofile/answer/16410382?hl=en

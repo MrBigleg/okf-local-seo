@@ -3,10 +3,10 @@ type: Concept
 title: Grounding with Google Maps
 description: Google's developer services for adding Google Maps place, route, weather and review context to AI applications.
 tags: [google-maps, ai, grounding, developer]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-07-25
+stale_after: 2026-09-01
 sources:
   - id: google-cloud-grounding-with-google-maps
     resource: /references/google-maps-grounding.md
@@ -23,7 +23,7 @@ Grounding with Google Maps connects Gemini models to Google Maps geospatial data
 
 # Full Maps grounding
 
-In the Gemini Enterprise Agent Platform and Vertex AI Studio workflow, a developer enables Google Maps as a grounding tool. Responses can include Google Maps sources in REST field `groundingMetadata.groundingChunks`; client libraries may expose equivalent snake-case names such as `grounding_metadata` and `grounding_chunks`.
+In the Gemini Enterprise Agent Platform and Vertex AI Studio workflow, a developer enables Google Maps as a grounding tool. In REST responses, Google Maps sources appear under `groundingMetadata.groundingChunks[].maps`; documented fields include `uri`, `title`, `placeId` and `placeAnswerSources.reviewSnippets`. Client libraries may expose equivalent snake-case names.
 
 Maps source chunks can contain:
 
@@ -33,6 +33,8 @@ Maps source chunks can contain:
 * review snippets and review identifiers where available.
 
 Source attribution is part of the product's display requirements. The current documentation does not describe the earlier draft's widget context token or a product named “Contextual View”, so those claims are not retained.
+
+The current full-grounding documentation also describes route-aware capabilities. **Find Directions** returns travel information backed by structured metadata, while **Search Along Route** finds places that are convenient to a planned journey and returns metadata for both the route and the places found.
 
 # Maps Grounding Lite
 
@@ -44,9 +46,11 @@ Maps Grounding Lite is a Google Maps Platform service with Model Context Protoco
 
 It does not provide turn-by-turn directions, real-time traffic or navigation.
 
+A separate experimental Resolution API can resolve batches of free-form place names, addresses and Google Maps URLs to stable Place IDs. Google labels its `ResolveNames` and `ResolveMapsUrls` endpoints pre-GA.
+
 # Places API AI summaries
 
-Places API (New) can return AI-powered place summaries through `generativeSummary` in Place Details, Text Search and Nearby Search responses. Google describes these as brief, 100-character overviews and requires a “Summarized with Gemini” disclosure. On 25 June 2026, place summaries were documented for supported place types in English in India and the United States and were not guaranteed for every place.
+Places API (New) can return AI-powered place summaries through `generativeSummary` in Place Details, Text Search and Nearby Search responses. Google describes these as brief, 100-character overviews and requires a “Summarized with Gemini” disclosure. On 1 August 2026, place summaries were documented for supported place types in English in India and the United States and were not guaranteed for every place.
 
 # Why it matters
 

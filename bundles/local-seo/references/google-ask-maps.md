@@ -5,14 +5,14 @@ description: Google's primary-source announcement of Ask Maps, the Gemini-powere
 resource: https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/
 publisher: Google (The Keyword blog)
 published: 2026-03-12
-accessed: 2026-06-25
+accessed: 2026-08-01
 confidence: high
 scope: Primary announcement of Ask Maps — name, capabilities, data inputs, launch date and rollout regions. Durable UI placement and ranking factors are not specified.
 tags: [reference, google-maps, ai-search, agentic]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
+stale_after: 2026-11-01
 sources:
   - id: google-how-we-re-reimagining-maps
     resource: https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/

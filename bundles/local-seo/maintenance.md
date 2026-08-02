@@ -6,9 +6,9 @@ owner: CTB Marketing (bundle maintainer)
 review_cadence: weekly queue (volatile claims monthly — see tiers)
 tags: [governance, maintenance, policy]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2027-01-06
+stale_after: 2027-02-01
 ---
 
 This bundle mixes durable principles with fast-moving product facts. This policy says who keeps it current, how often, and how to tell which claims need the closest watch.

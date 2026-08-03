@@ -1,0 +1,6 @@
+Probing 69 external URLs ...
+OKF verify (v0.2): /home/runner/work/okf-local-seo/okf-local-seo/bundles/local-seo
+  documents: 73  external URLs: 69
+  trust: 65 verified / 0 unverified
+
+RESULT: PASS  (clean)

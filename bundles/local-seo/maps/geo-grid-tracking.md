@@ -5,9 +5,9 @@ description: Simulate Google Maps searches from multiple GPS coordinates to show
 tags: [maps, geo-grid, rank-tracking, solv]
 tier: 1
 generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
-stale_after: 2027-01-27
+stale_after: 2027-02-27
 sources:
   - id: dataforseo
     resource: /references/dataforseo.md
@@ -21,7 +21,7 @@ Geo-grid tracking simulates Maps searches from many GPS coordinates to reveal ho
 1. Geocode the business address to a centre lat/lng.
 2. Generate grid points (default 7×7, 5km radius) using a Haversine offset.
 3. **Display a cost estimate and ask for confirmation before proceeding.**
-4. Fire DataForSEO Maps SERP calls with `location_coordinate` per grid point.
+4. Fire DataForSEO SERP API (Google → Maps) calls with `location_coordinate` per grid point.
 5. Find the target business rank at each point.
 6. Compute SoLV: `(top_3_count / total_points) * 100`.
 7. Render an ASCII heatmap in the output.

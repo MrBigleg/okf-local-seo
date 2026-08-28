@@ -49,6 +49,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 # Bundle governance
 
+* [Verification report — 2026-08-27, follow-ups](/references/verification-report-2026-08-27-followups.md) - Closes the OpenAI Instant Checkout citation, DataForSEO endpoint naming drift, and Whitespark 2026 re-confirmation follow-up issues.
 * [Verification report — 2026-08-01, agentic](/references/verification-report-2026-08-01-agentic.md) - Monthly claim-by-claim review of all seven volatile agentic documents against current primary sources.
 * [Verification report — 2026-06-25](/references/verification-report-2026-06-25.md) - Claim-by-claim fact-check of the agentic section against primary sources.
 * [Verification report — 2026-07-27, Group A2](/references/verification-report-2026-07-27-group-a2.md) - Claim-by-claim fact-check of the four Group A2 detection/maps docs against primary sources.

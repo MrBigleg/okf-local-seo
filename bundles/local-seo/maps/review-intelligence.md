@@ -5,9 +5,9 @@ description: Cross-platform review velocity, sentiment, rating distribution, and
 tags: [maps, reviews, velocity, sentiment]
 tier: 1
 generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
-stale_after: 2027-01-27
+stale_after: 2027-02-27
 sources:
   - id: sterling-sky
     resource: /references/sterling-sky.md
@@ -21,7 +21,7 @@ Cross-platform review analysis across Google, Tripadvisor, and Trustpilot. Exten
 
 # Workflow
 
-1. Fetch Google reviews via the DataForSEO Reviews API (newest first).
+1. Fetch Google reviews via the DataForSEO Business Data API's Google Reviews endpoint (newest first).
 2. Calculate review velocity: reviews per month over the last 6 months.
 3. Check the **18-day rule** (Sterling Sky): any 3-week gap = ranking risk.
 4. Analyse rating distribution: healthy = bell curve skewed to 5-star.

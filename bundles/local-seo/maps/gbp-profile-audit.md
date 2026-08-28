@@ -5,9 +5,9 @@ description: Score the 25 Google Business Profile fields that affect quality and
 tags: [maps, gbp, audit]
 tier: 1
 generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
-stale_after: 2027-01-27
+stale_after: 2027-02-27
 sources:
   - id: dataforseo
     resource: /references/dataforseo.md
@@ -18,7 +18,7 @@ Audits the 25 fields that affect GBP quality and ranking. Tier 1 uses live API d
 
 # Tier 1 workflow
 
-1. Fetch the profile via the DataForSEO My Business Info API (keyword or CID).
+1. Fetch the profile via the DataForSEO Business Data API's Google My Business endpoint (keyword or CID).
 2. Map the API response to the 25-field checklist.
 3. Score each field: Present + Optimised = 2pts, Present = 1pt, Missing = 0pts.
 4. Apply industry-specific weight multipliers.

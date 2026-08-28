@@ -4,9 +4,9 @@ title: Local Schema Markup
 description: LocalBusiness JSON-LD with the correct industry subtype — not a ranking factor, but it helps search and AI parse the business.
 tags: [local-seo, schema, json-ld, ranking-factors]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
-stale_after: 2027-01-27
+stale_after: 2027-02-27
 sources:
   - id: whitespark-2026
     resource: /references/whitespark-2026.md

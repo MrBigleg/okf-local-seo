@@ -32,6 +32,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Google — GMB to GBP rename announcement](/references/google-gbp-rename-2021.md) - The 4 November 2021 blog.google post; primary source for the rename.
 * [Google — Guidelines for representing your business on Google](/references/google-gbp-categories-description.md) - Category-selection and business-description content rules.
 * [Google — Manage your service areas](/references/google-gbp-service-areas.md) - SAB vs hybrid address visibility and the 20-service-area limit.
+* [Google — Business name guidelines](/references/google-gbp-business-name-guidelines.md) - The prohibition on repeated bilingual names and script transliterations; single-script name requirement.
 * [Google Business Profile APIs — locations.patch](/references/google-locations-patch.md) - The update-mask-gated PATCH endpoint; no generic revert exists.
 * [Google Business Profile APIs — Update Food Menus](/references/google-food-menus-api.md) - The structured menu data model; no vision-based menu extraction.
 * [Schema.org — LocalBusiness](/references/schema-org-localbusiness.md) - Type hierarchy and properties, including `areaServed`; not a ranking signal.

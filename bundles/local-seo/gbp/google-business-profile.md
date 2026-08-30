@@ -25,7 +25,10 @@ sources:
     title: "Google — Local, now with a dash of Zagat and a sprinkle of Google+ (30 May 2012)"
   - id: google-help-your-business-shine-with
     resource: https://smallbusiness.googleblog.com/2014/06/help-your-business-shine-with-google-my.html
-    title: Google — Help your business shine with Google My Business (11 June 2014)
+    title: "Google — Help your business shine with Google My Business (11 June 2014)"
+  - id: google-gbp-name-guidelines
+    resource: /references/google-gbp-business-name-guidelines.md
+    title: Google — Guidelines for representing your business on Google (Name section)
 ---
 
 A Google Business Profile (GBP) is the free listing through which a business manages how it appears on Google Search and Google Maps. Google's own framing: "With a Business Profile on Google, you can manage how your business shows up on Maps and Search at no charge." Eligibility requires in-person contact with customers — a storefront customers visit, or a service-area business that travels to them; online-only businesses are not eligible.
@@ -44,6 +47,10 @@ The product has been renamed several times. Every date below is taken from Googl
 | 4 November 2021 | GMB becomes **Google Business Profile**. | "To keep things simple, 'Google My Business' is being renamed 'Google Business Profile.'" |
 
 The 2021 announcement also changed how profiles are managed: single-location businesses claim, verify and manage the profile directly in Google Search and the Google Maps app; the standalone GMB mobile app was retired in 2022; and the old web console was repositioned for multi-location businesses as **Business Profile Manager**. "GMB" and "GBP" refer to the same product — management now happens in Search and Maps themselves.
+
+# Business name guidelines
+
+Google's business name guideline requires a name that reflects how the business is represented in the real world, in a single consistent form. As of the August 2026 update, repeating the same name in multiple scripts or languages is not permitted — Google lists it as **"Repeated Bilingual Names / Script Transliterations"** — even when the dual-script name appears on the physical storefront signage, which was previously an accepted justification. Examples: `Kafiex` and `Burger King` are acceptable; `Kafiex / カフィエクス` and `Burger King バーガーキング` are not. This directly affects bilingual and multi-script markets (Thailand, Japan, the Middle East, Europe). It is a content-guideline change, not a documented ranking factor. See [Google — business name guidelines](/references/google-gbp-business-name-guidelines.md).
 
 # Google's three local ranking factors
 

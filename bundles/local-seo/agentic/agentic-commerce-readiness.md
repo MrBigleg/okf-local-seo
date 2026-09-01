@@ -4,9 +4,9 @@ title: Agentic Commerce Readiness
 description: A conservative checklist for making a local business discoverable and safely transactable by supported AI agents.
 tags: [local-seo, commerce, gbp, agentic, checklist]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-01
+stale_after: 2026-10-01
 sources:
   - id: google-get-started-with-business-agent
     resource: /references/google-business-agent.md

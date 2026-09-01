@@ -4,9 +4,9 @@ title: Ask Maps
 description: Google's Gemini-powered conversational experience in Google Maps for complex, place-based questions and actions.
 tags: [local-seo, ai-search, google-maps, agentic]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-01
+stale_after: 2026-10-01
 sources:
   - id: google-how-we-re-reimagining-maps
     resource: /references/google-ask-maps.md

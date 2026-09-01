@@ -1,5 +1,8 @@
 # Knowledge Base Update Log
 
+## 2026-09-01
+* **Agentic monthly verification**: Re-opened all primary sources behind the seven volatile `agentic/` documents and completed a claim-by-claim pass — see the [verification report](/references/verification-report-2026-09-01-agentic.md). Every claim reconfirmed unchanged at source; no corrections were needed. The Lastmile survey's LinkedIn URL still blocks automated retrieval, but its 95%/40%/37% figures were reconfirmed via the publisher's own non-gated site mirror. Each document now records a fresh `verified` and monthly `stale_after: 2026-10-01`; factual changes remain behind the repository's human-review merge gate.
+
 ## 2026-08-30
 * **GBP business name guidelines**: Added a new reference — [Google — Business name guidelines](/references/google-gbp-business-name-guidelines.md) — recording that Google's "Guidelines for representing your business on Google" (Name section) now prohibits repeated bilingual names and script transliterations, even when the dual-script name appears on storefront signage. Linked it from [Google Business Profile](/gbp/google-business-profile.md) as a new "Business name guidelines" subsection, and listed it in [the references index](/references/index.md). Source: Google Business Profile Help, https://support.google.com/business/answer/3038177 (Name section, accessed 2026-08-23). Content-guideline change; no ranking claim added.
 

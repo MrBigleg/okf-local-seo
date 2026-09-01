@@ -4,9 +4,9 @@ title: Grounding with Google Maps
 description: Google's developer services for adding Google Maps place, route, weather and review context to AI applications.
 tags: [google-maps, ai, grounding, developer]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-01
+stale_after: 2026-10-01
 sources:
   - id: google-cloud-grounding-with-google-maps
     resource: /references/google-maps-grounding.md

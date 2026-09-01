@@ -4,9 +4,9 @@ title: Human-in-the-Loop GBP Management
 description: A control pattern in which AI drafts Google Business Profile changes and an authorised human approves execution.
 tags: [local-seo, gbp, ai-ops, hitl]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-01
+stale_after: 2026-10-01
 sources:
   - id: google-business-profile-apis-create-posts
     resource: https://developers.google.com/my-business/content/posts-data

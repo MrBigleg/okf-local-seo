@@ -4,9 +4,9 @@ title: Agentic Commerce
 description: Commerce in which an AI agent can help discover, select and transact with a business under explicit user authority.
 tags: [local-seo, ai-search, commerce, agentic]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-09-01
+stale_after: 2026-10-01
 sources:
   - id: google-new-tech-and-tools-for
     resource: https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/

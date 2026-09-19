@@ -9,6 +9,12 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Sterling Sky review research](/references/sterling-sky.md) - Joy Hawkins' agency research; the 18-day rule on review recency.
 * [BrightLocal Local Consumer Review Survey](/references/brightlocal-lcrs.md) - Consumer review behaviour and rating thresholds.
 * [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md) - Adoption and awareness of Apple Business Connect.
+* [Sterling Sky — 7-step suspension reinstatement protocol](/references/sterling-sky-suspension-reinstatement.md) - Agency-tested framework for diagnosing and appealing GBP suspensions.
+* [Sterling Sky — AI-generated service area pages case study](/references/sterling-sky-ai-content-indexing.md) - 200 AI pages published, zero indexing, no penalty.
+* [Sterling Sky — SEO debates with David Quaid](/references/sterling-sky-seo-debates-david-quaid.md) - 80/20 traffic rule, AI-era measurement, algorithmic penalty rarity.
+* [Sterling Sky — 5 resurrected local SEO tactics](/references/sterling-sky-resurrected-tactics.md) - Press releases drove +83% traffic; business hours as ranking factor.
+* [Sterling Sky — Ex-Googlers on review secrets](/references/sterling-sky-ex-googlers-review-secrets.md) - Insider view of review-filtering algorithms, review parties, manual workflow decline.
+* [Sterling Sky — Ranking spot-check pitfalls](/references/sterling-sky-rankings-personalization.md) - Why proximity and personalisation skew manual ranking checks; tools to use instead.
 
 # AI search & conversion
 

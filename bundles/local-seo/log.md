@@ -1,5 +1,8 @@
 # Knowledge Base Update Log
 
+## 2026-09-19
+* **Notebook intel drop 2026-W38**: Added 6 new Sterling Sky reference pages from the weekly radar — suspension reinstatement protocol (7-step), AI-content indexing case study (200 pages, zero traffic), SEO measurement debates (David Quaid, 80/20 rule), resurrected local SEO tactics (press releases +83% traffic), ex-Googlers on review-filtering algorithms and review parties, and ranking spot-check pitfalls (proximity/personalisation biases). All pages are `status: draft`, unverified, and set to `stale_after: 2027-03-19`. See PR #N for the full batch.
+
 ## 2026-09-01
 * **Agentic monthly verification**: Re-opened all primary sources behind the seven volatile `agentic/` documents and completed a claim-by-claim pass — see the [verification report](/references/verification-report-2026-09-01-agentic.md). Every claim reconfirmed unchanged at source; no corrections were needed. The Lastmile survey's LinkedIn URL still blocks automated retrieval, but its 95%/40%/37% figures were reconfirmed via the publisher's own non-gated site mirror. Each document now records a fresh `verified` and monthly `stale_after: 2026-10-01`; factual changes remain behind the repository's human-review merge gate.
 
@@ -12,7 +15,7 @@
 ## 2026-08-01
 * **Agentic monthly verification**: Re-opened the available primary sources behind all seven volatile `agentic/` documents and completed a claim-by-claim pass — see the [verification report](/references/verification-report-2026-08-01-agentic.md). OpenAI's redundant Instant Checkout announcement could not be reopened because automated access returned HTTP 403, so it was removed from active provenance in favour of ACP's accessible canonical specification; issue #8 remains the manual follow-up. Each document now records AI verification provenance and a monthly `stale_after: 2026-09-01`; the maintenance policy records the machine-run pass, and factual changes remain behind the repository's human-review merge gate.
 * **Maps grounding update**: Google's current grounding documentation now includes Find Directions and Search Along Route. Maps Grounding Lite also documents a separate experimental Resolution API for resolving names, addresses and Maps URLs to stable Place IDs. Added both changes without extending them to consumer Maps ranking claims.
-* **Merchant Center terminology**: Replaced generic “pickup service level” wording with Google's current **pickup SLA** field name. Rechecked the Lastmile survey's public article text and embedded charts; the scoped 1,000-person, $300+, 95%, 56%, 48%, 40% and 37% figures remain supported.
+* **Merchant Center terminology**: Replaced generic "pickup service level" wording with Google's current **pickup SLA** field name. Rechecked the Lastmile survey's public article text and embedded charts; the scoped 1,000-person, $300+, 95%, 56%, 48%, 40% and 37% figures remain supported.
 * **Access exceptions**: OpenAI's Instant Checkout announcement still blocks automated retrieval with HTTP 403; issue #8 remains the manual follow-up. The bundle URL checker also reported environment-wide `URLError` warnings despite successful independent retrieval, so those warnings were documented rather than misclassified as 69 dead links.
 
 ## 2026-07-27

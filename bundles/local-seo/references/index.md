@@ -5,6 +5,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Local SEO & reviews
 
 * [Whitespark Local Search Ranking Factors](/references/whitespark-2026.md) - Annual ranking-factors study. Used qualitatively — exact weightings are not public.
+* [Whitespark business-name keywords study](/references/whitespark-business-name-keywords-2026.md) - 1.4M-listing correlative study of keywords in GBP business titles against top-3 local pack visibility, by industry.
 * [SOCi 2025 Consumer Behavior Index](/references/soci-cbi-2025.md) - US consumer survey behind the 91% reviews and 65% respond-to-reviews figures.
 * [Sterling Sky review research](/references/sterling-sky.md) - Joy Hawkins' agency research; the 18-day rule on review recency.
 * [BrightLocal Local Consumer Review Survey](/references/brightlocal-lcrs.md) - Consumer review behaviour and rating thresholds.

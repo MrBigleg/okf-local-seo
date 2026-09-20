@@ -29,6 +29,9 @@ sources:
   - id: google-gbp-name-guidelines
     resource: /references/google-gbp-business-name-guidelines.md
     title: Google — Guidelines for representing your business on Google (Name section)
+  - id: whitespark-business-name-keywords-2026
+    resource: /references/whitespark-business-name-keywords-2026.md
+    title: Whitespark — Keywords in business names (September 2026 study)
 ---
 
 A Google Business Profile (GBP) is the free listing through which a business manages how it appears on Google Search and Google Maps. Google's own framing: "With a Business Profile on Google, you can manage how your business shows up on Maps and Search at no charge." Eligibility requires in-person contact with customers — a storefront customers visit, or a service-area business that travels to them; online-only businesses are not eligible.
@@ -51,6 +54,12 @@ The 2021 announcement also changed how profiles are managed: single-location bus
 # Business name guidelines
 
 Google's business name guideline requires a name that reflects how the business is represented in the real world, in a single consistent form. As of the August 2026 update, repeating the same name in multiple scripts or languages is not permitted — Google lists it as **"Repeated Bilingual Names / Script Transliterations"** — even when the dual-script name appears on the physical storefront signage, which was previously an accepted justification. Examples: `Kafiex` and `Burger King` are acceptable; `Kafiex / カフィエクス` and `Burger King バーガーキング` are not. This directly affects bilingual and multi-script markets (Thailand, Japan, the Middle East, Europe). It is a content-guideline change, not a documented ranking factor. See [Google — business name guidelines](/references/google-gbp-business-name-guidelines.md).
+
+# Business-name keywords: what the correlative evidence shows
+
+Whitespark's September 2026 study of 1.4+ million listings found that having keywords in the business title correlates with a higher share of top-3 local pack visibility in most industries: the largest lift was travel & tourism (29.54% exact-match titles earning top-3 visibility against 6.05% for zero-match titles), the weakest was real estate (3.92% against 2.31%), and most industries sat around a doubling. Titles beginning with a keyword correlated with more top-3 results in 15 of 16 industries analysed, and zero-match titles still vastly outnumbered optimised ones. See [Whitespark business-name keywords study](/references/whitespark-business-name-keywords-2026.md).
+
+Two limits keep this in proportion. The study is correlative, not causal, and it had no AI-ranking dataset, so nothing here should be read as an AI-visibility effect. And the ranking-adjacent advantage sits inside the guideline above: the compliant routes to a keyword-bearing name are a genuine re-brand or a DBA, not an expanded title. A keyword-stuffed name can be reported or corrected by Google, which removes the advantage along with the words.
 
 # Google's three local ranking factors
 

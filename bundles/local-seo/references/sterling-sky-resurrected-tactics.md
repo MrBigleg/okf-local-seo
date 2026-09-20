@@ -9,7 +9,7 @@ accessed: 2026-09-19
 confidence: low-medium
 scope: Agency test data from Sterling Sky client work; press release results are single-client. Business-hours ranking shift observed across multiple profiles.
 tags: [reference, local-seo-tactics, press-releases, near-me, business-hours]
-generated: { by: agent:notebook-producer, at: 2026-09-19T02:14:22Z }
+generated: { by: notebook-producer/1.0, at: 2026-09-19T02:14:22Z }
 status: draft
 stale_after: 2027-03-19
 sources:

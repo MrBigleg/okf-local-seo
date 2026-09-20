@@ -9,7 +9,7 @@ accessed: 2026-09-19
 confidence: low-medium
 scope: Insider perspective from two former Google employees (11 years each). Covers review algorithm seasonality, not Google's current policy.
 tags: [reference, reviews, review-filtering, google-trust-safety]
-generated: { by: agent:notebook-producer, at: 2026-09-19T02:14:22Z }
+generated: { by: notebook-producer/1.0, at: 2026-09-19T02:14:22Z }
 status: draft
 stale_after: 2027-03-19
 sources:

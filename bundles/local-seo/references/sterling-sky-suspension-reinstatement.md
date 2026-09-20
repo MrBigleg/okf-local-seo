@@ -9,7 +9,7 @@ accessed: 2026-09-19
 confidence: low-medium
 scope: Agency protocol derived from Sterling Sky's client case work; reinstatement speed depends on Google's support queue backlog and may vary widely.
 tags: [reference, gbp-suspension, reinstatement]
-generated: { by: agent:notebook-producer, at: 2026-09-19T02:14:22Z }
+generated: { by: notebook-producer/1.0, at: 2026-09-19T02:14:22Z }
 status: draft
 stale_after: 2027-03-19
 sources:

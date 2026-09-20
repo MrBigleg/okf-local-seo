@@ -9,7 +9,7 @@ accessed: 2026-09-19
 confidence: low-medium
 scope: Single-client case study; service-area page SEO for North American local businesses. References a separate prior case where 3,000 AI pages triggered a manual penalty.
 tags: [reference, ai-content, service-area-pages, indexing]
-generated: { by: agent:notebook-producer, at: 2026-09-19T02:14:22Z }
+generated: { by: notebook-producer/1.0, at: 2026-09-19T02:14:22Z }
 status: draft
 stale_after: 2027-03-19
 sources:

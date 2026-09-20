@@ -9,7 +9,7 @@ accessed: 2026-09-19
 confidence: low-medium
 scope: Educational methodology; not original research data but practical guidance from agency experience.
 tags: [reference, ranking-verification, personalisation, local-seo-tools]
-generated: { by: agent:notebook-producer, at: 2026-09-19T02:14:22Z }
+generated: { by: notebook-producer/1.0, at: 2026-09-19T02:14:22Z }
 status: draft
 stale_after: 2027-03-19
 sources:

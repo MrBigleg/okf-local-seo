@@ -1,0 +1,10 @@
+Probing 81 external URLs ...
+OKF verify (v0.2): /home/runner/work/okf-local-seo/okf-local-seo/bundles/local-seo
+  documents: 83  external URLs: 81
+  trust: 69 verified / 6 unverified
+
+  WARNINGS (2):
+    ! sources resources differ only by query string for https://www.youtube.com/watch: https://www.youtube.com/watch?v=B3vRc1475wg (references/sterling-sky-ai-content-indexing.md); https://www.youtube.com/watch?v=F-yMpf8cagc (references/sterling-sky-suspension-reinstatement.md); https://www.youtube.com/watch?v=TQLeIIjhIKU (references/sterling-sky-resurrected-tactics.md); https://www.youtube.com/watch?v=TjrrE_OAWkU (references/sterling-sky-seo-debates-david-quaid.md); https://www.youtube.com/watch?v=UbLoGS7HJi8 (references/sterling-sky-rankings-personalization.md); https://www.youtube.com/watch?v=rym8pD9Gnhc (references/sterling-sky-ex-googlers-review-secrets.md)
+    ! URL 403: https://openai.com/index/buy-it-in-chatgpt/
+
+RESULT: PASS  (2 warnings)

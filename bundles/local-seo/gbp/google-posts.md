@@ -3,7 +3,7 @@ type: Playbook
 title: Google Posts
 description: Update, Offer and Event posts on a Business Profile — mechanics, cadence, advanced tactics, and the visibility evidence.
 tags: [local-seo, gbp, posts, content]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: deepseek/deepseek-v4-flash-vision-exp, at: 2026-09-27T00:41:08Z }
 verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
 status: stable
 stale_after: 2026-10-06
@@ -11,6 +11,9 @@ sources:
   - id: google-create-and-manage-posts-on
     resource: https://support.google.com/business/answer/7342169
     title: Google — Create and manage posts on your Business Profile
+  - id: google-posts-content-policy
+    resource: https://support.google.com/business/answer/7213077
+    title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-09-27)
   - id: uberall-crate-barrel-case-study-accessed
     resource: https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time
     title: Uberall — Crate & Barrel case study (accessed 2026-07-06)
@@ -27,7 +30,24 @@ Posts are the publishing surface of a [Google Business Profile](/gbp/google-busi
 | **Offer** | Title, start/end dates | Description, photo/video, coupon code, link, terms | Gets a "View Offer" button automatically. |
 | **Event** | Title, start/end dates and times | Description, photo/video, action button | Without times, the event shows as lasting 24 hours on the event dates. |
 
-Content rules worth knowing before drafting: posts containing phone numbers may be rejected, and the usual content policies apply (no misspellings-as-style, explicit material, or product-level content for regulated goods such as alcohol or tobacco).
+Content rules worth knowing before drafting: contact details in post text are subject to Google's verification rule (see below), and the usual content policies apply (no misspellings-as-style, explicit material, or product-level content for regulated goods such as alcohol or tobacco).
+
+# Contact information in posts
+
+Google's posts content policy treats contact details in post text as a verification question rather than a flat prohibition. As accessed on 27 September 2026, the policy section headed "Posts including contact information" reads:
+
+> "To avoid fraud or abuse, we may remove posts with unverified contact information. This includes phone numbers, email addresses, and social media handles. Alternatively, attach a Call now button to your post. This uses your verified Business Profile phone number so customers can contact you."
+
+The companion page adds the rejection framing: "**Important:** Posts that include a phone number in the post description might get rejected if they cannot be verified as being connected to the business on which they are posted."
+
+Until some point between 31 August and 25 September 2026, the same policy carried a differently titled section and a categorical rule:
+
+> "**Avoid \"phone stuffing\"**
+> To avoid the risk of abuse, we do not allow your post content to include a phone number. Instead, you can attach a \"Call now\" button to your post that uses your verified Business Profile phone number."
+
+Two things changed. The rule became conditional on verification rather than absolute — Google now says it *may* remove posts with unverified contact information — and the named scope widened from phone numbers to phone numbers, email addresses **and** social media handles. The documented route for a phone-based call to action is unchanged: the **Call now** button, which uses the verified profile number.
+
+Practically: keep phone numbers, email addresses and social handles out of post descriptions, and route contact through the post's action button and the profile's own verified fields. Google published no effective date or changelog entry for this edit, and states no visibility effect either way.
 
 # Cadence
 

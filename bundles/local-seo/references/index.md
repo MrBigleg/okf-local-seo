@@ -51,6 +51,11 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [US DOJ — B.E.S.T. GDR / Premium Home Service complaint](/references/doj-best-gdr-2026.md) - The May 2026 fake-listings enforcement action; press release and filed complaint.
 * [Google — Prohibited and restricted content (contribution policy)](/references/google-review-policy.md) - Bars incentivised and selectively solicited reviews.
 
+# Paid local advertising (primary sources)
+
+* [Google — Local Services Ads: how leads are charged](/references/google-lsa-lead-charging.md) - Valid-lead definitions, the 20-second missed-call rule (including IVR timer resets and voicemail), the four charge statuses, 30-day reassessment, the 15-day no-recharge window, and the fact that billed "business hours" come from the Google Business Profile.
+* [Google Ads — business name requirements and domain differences](/references/google-ads-business-name-requirements.md) - The October 2026 allowance for an ad business name differing from the destination domain in three defined cases, and the exclusion of resellers, booking intermediaries, affiliate distributors and secondary sellers. An ads policy, distinct from the GBP name guidelines.
+
 # Tooling
 
 * [DataForSEO](/references/dataforseo.md) - SEO data API powering Tier 1+ maps intelligence.

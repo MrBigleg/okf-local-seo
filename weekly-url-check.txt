@@ -1,0 +1,48 @@
+Probing 88 external URLs ...
+OKF verify (v0.2): /home/runner/work/okf-local-seo/okf-local-seo/bundles/local-seo
+  documents: 85  external URLs: 88
+  trust: 69 verified / 8 unverified
+
+  STALE (31):
+    ~ gbp/business-description.md: stale since 2026-10-06 - due for review
+    ~ gbp/google-business-profile.md: stale since 2026-10-06 - due for review
+    ~ gbp/google-posts.md: stale since 2026-10-06 - due for review
+    ~ gbp/profile-shielding.md: stale since 2026-10-06 - due for review
+    ~ gbp/review-gating.md: stale since 2026-10-06 - due for review
+    ~ gbp/reviews.md: stale since 2026-10-06 - due for review
+    ~ gbp/spam-and-fake-listings.md: stale since 2026-10-06 - due for review
+    ~ gbp/verification.md: stale since 2026-10-06 - due for review
+    ~ agentic/agentic-commerce-readiness.md: stale since 2026-10-01 - due for review
+    ~ agentic/agentic-commerce.md: stale since 2026-10-01 - due for review
+    ~ agentic/ask-maps.md: stale since 2026-10-01 - due for review
+    ~ agentic/generative-engine-optimization.md: stale since 2026-10-01 - due for review
+    ~ agentic/grounding-google-maps.md: stale since 2026-10-01 - due for review
+    ~ agentic/hitl-gbp-management.md: stale since 2026-10-01 - due for review
+    ~ agentic/real-time-local-inventory.md: stale since 2026-10-01 - due for review
+    ~ references/ahrefs-ai-overviews.md: stale since 2026-09-25 - due for review
+    ~ references/brightlocal-apple-business-connect.md: stale since 2026-09-25 - due for review
+    ~ references/brightlocal-lcrs.md: stale since 2026-09-25 - due for review
+    ~ references/doj-best-gdr-2026.md: stale since 2026-10-06 - due for review
+    ~ references/ftc-consumer-review-rule.md: stale since 2026-10-06 - due for review
+    ~ references/google-ai-optimization-guide.md: stale since 2026-09-25 - due for review
+    ~ references/google-gbp-business-name-guidelines.md: stale since 2026-10-06 - due for review
+    ~ references/google-gbp-rename-2021.md: stale since 2026-10-06 - due for review
+    ~ references/google-gbp-verification.md: stale since 2026-10-06 - due for review
+    ~ references/google-local-ranking.md: stale since 2026-10-06 - due for review
+    ~ references/google-manage-google-updates.md: stale since 2026-10-06 - due for review
+    ~ references/seer-chatgpt-conversion.md: stale since 2026-09-25 - due for review
+    ~ references/soci-cbi-2025.md: stale since 2026-10-06 - due for review
+    ~ references/sterling-sky.md: stale since 2026-09-25 - due for review
+    ~ references/verification-report-2026-06-25.md: stale since 2026-09-25 - due for review
+    ~ references/verification-report-2026-07-06.md: stale since 2026-10-06 - due for review
+
+  WARNINGS (7):
+    ! sources resources differ only by query string for https://www.youtube.com/watch: https://www.youtube.com/watch?v=B3vRc1475wg (references/sterling-sky-ai-content-indexing.md); https://www.youtube.com/watch?v=F-yMpf8cagc (references/sterling-sky-suspension-reinstatement.md); https://www.youtube.com/watch?v=TQLeIIjhIKU (references/sterling-sky-resurrected-tactics.md); https://www.youtube.com/watch?v=TjrrE_OAWkU (references/sterling-sky-seo-debates-david-quaid.md); https://www.youtube.com/watch?v=UbLoGS7HJi8 (references/sterling-sky-rankings-personalization.md); https://www.youtube.com/watch?v=rym8pD9Gnhc (references/sterling-sky-ex-googlers-review-secrets.md)
+    ! URL 403: https://openai.com/index/buy-it-in-chatgpt/
+    ! URL 404: https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers
+    ! URL 404: https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-warns-10-companies-about-possible-violations-agencys-new-consumer-review-rule
+    ! URL 404: https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake
+    ! URL 404: https://www.ftc.gov/system/files/ftc_gov/pdf/premium_home_service_-_filed_complaint.pdf
+    ! URL unreachable (RemoteDisconnected): https://www.sterlingsky.ca/number-of-reviews-impact-ranking/
+
+RESULT: PASS  (7 warnings, 31 stale)

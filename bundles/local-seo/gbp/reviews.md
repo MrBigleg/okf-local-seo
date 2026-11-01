@@ -1,13 +1,16 @@
 ---
 type: Playbook
 title: Reviews on GBP
-description: GBP-specific review mechanics — the response flow, a generation workflow with review links and QR codes, and handling problematic reviews.
+description: GBP-specific review mechanics — the response flow, a generation workflow with review links and QR codes, handling problematic reviews, and what measured deletion data adds.
 tags: [local-seo, gbp, reviews]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W44, at: 2026-11-01T00:00:00Z }
 verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
 status: stable
 stale_after: 2026-10-06
 sources:
+  - id: reviewflowz-gone-in-7-days
+    resource: /references/reviewflowz-review-deletion-2026.md
+    title: Reviewflowz with Cartelis — Google review deletions, measured (October 2026)
   - id: soci-cbi-2025
     resource: /references/soci-cbi-2025.md
     title: SOCi 2025 Consumer Behavior Index
@@ -53,3 +56,14 @@ Google explicitly supports asking for reviews — it provides each verified prof
 * **Genuine negatives** — not removable and not worth fighting: respond with the flow above. A visible, calm owner response is read by prospects as a trust signal.
 * **Suspected fake attacks** — the detection heuristics (timing, account history, text similarity) are in [review intelligence](/maps/review-intelligence.md); report matches through the same flow.
 * **Never pay for removal or revision.** Offering money, discounts or goods for changing or deleting a negative review breaches Google policy, and the FTC has stated that such incentives can be an unfair practice under the FTC Act.
+
+# What measured deletion data adds
+
+Google does not document when or why it removes reviews that were already published. The largest public measurement of that behaviour is the [4.9M-review Reviewflowz/Cartelis panel](/references/reviewflowz-review-deletion-2026.md), which found that **just under 2% of new reviews are deleted within a week**, that deletions cluster in a review's first seven days (negative reviews on days 2–3, positive on days 6–7, roughly a tenth of that risk from day 8), and that deletion concentrates: 1% of businesses accounted for half of all deletions in the panel.
+
+Two findings are operationally relevant to the flow above, and both are **associations in vendor research rather than demonstrated causes**:
+
+* **Reply timing correlated with retention.** A positive review answered within two days was deleted at 1.5% against 2.4% for unanswered positive reviews. Whether the reply came the same day or on day two made no measurable difference, and there was no measurable effect on 1-star reviews. Reply promptness is justified by customer experience regardless, so treat this as a reason to keep the habit, not as a retention tactic to optimise.
+* **Single-day bursts correlated with deletion; busy months did not.** Reviews posted on a day with at least three positive reviews and at least four times the business's usual daily count were deleted 1.8× more often, while a month three times busier than normal showed no increase. Spreading asks across days is consistent with the systematic, always-on generation workflow above.
+
+The panel observes only reviews that appeared and were later removed, so it says nothing about reviews withheld before publication, and it records deletions without their cause. It is a measurement of an undocumented behaviour, not a statement of Google policy.

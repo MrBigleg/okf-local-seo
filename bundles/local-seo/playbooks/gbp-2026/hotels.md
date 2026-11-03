@@ -4,7 +4,6 @@ title: Google Business Profile 2026 Playbook for Hotels & Accommodations
 description: RIM's learning adaptation of Google's 2026 hotel playbook, covering booking links, hotel details, eligible independent businesses, and current post restrictions.
 tags: [playbook, gbp, local-seo, hotels, hospitality, lodging, gbp-2026]
 generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
-verified:  { by: codex/2026-10-13, at: 2026-10-13T08:55:19Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13

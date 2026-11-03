@@ -2,6 +2,7 @@
 
 ## 2026-11-03
 
+* **Unbacked verification removed**: Dropped the `verified` entry from the five GBP 2026 playbooks. It recorded an agent review on 2026-10-13 but no dated verification report covers these pages, which CONTRIBUTING requires before `verified` is added. `verification_scope` and `status` are unchanged.
 * **Playbooks restored**: Re-added the five Google Business Profile 2026 playbooks under `playbooks/gbp-2026/` (master overview, restaurants, hotels, services, tours and attractions) and their entries in the [playbooks index](/playbooks/index.md). They were added to the RankinMaps copy of this bundle only and were never committed here, so the weekly synchronisation removed them. Content is unchanged from the RankinMaps copy; no human verification is recorded for them (`verification_scope` is source-and-policy-review).
 
 ## 2026-10-25

@@ -4,7 +4,6 @@ title: Google Business Profile 2026 Playbook for Tours, Activities & Attractions
 description: RIM's learning adaptation of Google's 2026 tours and attractions playbook, covering ticket and activity details, booking links, supported partners, and price accuracy.
 tags: [playbook, gbp, local-seo, tours, attractions, experiences, travel, gbp-2026]
 generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
-verified:  { by: codex/2026-10-13, at: 2026-10-13T08:55:19Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13

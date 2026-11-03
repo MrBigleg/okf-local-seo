@@ -4,7 +4,6 @@ title: Google Business Profile 2026 Master Playbook (Universal Best Practices)
 description: RIM's learning adaptation of Google's 2026 Google Business Profile playbook, with official guidance separated from research and RIM coaching practices.
 tags: [playbook, gbp, local-seo, gbp-2026, master-guide, rim-adaptation]
 generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
-verified:  { by: codex/2026-10-13, at: 2026-10-13T08:55:19Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13

@@ -4,7 +4,6 @@ title: Google Business Profile 2026 Playbook for Service Businesses & Trades
 description: RIM's learning adaptation of Google's 2026 service-business playbook, covering accurate service areas, service lists, booking options, and optional paid Local Services Ads.
 tags: [playbook, gbp, local-seo, service-businesses, trades, sab, gbp-2026]
 generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
-verified:  { by: codex/2026-10-13, at: 2026-10-13T08:55:19Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13

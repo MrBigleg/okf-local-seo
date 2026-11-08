@@ -62,7 +62,7 @@ The study's own operational reading is that a review campaign should be judged o
 
 | Factor | Result |
 |---|---|
-| Owner reply to a **positive** review within two days | 1.5% deleted against 2.4% without a reply. Same-day, next-day and day-2 replies gave similar deletion odds (0.46, 0.52, 0.51 against no reply). The study states this is an association, not a proven cause. |
+| Owner reply to a **5-star** review within two days | Measured on new 5-star reviews, counting deletions **between day 3 and day 7**: 1.5% deleted with a reply against 2.4% without. Same-day, next-day and day-2 replies gave similar deletion odds (0.46, 0.52, 0.51 against no reply). The study states this is an association, not a proven cause. |
 | Owner reply to a **1-star** review | No measurable difference (4.9% against 6.0%). |
 | **Spike day** — at least 3 positive reviews *and* at least 4× the business's usual daily count | Reviews posted that day were deleted 1.8× more often. The effect is strongest in Europe (0.9% → 2.2%); in the US the difference was too small to be certain of (2.1% → 2.4%). |
 | **Busy month** — a month three times busier than normal | No increase (1.1% against 1.9%). The study reads the pattern as a reaction to individual days, not to monthly volume. |

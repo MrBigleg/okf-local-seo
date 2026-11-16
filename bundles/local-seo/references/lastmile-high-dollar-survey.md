@@ -5,14 +5,14 @@ description: Consumer survey on real-time local availability and high-dollar loc
 resource: https://www.linkedin.com/pulse/data-based-tactics-increasing-high-dollar-local-purchases-lastmile-ozqte
 publisher: Lastmile Retail; written by Miriam Ellis; survey conducted with Greg Sterling
 published: 2026-05-21
-accessed: 2026-08-01
+accessed: 2026-11-16
 confidence: medium
 scope: Single survey of 1,000 US adults about purchases of $300 or more. Findings are specific to that high-dollar US scenario and should not be generalised.
 tags: [reference, retail, inventory, consumer-behaviour]
-generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-11-01
+stale_after: 2027-02-16
 sources:
   - id: lastmile-retail-miriam-ellis-data-based
     resource: https://www.linkedin.com/pulse/data-based-tactics-increasing-high-dollar-local-purchases-lastmile-ozqte
@@ -24,8 +24,7 @@ The consumer survey underpinning the demand-side claims in [Real-Time Local Inve
 # Verified figures
 
 * **95%** said confirming local availability before visiting was somewhat to extremely important.
-* **56%** selected real-time product availability before visiting as a factor favouring local over remote shipping.
-* **48%** selected reserving online for in-store purchase or pickup.
+* Real-time product availability online was reported as the number one factor that might lead a consumer to choose a local option over remote shipping. The article text gives no percentage for it.
 * **40%** reported insufficient product information on company websites.
 * **37%** could not confirm availability at a particular store; another **37%** reported inaccurate inventory information.
 

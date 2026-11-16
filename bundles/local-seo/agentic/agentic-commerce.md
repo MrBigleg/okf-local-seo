@@ -3,10 +3,10 @@ type: Concept
 title: Agentic Commerce
 description: Commerce in which an AI agent can help discover, select and transact with a business under explicit user authority.
 tags: [local-seo, ai-search, commerce, agentic]
-generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-01
+stale_after: 2026-12-16
 sources:
   - id: google-new-tech-and-tools-for
     resource: https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/
@@ -23,20 +23,23 @@ sources:
   - id: coinbase-developer-platform-x402-overview
     resource: /references/agentic-commerce-protocols.md
     title: Coinbase Developer Platform — x402 overview
+  - id: x402-foundation-site
+    resource: https://www.x402.org/
+    title: x402 Foundation — x402 overview (accessed 2026-11-16)
 ---
 
 Agentic commerce describes commerce in which an AI agent can move beyond recommendation into actions such as building a cart, initiating checkout or completing an authorised purchase. For local businesses, the practical shift is from being merely discoverable to exposing reliable data and transaction capabilities that an agent can use.
 
 # The protocol landscape
 
-As of 1 August 2026, several distinct open protocols exist. They are not one universal, fully adopted stack.
+As of 16 November 2026, several distinct open protocols exist. They are not one universal, fully adopted stack.
 
 | Protocol | Scope | Primary backing and status |
 |---|---|---|
 | Universal Commerce Protocol (UCP) | Discovery, catalogue, cart, checkout, identity linking and order management | Launched in January 2026; co-developed by Google and several retailers and platforms, with public specifications and reference implementations. |
 | Agent Payments Protocol (AP2) | Verifiable authority, payment instructions and accountability for agent-led payments | Announced by Google in September 2025 with more than 60 participating organisations; public specification available. |
-| Agentic Commerce Protocol (ACP) | Programmatic checkout between buyers, agents and businesses | Published in September 2025 and developed by OpenAI and Stripe, with a public specification. |
-| x402 | HTTP-native, programmatic stablecoin payments | Developed by Coinbase as an open protocol. AP2 also documents an A2A x402 extension for agent-based crypto payments. |
+| Agentic Commerce Protocol (ACP) | Programmatic checkout between buyers, agents and businesses | An open standard with a public specification. OpenAI is the first AI platform to implement it and Stripe the first compatible payment provider. |
+| x402 | Payments built into HTTP requests, using the HTTP 402 status code | Described by the x402 Foundation as an open, neutral standard for internet-native payments. Coinbase's developer platform runs a facilitator for it. AP2 also documents an A2A x402 extension for agent-based crypto payments. |
 
 # Signed mandates
 

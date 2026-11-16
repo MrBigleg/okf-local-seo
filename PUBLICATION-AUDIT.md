@@ -23,7 +23,8 @@ before changing GitHub visibility from private to public.
 
 ## Publication controls
 
-- CI validates OKF structure, citations, links, and generated graph output.
+- CI validates OKF structure, citations and links, and confirms the graph
+  builds. The graph file itself is generated on demand and not committed.
 - `audience: internal` is a hard verification failure.
 - Contribution templates prohibit credentials, customer data, private admin
   material, and proprietary content.

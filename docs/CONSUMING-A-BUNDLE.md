@@ -72,7 +72,7 @@ Use these as change signals — e.g. re-check anything past `stale_after`, or di
 
 ## Read it as a graph
 
-Cross-links (`[text](/folder/concept.md)`) form a concept graph richer than the folder tree. A `sources[].resource` pointing at another concept is an edge too — a derivation edge — so you can recurse into a source's own `sources` and let credibility propagate. Open `bundles/<name>/viz.html` for an interactive force-directed view (search, type filter, layouts, sources, trust tier, "cited by" backlinks) — a self-contained file, no backend.
+Cross-links (`[text](/folder/concept.md)`) form a concept graph richer than the folder tree. A `sources[].resource` pointing at another concept is an edge too — a derivation edge — so you can recurse into a source's own `sources` and let credibility propagate. For an interactive force-directed view (search, type filter, layouts, sources, trust tier, "cited by" backlinks), build the graph with `python3 tool/okf_build.py bundles/<name> --name "<Display name>"` and open the `bundles/<name>/viz.html` it writes — a self-contained file, no backend. The file is not stored in the repository; the Local SEO graph is also published at [rank-in-maps.com/knowledge-graph](https://www.rank-in-maps.com/knowledge-graph).
 
 ## Use it in existing tools
 

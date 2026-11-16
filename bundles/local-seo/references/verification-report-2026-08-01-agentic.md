@@ -6,7 +6,6 @@ tags: [governance, verification, agentic, maintenance]
 generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
-stale_after: 2026-11-01
 sources:
   - id: google-business-agent
     resource: https://support.google.com/brandprofile/answer/16410382?hl=en

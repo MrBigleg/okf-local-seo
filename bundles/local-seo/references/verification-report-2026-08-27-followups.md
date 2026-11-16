@@ -6,7 +6,6 @@ tags: [governance, verification, maintenance]
 generated: { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
-stale_after: 2026-11-27
 sources:
   - id: openai-instant-checkout
     resource: https://openai.com/index/buy-it-in-chatgpt/

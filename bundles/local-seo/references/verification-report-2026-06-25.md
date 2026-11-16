@@ -6,7 +6,6 @@ tags: [governance, verification, agentic]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
 verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
 ---
 
 Checked against primary sources on 25 June 2026. Each row records the original draft claim, the verification result, and the primary source consulted. See the [maintenance policy](/maintenance.md) for review cadence.

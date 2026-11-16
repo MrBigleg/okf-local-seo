@@ -6,7 +6,6 @@ tags: [governance, verification, local-seo, maps]
 generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
 verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
 sources:
   - id: whitespark-2026
     resource: /references/whitespark-2026.md

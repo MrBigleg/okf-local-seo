@@ -30,12 +30,14 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 | **Semi-stable** | Survey figures, study percentages, ranking-factor framing. The `references/` studies. | Quarterly; re-check the source for a newer edition. |
 | **Durable** | Method and detection docs, governance principles (HITL, NAP consistency, schema fundamentals). | Semi-annually, or when a dependency changes. |
 
+These tiers cover the knowledge documents. A `Report` is different in kind: it records a pass that happened on a date, so it carries no `stale_after` and is never rolled forward or reopened. Reports are exempt from the freshness queue by design; if a report's subject needs re-checking, the re-check is a new pass with its own report.
+
 # Review procedure
 
 1. Run `python tool/okf_verify.py bundles/local-seo` and resolve every hard failure.
 2. Run it with `--check-urls` to catch dead external links.
 3. For each **volatile** claim, re-open the cited primary source and confirm the figure, name and status still match. Update the doc body and the reference's `accessed` date.
-4. For every doc the pass actually covered, add or update its `verified: { by, at }` and roll `stale_after` forward by the tier cadence below. Leave docs the pass did not cover untouched.
+4. For every knowledge doc the pass actually covered, add or update its `verified: { by, at }` and roll `stale_after` forward by the tier cadence below. Leave docs the pass did not cover untouched, and leave `Report` pages alone: they are dated records with no freshness tier.
 5. Re-run `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` to confirm the graph still builds. Its `viz.html` output is generated and not committed.
 6. Append a dated entry to [log.md](/log.md) and update this file's own `verified` date.
 7. File or update a dated verification report (see [the 2026-06-25 report](/references/verification-report-2026-06-25.md)) when a full claim-by-claim pass is done.

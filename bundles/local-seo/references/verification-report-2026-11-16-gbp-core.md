@@ -5,7 +5,6 @@ description: Claim-by-claim maintenance review of four GBP pages and seven of th
 tags: [governance, verification, gbp, maintenance]
 generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 status: draft
-stale_after: 2027-02-16
 sources:
   - id: src-blog-google-products-ads-commerce-connect-local-holiday-shop
     resource: https://blog.google/products/ads-commerce/connect-local-holiday-shoppers/

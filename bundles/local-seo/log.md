@@ -2,6 +2,7 @@
 
 ## 2026-11-16
 
+* **Graph no longer committed**: `viz.html` is now built on demand and git-ignored. Every content change rewrote it, so any two open pull requests conflicted as soon as one merged. CI still runs the build. No knowledge claim changed.
 * **18-day rule wording aligned**: [Review intelligence](/maps/review-intelligence.md) and the [GBP quick-wins checklist](/playbooks/gbp-optimisation-checklist.md) stated the Sterling Sky 18-day observation as a fixed rule. Both now carry the same caveat as [reviews & reputation](/local-seo/reviews-reputation.md) and the [Sterling Sky reference](/references/sterling-sky.md): a case-study observation, not confirmed Google policy. No source was reopened and no new claim was added.
 * **Weekly review runs locally**: Removed the scheduled weekly-review workflow, which had failed every week since 2026-08-03 because GitHub Actions is not permitted to open pull requests in this repository. The freshness report is now produced by running `tool/weekly_review.py` by hand; [maintenance.md](/maintenance.md) records this. No knowledge claim changed.
 * **Log reference fixed**: The 2026-W38 notebook intel entry now names PR #16 in place of a placeholder.

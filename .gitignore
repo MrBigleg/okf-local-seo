@@ -19,4 +19,6 @@ Thumbs.db
 reviews/weekly/
 weekly-url-check.txt
 
-# Note: bundle/viz.html IS committed on purpose — it's a shareable artifact.
+# Generated graph. Build it locally with tool/okf_build.py; it is not committed,
+# because every content change rewrote it and made open pull requests conflict.
+viz.html

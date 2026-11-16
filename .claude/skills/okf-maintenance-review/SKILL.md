@@ -18,9 +18,10 @@ skill does not override that policy; it executes it.
 
 ## When this runs
 
-- A `automation/weekly-okf-review-*` branch/PR exists with pages listed under
-  "Pages due for freshness review" (non-empty table) — the scheduled
-  `weekly-review.yml` workflow prepares these but never researches them.
+- `python tool/weekly_review.py bundles/local-seo` writes a report under
+  `reviews/weekly/` whose "Pages due for freshness review" table is non-empty.
+  The report is run locally (there is no scheduled workflow) and only lists
+  what is due; it never researches anything.
 - `python tool/okf_verify.py bundles/local-seo` reports one or more `STALE`
   documents.
 - The user asks directly for a review pass (e.g. "run this month's agentic
@@ -31,8 +32,8 @@ skill does not override that policy; it executes it.
 ## Procedure
 
 1. **Scope the pass.** Run `python tool/okf_verify.py bundles/local-seo` and
-   note every `STALE` document, or use the due-pages table from the weekly
-   review branch. Don't touch documents that aren't due — the maintenance
+   note every `STALE` document, or use the due-pages table from the local
+   weekly report. Don't touch documents that aren't due — the maintenance
    policy is explicit that untouched docs keep their existing `verified`.
 
 2. **Collect every primary source per document.** Read each due document's
@@ -91,9 +92,9 @@ skill does not override that policy; it executes it.
    merges without human approval. Default to committing on a branch and
    opening a PR for review rather than pushing straight to `main` — only push
    directly if the operator explicitly asks for that (as happened in this
-   session's precedent). If the pass was triggered by an
-   `automation/weekly-okf-review-*` branch, commit onto that same branch and
-   mark its PR ready for review instead of opening a new one.
+   session's precedent). The weekly
+   report under `reviews/weekly/` is a git-ignored working file; do not
+   commit it.
 
 10. **Surface anything you couldn't finish.** A source that stays genuinely
     inaccessible, a claim you can't confirm either way, or a correction that
@@ -109,12 +110,3 @@ skill does not override that policy; it executes it.
 - Don't merge factual changes without a human in the loop, and don't delete
   or force-push anything as part of this skill — branch/PR hygiene is a
   separate, lower-stakes concern from claim verification.
-
-## Reusable housekeeping check (optional, run alongside)
-
-While in the repo for a review pass, it's cheap to also check for merged or
-empty `automation/weekly-okf-review-*` branches (`git branch -a`, `gh pr list
---state all`) and flag or delete ones that are fully superseded — see the
-2026-08-31 session for the worked example. This is separate from claim
-verification and never needs the human-review gate, but still confirm with
-the operator before deleting anything.

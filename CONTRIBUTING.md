@@ -56,5 +56,5 @@ By submitting a contribution, you confirm that you have the right to submit it
 and agree that it is distributed under this repository's MIT License. Retain
 source attribution and copyright notices where required.
 
-All factual changes require human review. Scheduled automation may prepare a
+All factual changes require human review. Automation may prepare a
 draft review report, but it never approves or merges knowledge changes.

@@ -5,7 +5,7 @@ description: Ownership, review cadence and freshness tiers for keeping fast-movi
 owner: CTB Marketing (bundle maintainer)
 review_cadence: weekly queue (volatile claims monthly — see tiers)
 tags: [governance, maintenance, policy]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 verified:  { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
 status: stable
 stale_after: 2027-02-01
@@ -20,7 +20,7 @@ This bundle mixes durable principles with fast-moving product facts. This policy
 * Each concept records `generated: { by, at }` for its last content change, and `verified: { by, at }` once a dated pass has confirmed it. This file's own `verified` date is the date of the most recent full pass.
 * Each reference doc also records an `accessed` date — the day the maintainer last opened the canonical source. That date is the evidence behind the reference's `verified` entry.
 * A concept with no `verified` entry has not been through a claim-by-claim pass. That is a real signal for readers and agents, so leave it absent rather than asserting a check that did not happen.
-* A scheduled workflow opens a weekly draft review report. It is a queue for human research, never approval or evidence by itself.
+* The weekly review report is produced by running `python tool/weekly_review.py bundles/local-seo` on a maintainer's machine; nothing runs it on a schedule. The report is a queue for human research, never approval or evidence by itself.
 
 # Freshness tiers
 

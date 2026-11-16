@@ -3,7 +3,7 @@ type: Playbook
 title: Google Business Profile 2026 Playbook for Tours, Activities & Attractions
 description: RIM's learning adaptation of Google's 2026 tours and attractions playbook, covering ticket and activity details, booking links, supported partners, and price accuracy.
 tags: [playbook, gbp, local-seo, tours, attractions, experiences, travel, gbp-2026]
-generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13
@@ -62,7 +62,7 @@ Google's PDF describes two ways to supply ticket or activity details [1, PDF p. 
 * **Language Support**: Guided tours offered in English, Thai, Spanish, Mandarin, etc.
 
 ### C. Capturing "Things to Do" Demand via Google Posts
-Google's PDF recommends weekly posts [1]. Use accurate updates suited to the business:
+Google's PDF lists "Post at least once a week" among its Google Posts best practices [1]. It is a recommendation, not a requirement; see [Google Posts](/gbp/google-posts.md). Use accurate updates suited to the business:
 1. **Seasonal Schedules & Slots**: Announce opening of holiday slots, sunset cruises, or seasonal exhibitions.
 2. **Special Offers**: Early-bird discounts, family bundle passes, or resident rates (50% of consumers seek discounts online).
 3. **Event Highlights**: Guest speakers, live performance schedules, and weekend workshops.

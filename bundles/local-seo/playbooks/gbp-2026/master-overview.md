@@ -3,7 +3,7 @@ type: Playbook
 title: Google Business Profile 2026 Master Playbook (Universal Best Practices)
 description: RIM's learning adaptation of Google's 2026 Google Business Profile playbook, with official guidance separated from research and RIM coaching practices.
 tags: [playbook, gbp, local-seo, gbp-2026, master-guide, rim-adaptation]
-generated: { by: antigravity/2026-10-13, at: 2026-10-13T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13
@@ -111,7 +111,7 @@ Google's PDF lists 13 areas of profile information and customer interaction [1, 
 * **RIM practice**: Prefer authentic business media that accurately represents the place, people, and offerings. Do not promise a ranking reward for a particular photo style.
 
 ### 9. Google Posts (Cadence & Content)
-* Maintain an active posting cadence of **at least once per week** [1].
+* Google's playbook lists "Post at least once a week" among its Google Posts best practices [1]. This is a recommendation, not a requirement: Google's posts content policy sets no frequency [8]. See [Google Posts](/gbp/google-posts.md) for cadence in full.
 * Utilize the 3 primary post types: **Updates**, **Offers** (with coupon codes/dates), and **Events**.
 * Posts share timely information in Search and Maps. Do not infer an algorithmic freshness or ranking boost from posting frequency.
 * Apply current category restrictions: hotels cannot create offer posts or posts mentioning/linking promotions, deals, special offers, or discounts [8].

@@ -5,14 +5,14 @@ description: Developer documentation for detecting and accepting or rejecting Go
 resource: https://developers.google.com/my-business/content/accept-or-reject-updates
 publisher: Google (Business Profile APIs)
 published: living document
-accessed: 2026-07-06
+accessed: 2026-11-16
 confidence: high
 scope: The hasGoogleUpdated flag, getGoogleUpdated endpoint, diffMask/pendingMask semantics, and patch-based accept/reject mechanics.
 tags: [reference, gbp, api, monitoring]
 generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-02-16
 sources:
   - id: manage-google-updates
     resource: https://developers.google.com/my-business/content/accept-or-reject-updates

@@ -5,14 +5,14 @@ description: Address-visibility, service-area limits, and definitions for SABs v
 resource: https://support.google.com/business/answer/9157481
 publisher: Google (Business Profile Help)
 published: living document
-accessed: 2026-07-27
+accessed: 2026-11-16
 confidence: high
-scope: Confirms SABs hide their address while hybrids show both address and service areas; up to 20 service areas defined by city/postal code (not a radius), capped at roughly two hours' driving time from the business's base. Does not cover verification methods (see google-gbp-verification.md) or any ranking effect of service-area configuration.
+scope: Confirms SABs remove their address while hybrids show both address and service areas; up to 20 service areas defined by city/postal code (not a radius), with Google's tip that the overall area should not be more than about two hours' driving time from the business's base. Does not cover verification methods (see google-gbp-verification.md) or any ranking effect of service-area configuration.
 tags: [reference, gbp, service-area]
-generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2027-02-16
 sources:
   - id: google-manage-your-service-areas
     resource: https://support.google.com/business/answer/9157481

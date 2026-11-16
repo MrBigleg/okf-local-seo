@@ -3,10 +3,10 @@ type: Playbook
 title: Profile Shielding
 description: A generic detect-diff-decide-revert pattern for catching and reversing unauthorised Business Profile edits ("Google updates").
 tags: [local-seo, gbp, monitoring, api]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-05-16
 sources:
   - id: google-manage-google-updates
     resource: /references/google-manage-google-updates.md
@@ -36,6 +36,6 @@ Google's Business Profile API documents the mechanics end-to-end ("Manage Google
 
 * **Keep a canonical record.** Reversion requires a trusted copy of every field's correct value, versioned and dated, outside the profile itself. The [audit checklist](/maps/gbp-profile-audit.md) fields are the natural schema.
 * **Patch narrowly.** Always use the tightest `updateMask` that covers the disputed fields — a broad patch can overwrite unrelated pending changes.
-* **Expect review latency.** Owner edits are themselves reviewed — usually about ten minutes, but up to 30 days for sensitive fields — so a re-asserted value is not instantly live, and repeated rapid flip-flopping of high-trust fields (name, address, category) invites scrutiny.
+* **Expect review latency.** Owner edits are themselves reviewed — Google says edits "usually take up to 10 minutes to review, but sometimes it can take up to 30 days" — so a re-asserted value is not instantly live, and repeated rapid flip-flopping of high-trust fields (name, address, category) invites scrutiny.
 * **Alert on the fields that hurt most.** Primary category, name, address, phone, website and hours deserve immediate alerts; attribute-level drift can batch into a daily digest.
 * **Non-API fallback.** The same loop runs manually at lower frequency: check the Edit profile section for the pending-updates alert on a schedule, compare against the canonical record, and accept or edit back through the editor.

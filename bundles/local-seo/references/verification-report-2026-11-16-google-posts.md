@@ -5,7 +5,6 @@ description: Claim-by-claim maintenance review of gbp/google-posts.md against it
 tags: [governance, verification, gbp, posts, maintenance]
 generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 status: draft
-stale_after: 2027-02-16
 sources:
   - id: google-create-and-manage-posts-on
     resource: https://support.google.com/business/answer/7342169

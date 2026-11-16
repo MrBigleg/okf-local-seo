@@ -6,7 +6,6 @@ tags: [governance, verification, agentic, maintenance]
 generated: { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
 status: stable
-stale_after: 2026-12-01
 sources:
   - id: ap2-protocol
     resource: https://ap2-protocol.org/

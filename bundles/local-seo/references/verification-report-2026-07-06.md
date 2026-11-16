@@ -6,7 +6,6 @@ tags: [governance, verification, gbp]
 generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
 verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
 sources:
   - id: tips-to-improve-your-local-ranking
     resource: https://support.google.com/business/answer/7091

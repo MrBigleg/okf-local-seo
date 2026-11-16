@@ -5,7 +5,6 @@ description: Removal of the ftc.gov citations that could not be reopened, and a 
 tags: [governance, verification, gbp, reviews, maintenance]
 generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 status: draft
-stale_after: 2027-02-16
 sources:
   - id: src-ahrefs-com-blog-ai-overview-brand-correlation
     resource: https://ahrefs.com/blog/ai-overview-brand-correlation/

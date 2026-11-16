@@ -5,7 +5,6 @@ description: Claim-by-claim maintenance review of the seven agentic documents an
 tags: [governance, verification, agentic, maintenance]
 generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
 status: draft
-stale_after: 2027-02-16
 sources:
   - id: src-ap2-protocol-org
     resource: https://ap2-protocol.org/

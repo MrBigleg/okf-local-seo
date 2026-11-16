@@ -5,14 +5,14 @@ description: Rules for choosing Business Profile categories and writing the busi
 resource: https://support.google.com/business/answer/3038177
 publisher: Google (Business Profile Help)
 published: living document
-accessed: 2026-07-27
+accessed: 2026-11-16
 confidence: high
 scope: Category-selection rules (fewest applicable categories, "this business IS a" rather than "HAS a", no keyword-stuffing, no categories for nearby/unrelated businesses) and description-content rules (informational, no promotions/prices, no links, no low-quality or unrelated content). Does not state a ranking weight for either field — this is content policy, not an algorithm disclosure.
 tags: [reference, gbp, content]
 generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2027-02-16
 sources:
   - id: google-guidelines-for-representing-your-business
     resource: https://support.google.com/business/answer/3038177

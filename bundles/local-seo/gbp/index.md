@@ -13,5 +13,5 @@ GBP depth: what the profile is, how each surface works, and the operational play
 * [Business description](/gbp/business-description.md) - The 750-character description field: rules, a working formula, anti-patterns.
 * [Reviews on GBP](/gbp/reviews.md) - Response flow, generation workflow, QR codes, and handling problematic reviews.
 * [Google Posts](/gbp/google-posts.md) - Update, Offer and Event posts: mechanics, cadence, and what posts do for visibility.
-* [Verification](/gbp/verification.md) - The six verification methods, how Google assigns them, timing, claiming, and SAB edge cases.
+* [Verification](/gbp/verification.md) - The verification methods, how Google assigns them, timing, claiming, and SAB edge cases.
 * [Profile shielding](/gbp/profile-shielding.md) - Detecting and reverting unauthorised profile edits, as a generic monitoring pattern.

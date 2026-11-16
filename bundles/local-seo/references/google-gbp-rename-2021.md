@@ -5,14 +5,14 @@ description: Google's own announcement of the Google My Business to Google Busin
 resource: https://blog.google/products/ads-commerce/connect-local-holiday-shoppers/
 publisher: Google (The Keyword blog)
 published: 2021-11-04
-accessed: 2026-07-06
+accessed: 2026-11-16
 confidence: high
 scope: The rename, direct claim/verify/manage in Search and Maps, the 2022 GMB app retirement, and the Business Profile Manager repositioning.
 tags: [reference, gbp, history]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-02-16
 sources:
   - id: connect-with-local-holiday-shoppers-blog
     resource: https://blog.google/products/ads-commerce/connect-local-holiday-shoppers/
@@ -29,4 +29,4 @@ Google's announcement post "Connect with local holiday shoppers" (Matt Madrigal,
 * "To keep things simple, 'Google My Business' is being renamed 'Google Business Profile.'"
 * Businesses can claim, verify and manage the profile directly on Google Search or the Google Maps app.
 * The Google My Business app was slated for retirement in 2022.
-* The existing GMB web experience transitioned to supporting larger multi-location businesses as "Business Profile Manager"; the community announcement adds that the Google My Business API would be renamed the Business Profile API with functionality retained.
+* Google said the existing GMB web experience "will transition to primarily support larger businesses with multiple locations, and will be renamed 'Business Profile Manager'"; the community announcement adds that the Google My Business API would be renamed the Business Profile API with functionality retained.

@@ -3,10 +3,10 @@ type: Concept
 title: Google Business Profile
 description: The free Google listing that controls how a business appears on Search and Maps, ranked by relevance, distance and prominence.
 tags: [local-seo, gbp, ranking-factors]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-05-16
 sources:
   - id: google-local-ranking
     resource: /references/google-local-ranking.md
@@ -49,11 +49,11 @@ The product has been renamed several times. Every date below is taken from Googl
 | 11 June 2014 | **Google My Business (GMB)** launches, "upgrading current users of Places for Business and the Google+ Dashboard to this new experience". | "Help your business shine with Google My Business." |
 | 4 November 2021 | GMB becomes **Google Business Profile**. | "To keep things simple, 'Google My Business' is being renamed 'Google Business Profile.'" |
 
-The 2021 announcement also changed how profiles are managed: single-location businesses claim, verify and manage the profile directly in Google Search and the Google Maps app; the standalone GMB mobile app was retired in 2022; and the old web console was repositioned for multi-location businesses as **Business Profile Manager**. "GMB" and "GBP" refer to the same product — management now happens in Search and Maps themselves.
+The 2021 announcement also changed how profiles are managed: businesses can claim, verify and manage the profile directly in Google Search and the Google Maps app; Google said it would retire the standalone GMB mobile app in 2022; and it said the old web console would be renamed **Business Profile Manager** and would primarily support larger businesses with multiple locations. "GMB" and "GBP" refer to the same product — management now happens in Search and Maps themselves.
 
 # Business name guidelines
 
-Google's business name guideline requires a name that reflects how the business is represented in the real world, in a single consistent form. As of the August 2026 update, repeating the same name in multiple scripts or languages is not permitted — Google lists it as **"Repeated Bilingual Names / Script Transliterations"** — even when the dual-script name appears on the physical storefront signage, which was previously an accepted justification. Examples: `Kafiex` and `Burger King` are acceptable; `Kafiex / カフィエクス` and `Burger King バーガーキング` are not. This directly affects bilingual and multi-script markets (Thailand, Japan, the Middle East, Europe). It is a content-guideline change, not a documented ranking factor. See [Google — business name guidelines](/references/google-gbp-business-name-guidelines.md).
+Google's business name guideline requires a name that reflects how the business is represented in the real world, in a single consistent form. Repeating the same name in multiple scripts or languages is not permitted — Google lists it as **"Repeated Bilingual Names / Script Transliterations"** — even when the dual-script name appears on the physical storefront signage. Examples: `Kafiex` and `Burger King` are acceptable; `Kafiex / カフィエクス` and `Burger King バーガーキング` are not. This directly affects bilingual and multi-script markets (Thailand, Japan, the Middle East, Europe). It is a content guideline, not a documented ranking factor. See [Google — business name guidelines](/references/google-gbp-business-name-guidelines.md).
 
 # Business-name keywords: what the correlative evidence shows
 
@@ -63,7 +63,7 @@ Two limits keep this in proportion. The study is correlative, not causal, and it
 
 # Google's three local ranking factors
 
-Google states that local results are ranked primarily on three factors, and that "there's no way to request or pay for a better local ranking on Google."
+Google states that local results are "mainly based on relevance, distance, and popularity" (the page's own section heading for the third factor is still "Prominence"), and that "there's no way to request or pay for a better local ranking on Google."
 
 | Factor | Google's definition | What feeds it |
 |--------|--------------------|---------------|

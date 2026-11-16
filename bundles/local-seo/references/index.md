@@ -35,7 +35,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Google Business Profile (primary sources)
 
 * [Google — Tips to improve your local ranking](/references/google-local-ranking.md) - Relevance, distance and prominence, as Google defines them.
-* [Google — Verify your business on Google](/references/google-gbp-verification.md) - The six verification methods, auto-assignment, and timelines.
+* [Google — Verify your business on Google](/references/google-gbp-verification.md) - Verification methods, auto-assignment, and timelines.
 * [Google — Manage Google Updates](/references/google-manage-google-updates.md) - hasGoogleUpdated, diffMask, and patch-based accept/reject.
 * [Google — GMB to GBP rename announcement](/references/google-gbp-rename-2021.md) - The 4 November 2021 blog.google post; primary source for the rename.
 * [Google — Guidelines for representing your business on Google](/references/google-gbp-categories-description.md) - Category-selection and business-description content rules.
@@ -63,6 +63,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 # Bundle governance
 
+* [Verification report — 2026-11-16, GBP core pages](/references/verification-report-2026-11-16-gbp-core.md) - Claim-by-claim review of four GBP pages and seven reference pages; wording aligned to live sources.
 * [Verification report — 2026-11-16, agentic](/references/verification-report-2026-11-16-agentic.md) - Claim-by-claim review of the seven agentic documents and their seven reference pages; unsupported claims pruned.
 * [Verification report — 2026-11-16, Google Posts](/references/verification-report-2026-11-16-google-posts.md) - Claim-by-claim review of the Google Posts page; resolves the weekly-posting contradiction with two GBP 2026 playbooks.
 * [Verification report — 2026-09-01, agentic](/references/verification-report-2026-09-01-agentic.md) - Monthly claim-by-claim review of all seven volatile agentic documents; every claim reconfirmed unchanged, no corrections needed.

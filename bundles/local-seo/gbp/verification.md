@@ -1,12 +1,12 @@
 ---
 type: Playbook
 title: GBP Verification
-description: The six verification methods, how Google auto-assigns them, review timing, claiming an existing profile, and service-area edge cases.
+description: The verification methods, how Google auto-assigns them, review timing, claiming an existing profile, and service-area edge cases.
 tags: [local-seo, gbp, verification]
-generated: { by: human:craigburton, at: 2026-07-06T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-05-16
 sources:
   - id: google-gbp-verification
     resource: /references/google-gbp-verification.md
@@ -24,18 +24,18 @@ sources:
 
 Verification proves to Google that you legitimately represent the business, and it gates almost everything else on a [Google Business Profile](/gbp/google-business-profile.md): responding to [reviews](/gbp/reviews.md), publishing [posts](/gbp/google-posts.md), and editing core fields. It is also the front line of Google's defence against [fake listings](/gbp/spam-and-fake-listings.md).
 
-# The six methods
+# The methods
 
-Google's verification help (accessed 2026-07-06) lists six methods:
+Google's verification help (accessed 2026-11-16) describes five methods and one instant route. It does not give a count:
 
 | Method | Mechanics |
 |--------|-----------|
 | **Video recording** | Record the business location, equipment and proof of management (details below). |
 | **Phone or text** | A code delivered by call or SMS to the listed number. |
-| **Email** | A code to the business email. |
+| **Email** | Follow the steps in an email sent to the business email address shown on screen. |
 | **Live video call** | A real-time walkthrough with a Google representative. |
 | **Postcard** | A code posted to the business address; most codes arrive within 14 days. |
-| **Search Console** | Instant verification when the business website is already verified in Google Search Console. |
+| **Search Console (instant)** | Not a method you select: Google says it sometimes verifies a profile instantly, for example when the business website is verified in Google Search Console. |
 
 Two operational rules matter more than the list:
 
@@ -48,12 +48,12 @@ Video has become the workhorse method, and most rejections are avoidable. The re
 
 1. **Location** — the surroundings and the business name on permanent signage (signboard, wall or window — not a paper sign).
 2. **Business evidence** — for service-area businesses: tools, equipment, stock, branded vehicle or apparel.
-3. **Proof of management** — something only a representative can do or access: unlocking the premises, opening the till or point-of-sale, a business licence or utility bill matching the profile name.
+3. **Proof of management** — something only a representative can do or access: unlocking a van that carries the business branding, opening the till or point-of-sale, or a business permit, invoice or utility bill matching the profile name.
 
 # Claiming and ownership
 
 * **Profile already exists, unclaimed** — claim it through the profile itself ("Own this business?") and verify as above.
-* **Profile claimed by someone else** (a former agency, ex-employee, previous owner) — use Google's request-ownership flow: the current owner is notified by email and has **3 days** to respond; if they don't, Google offers the option to claim and verify yourself.
+* **Profile claimed by someone else** (a former agency, ex-employee, previous owner) — use Google's request-ownership flow: the current owner is notified by email and has **3 days** to respond; if they don't, you may have the option to claim the profile yourself.
 * **Transferring ownership** — profiles carry primary-owner, owner and manager roles; primary ownership is transferred from the profile's people-management settings rather than by re-verifying. Never let an agency hold primary ownership of a client profile.
 
 # Service-area and hybrid businesses

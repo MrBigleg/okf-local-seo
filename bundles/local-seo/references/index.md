@@ -8,6 +8,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Whitespark business-name keywords study](/references/whitespark-business-name-keywords-2026.md) - 1.4M-listing correlative study of keywords in GBP business titles against top-3 local pack visibility, by industry.
 * [SOCi 2025 Consumer Behavior Index](/references/soci-cbi-2025.md) - US consumer survey behind the 91% reviews and 65% respond-to-reviews figures.
 * [Sterling Sky review research](/references/sterling-sky.md) - Joy Hawkins' agency research; the 18-day rule on review recency.
+* [Google review deletions, measured](/references/reviewflowz-review-deletion-2026.md) - 4.9M-review panel on how often, when and where Google deletes reviews. Vendor research; associations only.
 * [BrightLocal Local Consumer Review Survey](/references/brightlocal-lcrs.md) - Consumer review behaviour and rating thresholds.
 * [BrightLocal Apple Business Connect research](/references/brightlocal-apple-business-connect.md) - Adoption and awareness of Apple Business Connect.
 * [Sterling Sky — 7-step suspension reinstatement protocol](/references/sterling-sky-suspension-reinstatement.md) - Agency-tested framework for diagnosing and appealing GBP suspensions.

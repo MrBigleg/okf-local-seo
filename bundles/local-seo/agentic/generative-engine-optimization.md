@@ -4,9 +4,9 @@ title: Generative Engine Optimization
 description: Improving the visibility and attribution of source content in answers synthesised by generative search systems.
 tags: [seo, ai-search, local-seo, geo]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-01
+stale_after: 2026-12-16
 sources:
   - id: aggarwal-et-al-geo-generative-engine
     resource: https://arxiv.org/abs/2311.09735

@@ -63,6 +63,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 # Bundle governance
 
+* [Verification report — 2026-11-16, agentic](/references/verification-report-2026-11-16-agentic.md) - Claim-by-claim review of the seven agentic documents and their seven reference pages; unsupported claims pruned.
 * [Verification report — 2026-11-16, Google Posts](/references/verification-report-2026-11-16-google-posts.md) - Claim-by-claim review of the Google Posts page; resolves the weekly-posting contradiction with two GBP 2026 playbooks.
 * [Verification report — 2026-09-01, agentic](/references/verification-report-2026-09-01-agentic.md) - Monthly claim-by-claim review of all seven volatile agentic documents; every claim reconfirmed unchanged, no corrections needed.
 * [Verification report — 2026-08-27, follow-ups](/references/verification-report-2026-08-27-followups.md) - Closes the OpenAI Instant Checkout citation, DataForSEO endpoint naming drift, and Whitespark 2026 re-confirmation follow-up issues.

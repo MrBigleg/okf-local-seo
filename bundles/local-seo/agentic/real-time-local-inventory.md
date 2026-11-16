@@ -3,10 +3,10 @@ type: Concept
 title: Real-Time Local Inventory
 description: Store-level product availability, price and pickup data that makes local retail results actionable.
 tags: [local-seo, retail, inventory, agentic, ai-search]
-generated: { by: openai/gpt-5.6-sol, at: 2026-08-01T00:00:00Z }
-verified:  { by: anthropic/claude-sonnet-5, at: 2026-09-01T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-01
+stale_after: 2026-12-16
 sources:
   - id: google-merchant-center-local-inventory-ads
     resource: https://support.google.com/merchants/answer/14615117?hl=en
@@ -28,8 +28,7 @@ Real-time local inventory is store-level data showing whether a product is avail
 Lastmile Retail reported results from a consumer survey conducted with Greg Sterling among **1,000 US adults** about local purchases totalling **$300 or more**:
 
 * **95%** said confirming that an item priced at $300 or more is available locally before visiting is somewhat to extremely important.
-* **56%** selected real-time product availability before visiting as a factor that would influence them to choose a local option instead of remote shipping.
-* **48%** selected the option to reserve online for in-store purchase or pickup.
+* Real-time product availability online was reported as the number one factor that might lead a consumer to choose a local option instead of remote shipping.
 * **40%** reported insufficient product information on company websites when searching online to buy locally.
 * **37%** reported being unable to confirm whether a product was available at a particular store; the same proportion reported inaccurate inventory information.
 

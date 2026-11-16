@@ -1,18 +1,18 @@
 ---
 type: Reference
-title: Seer Interactive ChatGPT conversion case study
+title: "Seer Interactive — Case Study: 6 Learnings, 1 site - How Traffic from ChatGPT Converts"
 description: Single-client case study comparing how ChatGPT traffic converts vs Google organic.
 resource: https://www.seerinteractive.com/insights/case-study-6-learnings-about-how-traffic-from-chatgpt-converts
 publisher: Seer Interactive
-published: n.d. (see source)
-accessed: 2026-06-25
+published: 2025-06-03
+accessed: 2026-11-16
 confidence: low
 scope: Single-client case study; directional only, not a benchmark.
 tags: [reference, ai-search, conversion]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
+stale_after: 2027-02-16
 sources:
   - id: case-study-how-traffic-from-chatgpt
     resource: https://www.seerinteractive.com/insights/case-study-6-learnings-about-how-traffic-from-chatgpt-converts

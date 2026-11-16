@@ -5,14 +5,14 @@ description: The LocalBusiness type definition, its position in the type hierarc
 resource: https://schema.org/LocalBusiness
 publisher: Schema.org
 published: living document
-accessed: 2026-07-27
+accessed: 2026-11-16
 confidence: high
-scope: The vocabulary and subtype hierarchy — LocalBusiness inherits from both Organization and Place, with 30+ subtypes such as Restaurant and Store — plus its properties (address, geo, openingHours, priceRange, areaServed, and more). Does not establish that LocalBusiness markup is a ranking or SEO signal; the page documents structure only, not search-algorithm weight.
+scope: The vocabulary and subtype hierarchy — LocalBusiness inherits from both Organization and Place, with more specific subtypes — plus its properties (address, geo, openingHours, priceRange, areaServed, and more). Does not establish that LocalBusiness markup is a ranking or SEO signal; the page documents structure only, not search-algorithm weight.
 tags: [reference, schema, structured-data]
-generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2027-02-16
 sources:
   - id: schema-org-localbusiness
     resource: https://schema.org/LocalBusiness

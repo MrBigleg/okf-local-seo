@@ -5,14 +5,14 @@ description: Google's required and recommended LocalBusiness structured-data pro
 resource: https://developers.google.com/search/docs/appearance/structured-data/local-business
 publisher: Google (Search Central)
 published: living document
-accessed: 2026-07-27
+accessed: 2026-11-16
 confidence: high
 scope: The only two required LocalBusiness properties (name, address) and the recommended set (telephone, url, geo, openingHoursSpecification, priceRange, aggregateRating, review, department, menu, servesCuisine). Does not itself state the ranking-vs-rich-results distinction — see the companion General Structured Data Guidelines page for that. Field/property names on this page can drift with Google's documentation updates.
 tags: [reference, schema, structured-data, google]
-generated: { by: human:craigburton, at: 2026-07-27T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-27
+stale_after: 2027-02-16
 sources:
   - id: google-search-central-local-business-localbusiness
     resource: https://developers.google.com/search/docs/appearance/structured-data/local-business
@@ -26,5 +26,5 @@ Google's structured-data reference for the `LocalBusiness` type. Used as the pri
 
 # What the source establishes
 
-* Only `name` and `address` are required. Everything else — `telephone`, `url`, `geo`, `openingHoursSpecification`, `priceRange`, `aggregateRating`, `review`, `department`, `menu`, `servesCuisine` — is recommended, not required. `image` appears in neither list for `LocalBusiness` (unlike Product or Recipe, where it is required).
-* Per the companion [General Structured Data Guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies) page: structured data enables eligibility for a rich-result feature, it does not guarantee the feature appears, and a structured-data policy violation "doesn't affect how the page ranks in Google web search" — structured data governs rich-result eligibility, not ranking position.
+* Only `name` and `address` are required. Everything else — `telephone`, `url`, `geo`, `openingHoursSpecification`, `priceRange`, `aggregateRating`, `review`, `department`, `menu`, `servesCuisine` — is recommended, not required. `image` appears in neither list for `LocalBusiness`.
+* Per the companion [General Structured Data Guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies) page: structured data enables eligibility for a rich-result feature, it does not guarantee the feature appears, and a structured data manual action "doesn't affect how the page ranks in Google web search" — it removes rich-result eligibility, not ranking position.

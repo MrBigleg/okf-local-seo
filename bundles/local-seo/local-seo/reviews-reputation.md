@@ -34,7 +34,7 @@ So the bar for "acceptable" has moved up roughly half a star in two years.
 * Recency — is there a steady, recent flow rather than a stale cluster?
 * Owner responses, especially to negatives.
 * Presence across more than one review platform.
-* **No review gating** — pre-screening for happy customers before steering them to a review platform breaches Google's policies and risks FTC enforcement. Ask everyone.
+* **No review gating** — pre-screening for happy customers before steering them to a review platform breaches Google's policies. Ask everyone.
 
 # Industry notes
 

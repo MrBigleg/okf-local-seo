@@ -11,8 +11,8 @@ Thank you for helping keep the Local SEO OKF accurate, current, and useful.
    page's `sources` frontmatter.
 5. Update `generated` (`{ by, at }`) when you change a page's content.
 6. Append a dated summary to `bundles/local-seo/log.md`.
-7. Run the validation commands from the README and commit the regenerated
-   `viz.html`.
+7. Run the validation commands from the README. Do not commit `viz.html`; it
+   is generated and git-ignored.
 
 ## Trust fields
 

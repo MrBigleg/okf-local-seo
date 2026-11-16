@@ -17,5 +17,5 @@ Describe the knowledge or tooling change and why it is needed.
 - [ ] I added or updated `verified` only where I actually re-checked the page against its sources.
 - [ ] I updated the relevant index and `bundles/local-seo/log.md`.
 - [ ] `python tool/okf_verify.py bundles/local-seo` passes.
-- [ ] I regenerated `bundles/local-seo/viz.html` and committed the result.
+- [ ] `python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` builds without errors.
 - [ ] A human has verified any changed factual claims against their sources.

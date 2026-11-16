@@ -83,7 +83,7 @@ def build_report(bundle: Path, today: dt.date) -> str:
         "- [ ] Review URL-health output in `weekly-url-check.txt`.",
         "- [ ] Re-open primary sources for every edited volatile claim.",
         "- [ ] Update affected concept/reference dates and `bundles/local-seo/log.md`.",
-        "- [ ] Run the verifier and regenerate `viz.html`.",
+        "- [ ] Run the verifier and the graph build.",
         "- [ ] Obtain human approval before merge.",
         "",
         "## Pages due for freshness review",

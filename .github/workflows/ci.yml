@@ -23,7 +23,5 @@ jobs:
         run: python tool/okf_verify.py bundles/local-seo
       - name: Probe external URLs
         run: python tool/okf_verify.py bundles/local-seo --check-urls
-      - name: Regenerate graph
+      - name: Build graph
         run: python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
-      - name: Require committed generated output
-        run: git diff --exit-code -- bundles/local-seo/viz.html

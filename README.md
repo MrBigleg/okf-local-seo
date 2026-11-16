@@ -155,9 +155,12 @@ business knowledge should stay private.
 Start with [`bundles/local-seo/index.md`](bundles/local-seo/index.md). Choose
 a section, read its index, and open only the concepts relevant to your task.
 
-You can also open [`bundles/local-seo/viz.html`](bundles/local-seo/viz.html)
-locally for a self-contained interactive view of the knowledge graph. Search
-it, filter by type, and follow the links between concepts.
+For a self-contained interactive view of the knowledge graph, run
+`python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"` and open
+the `bundles/local-seo/viz.html` it writes. Search it, filter by type, and
+follow the links between concepts. The file is generated and not committed;
+the same graph is published at
+[rank-in-maps.com/knowledge-graph](https://www.rank-in-maps.com/knowledge-graph).
 
 The files can be mounted directly in an agent workspace, imported into a
 documentation system, or cloned and used as ordinary Git content. No special
@@ -176,8 +179,7 @@ okf-local-seo/
 │   ├── local-seo/              # ranking and on-page concepts
 │   ├── maps/                   # maps analysis and capability tiers
 │   ├── playbooks/              # repeatable procedures
-│   ├── references/             # evidence and provenance
-│   └── viz.html                # generated interactive graph
+│   └── references/             # evidence and provenance
 ├── bundles/minimal/            # small teaching bundle
 ├── docs/                       # producer and consumer documentation
 └── tool/                       # dependency-free build and verification tools
@@ -189,7 +191,6 @@ okf-local-seo/
 python tool/okf_verify.py bundles/local-seo
 python tool/okf_verify.py bundles/local-seo --check-urls
 python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
-git diff --exit-code -- bundles/local-seo/viz.html
 ```
 
 The first command is the hard structural and provenance gate. URL probing is

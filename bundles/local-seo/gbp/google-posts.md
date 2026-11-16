@@ -3,38 +3,41 @@ type: Playbook
 title: Google Posts
 description: Update, Offer and Event posts on a Business Profile — mechanics, cadence, advanced tactics, and the visibility evidence.
 tags: [local-seo, gbp, posts, content]
-generated: { by: deepseek/deepseek-v4-flash-vision-exp, at: 2026-09-27T00:41:08Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-05-16
 sources:
   - id: google-create-and-manage-posts-on
     resource: https://support.google.com/business/answer/7342169
-    title: Google — Create and manage posts on your Business Profile
+    title: Google — Create and manage posts on your Business Profile (accessed 2026-11-16)
   - id: google-posts-content-policy
     resource: https://support.google.com/business/answer/7213077
-    title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-09-27)
+    title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-11-16)
   - id: uberall-crate-barrel-case-study-accessed
     resource: https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time
-    title: Uberall — Crate & Barrel case study (accessed 2026-07-06)
+    title: Uberall — Crate & Barrel case study (accessed 2026-11-16)
     last_modified: 2026-04-19
+  - id: google-gbp-playbook-2026-official
+    resource: https://services.google.com/fh/files/helpcenter/1_official_gbp_best_practices_playbook_2026.pdf
+    title: Google — How Businesses Can Make the Most of Google, GBP best practices playbook, 2026 edition (PDF; accessed 2026-11-16)
 ---
 
-Posts are the publishing surface of a [Google Business Profile](/gbp/google-business-profile.md): short, dated announcements that appear on the profile itself. On mobile Search and Maps they show in the **Updates** (or Overview) tab; on desktop they show in the **"From the owner"** section. Posts without a date range are archived after six months.
+Posts are the publishing surface of a [Google Business Profile](/gbp/google-business-profile.md): short, dated announcements that appear on the profile itself. On mobile Search and Maps they show in the **Updates** (or Overview) tab; on desktop they show in the **"From the owner"** section. Posts without a date range are archived after six months.[^google-create-and-manage-posts-on]
 
 # The three post types
 
 | Type | Required | Optional | Notes |
 |------|----------|----------|-------|
-| **Update** | Description | Photo, video, action button (book, order, learn more) | The general-purpose type. |
-| **Offer** | Title, start/end dates | Description, photo/video, coupon code, link, terms | Gets a "View Offer" button automatically. |
+| **Update** | None stated by Google | Description, photo, video, action button with a link (book, order, learn more) | The general-purpose type. |
+| **Offer** | Title, dates and time | Description, photo/video, coupon code, link, terms | Gets a "View Offer" button automatically. |
 | **Event** | Title, start/end dates and times | Description, photo/video, action button | Without times, the event shows as lasting 24 hours on the event dates. |
 
 Content rules worth knowing before drafting: contact details in post text are subject to Google's verification rule (see below), and the usual content policies apply (no misspellings-as-style, explicit material, or product-level content for regulated goods such as alcohol or tobacco).
 
 # Contact information in posts
 
-Google's posts content policy treats contact details in post text as a verification question rather than a flat prohibition. As accessed on 27 September 2026, the policy section headed "Posts including contact information" reads:
+Google's posts content policy treats contact details in post text as a verification question rather than a flat prohibition. As accessed on 27 September 2026 and reconfirmed on 16 November 2026, the policy section headed "Posts including contact information" reads:
 
 > "To avoid fraud or abuse, we may remove posts with unverified contact information. This includes phone numbers, email addresses, and social media handles. Alternatively, attach a Call now button to your post. This uses your verified Business Profile phone number so customers can contact you."
 
@@ -51,7 +54,7 @@ Practically: keep phone numbers, email addresses and social handles out of post 
 
 # Cadence
 
-Google sets no required frequency; the archive rule and the "recent activity" reading of the profile argue for a steady rhythm rather than bursts. A **weekly post** is the common working baseline — the multi-location case study below runs a weekly planning cycle. Tie the calendar to real events: offers to actual promotions, events to actual dates, updates to genuine news. Regular activity also feeds the "actively maintained profile" signal described in [GBP signals](/local-seo/gbp-signals.md).
+Google's posts help page and posts content policy set no required frequency.[^google-create-and-manage-posts-on][^google-posts-content-policy] Google's 2026 Business Profile best-practices playbook does make a recommendation: its Google Posts best practices list "Post at least once a week".[^google-gbp-playbook-2026-official] Read the two together as **weekly is Google's recommended cadence, not a rule**: nothing in either document penalises posting less often, and neither states a ranking effect for posting more. The multi-location case study below runs a weekly planning cycle,[^uberall-crate-barrel-case-study-accessed] and the post editor can repeat a post weekly, monthly or on a custom schedule.[^google-create-and-manage-posts-on] Tie the calendar to real events: offers to actual promotions, events to actual dates, updates to genuine news. Regular activity also feeds the "actively maintained profile" signal described in [GBP signals](/local-seo/gbp-signals.md).
 
 # Advanced tactics
 
@@ -62,4 +65,4 @@ Google sets no required frequency; the archive rule and the "recent activity" re
 
 # What posts do for visibility
 
-Google does not document any direct ranking boost from posting. The honest case for posts is: they occupy profile real estate with fresh, owner-controlled content; they carry the only native call-to-action buttons on the profile; and they contribute to the active-profile signal. The strongest public quantified result is a vendor-published case study of a 161-location home-retail brand (US/Canada) that layered weekly posts into centralised profile management and reported **+31% Google Maps views and +6% Google Search views, 2024 versus 2023**, alongside a 95% profile-completeness rate — a correlation from one programme, not a controlled experiment, so treat it as directional.
+Google does not document any direct ranking boost from posting. The honest case for posts is: they occupy profile real estate with fresh, owner-controlled content; they carry action buttons that link to a booking, order or information page; and they contribute to the active-profile signal. The strongest public quantified result is a vendor-published case study of a 161-location home-retail brand (US/Canada) that layered weekly posts into centralised profile management and reported **+31% Google Maps views and +6% Google Search views, 2024 versus 2023**, alongside a 95% profile-completeness rate — a correlation from one programme, not a controlled experiment, so treat it as directional.

@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+      - name: Run tool unit tests
+        run: python -m unittest discover -s tool -p "test_*.py"
       - name: Verify canonical bundle
         run: python tool/okf_verify.py bundles/local-seo
       - name: Probe external URLs

@@ -202,8 +202,8 @@ Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md)
 before proposing a change.
 
 Every factual update must identify its source and scope. Fast-changing product
-claims need a current primary source. Automation may prepare a weekly draft
-maintenance pull request, but it does not decide what is true. A person must
+claims need a current primary source. Automation may prepare a draft
+review report or pull request, but it does not decide what is true. A person must
 verify and approve every claim before it is merged.
 
 AI can help draft and flag changes here, but it doesn't get the final say.

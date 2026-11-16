@@ -14,6 +14,9 @@ sources:
   - id: google-posts-content-policy
     resource: https://support.google.com/business/answer/7213077
     title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-11-16)
+  - id: google-posts-content-policy-archive-2026-08-31
+    resource: https://web.archive.org/web/20260831185738/https://support.google.com/business/answer/7213077
+    title: Internet Archive — capture of Google's posts content policy on 31 August 2026 (accessed 2026-11-16)
   - id: uberall-crate-barrel-case-study-accessed
     resource: https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time
     title: Uberall — Crate & Barrel case study (accessed 2026-11-16)
@@ -43,7 +46,7 @@ Google's posts content policy treats contact details in post text as a verificat
 
 The companion page adds the rejection framing: "**Important:** Posts that include a phone number in the post description might get rejected if they cannot be verified as being connected to the business on which they are posted."
 
-Until some point between 31 August and 25 September 2026, the same policy carried a differently titled section and a categorical rule:
+An archived copy of the same policy page captured on 31 August 2026 carried a differently titled section and a categorical rule:[^google-posts-content-policy-archive-2026-08-31]
 
 > "**Avoid \"phone stuffing\"**
 > To avoid the risk of abuse, we do not allow your post content to include a phone number. Instead, you can attach a \"Call now\" button to your post that uses your verified Business Profile phone number."
@@ -54,7 +57,7 @@ Practically: keep phone numbers, email addresses and social handles out of post 
 
 # Cadence
 
-Google's posts help page and posts content policy set no required frequency.[^google-create-and-manage-posts-on][^google-posts-content-policy] Google's 2026 Business Profile best-practices playbook does make a recommendation: its Google Posts best practices list "Post at least once a week".[^google-gbp-playbook-2026-official] Read the two together as **weekly is Google's recommended cadence, not a rule**: nothing in either document penalises posting less often, and neither states a ranking effect for posting more. The multi-location case study below runs a weekly planning cycle,[^uberall-crate-barrel-case-study-accessed] and the post editor can repeat a post weekly, monthly or on a custom schedule.[^google-create-and-manage-posts-on] Tie the calendar to real events: offers to actual promotions, events to actual dates, updates to genuine news. Regular activity also feeds the "actively maintained profile" signal described in [GBP signals](/local-seo/gbp-signals.md).
+Google's posts help page and posts content policy set no required frequency.[^google-create-and-manage-posts-on][^google-posts-content-policy] Google's 2026 Business Profile best-practices playbook does make a recommendation: its Google Posts best practices list "Post at least once a week".[^google-gbp-playbook-2026-official] Read the two together as **weekly is Google's recommended cadence, not a rule**: nothing in either document penalises posting less often, and neither states a ranking effect for posting more. The multi-location case study below runs a weekly planning cycle,[^uberall-crate-barrel-case-study-accessed] and the post editor can repeat a post weekly, monthly or on a custom schedule.[^google-create-and-manage-posts-on] Tie the calendar to real events: offers to actual promotions, events to actual dates, updates to genuine news.
 
 # Advanced tactics
 
@@ -65,4 +68,4 @@ Google's posts help page and posts content policy set no required frequency.[^go
 
 # What posts do for visibility
 
-Google does not document any direct ranking boost from posting. The honest case for posts is: they occupy profile real estate with fresh, owner-controlled content; they carry action buttons that link to a booking, order or information page; and they contribute to the active-profile signal. The strongest public quantified result is a vendor-published case study of a 161-location home-retail brand (US/Canada) that layered weekly posts into centralised profile management and reported **+31% Google Maps views and +6% Google Search views, 2024 versus 2023**, alongside a 95% profile-completeness rate — a correlation from one programme, not a controlled experiment, so treat it as directional.
+Google does not document any direct ranking boost from posting. The honest case for posts is: they occupy profile real estate with fresh, owner-controlled content; and they carry action buttons that link to a booking, order or information page. The strongest public quantified result is a vendor-published case study of a 161-location home-retail brand (US/Canada) that layered weekly posts into centralised profile management and reported **+31% Google Maps views and +6% Google Search views, 2024 versus 2023**, alongside a 95% profile-completeness rate — a correlation from one programme, not a controlled experiment, so treat it as directional.

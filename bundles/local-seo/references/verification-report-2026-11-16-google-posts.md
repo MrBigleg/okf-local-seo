@@ -13,6 +13,9 @@ sources:
   - id: google-posts-content-policy
     resource: https://support.google.com/business/answer/7213077
     title: Google — Business Profile photos, videos & posts content policy (accessed 2026-11-16)
+  - id: google-posts-content-policy-archive-2026-08-31
+    resource: https://web.archive.org/web/20260831185738/https://support.google.com/business/answer/7213077
+    title: Internet Archive — capture of Google's posts content policy on 31 August 2026 (accessed 2026-11-16)
   - id: uberall-crate-barrel-case-study
     resource: https://uberall.com/en-us/customers/how-crate-barrel-grew-google-visibility-by-31-while-saving-time
     title: Uberall — Crate & Barrel case study (accessed 2026-11-16)
@@ -32,7 +35,7 @@ The pass was carried out by an AI agent (`anthropic/claude-fable-5-2`, run as `i
 
 | Document | Result | Evidence |
 |---|---|---|
-| [gbp/google-posts.md](/gbp/google-posts.md) | Reconfirmed with four corrections (below). `verified` updated, `stale_after` rolled to 2027-05-16 (durable tier, six months). | All four of its sources reopened.[^google-create-and-manage-posts-on][^google-posts-content-policy][^uberall-crate-barrel-case-study][^google-gbp-playbook-2026-official] |
+| [gbp/google-posts.md](/gbp/google-posts.md) | Reconfirmed with corrections and two removals (below). Every claim left on the page was matched to a reopened source. `verified` updated, `stale_after` rolled to 2027-05-16 (durable tier, six months). | All four of its sources reopened.[^google-create-and-manage-posts-on][^google-posts-content-policy][^uberall-crate-barrel-case-study][^google-gbp-playbook-2026-official] |
 | [playbooks/gbp-2026/master-overview.md](/playbooks/gbp-2026/master-overview.md) | One sentence reworded. **Not verified**: only the two sources behind that sentence were reopened. No `verified` entry added, `stale_after` unchanged. | [^google-gbp-playbook-2026-official][^google-posts-content-policy] |
 | [playbooks/gbp-2026/tours-attractions.md](/playbooks/gbp-2026/tours-attractions.md) | One sentence reworded. **Not verified**: only the one source behind that sentence was reopened. No `verified` entry added, `stale_after` unchanged. | [^google-gbp-tours-2026] |
 
@@ -60,8 +63,8 @@ The pass was carried out by an AI agent (`anthropic/claude-fable-5-2`, run as `i
 
 # Source access notes and what a human still needs to check
 
-* **Earlier "phone stuffing" policy wording.** The page quotes the wording that stood until some point between 31 August and 25 September 2026. That text is no longer on the live page, and one attempt to read the Wayback Machine capture of 31 August 2026 returned the page shell without the policy section. The historical quote was not reconfirmed in this pass and rests on the 2026-09-27 edit.
-* **"Active-profile signal."** The page says posting contributes to an actively maintained profile signal and points to [GBP signals](/local-seo/gbp-signals.md). None of the four sources here states that. It was left in place as a cross-reference to that page, which was not reviewed in this pass.
+* **Earlier "phone stuffing" policy wording.** Reconfirmed in a second attempt on 2026-11-16: the Internet Archive capture of 31 August 2026 shows the section "Avoid 'phone stuffing'" with the quoted wording.[^google-posts-content-policy-archive-2026-08-31] The page now cites that capture. Its earlier statement that the change happened before 25 September 2026 could not be reconfirmed and was removed; what is established is the old wording on 31 August and the new wording live on 16 November.
+* **"Active-profile signal."** Both sentences saying that posting feeds an actively maintained profile signal were removed. None of the page's sources states it.
 * **Featured posts.** The help page now describes featured posts for single-location food and drink businesses in five English-speaking countries.[^google-create-and-manage-posts-on] The Google Posts page does not cover this. Nothing was added; it is a candidate for a later edit.
 * **Previous human verification.** The page's earlier `verified` entry was `human:craigburton` on 2026-07-06. This pass replaces it with an agent entry. A human reviewer may prefer to re-read the page and restore a human entry.
 * **PDF text extraction.** The playbook PDFs are designed slides. The quoted line was read from extracted text and its position beside the case study was judged from layout.

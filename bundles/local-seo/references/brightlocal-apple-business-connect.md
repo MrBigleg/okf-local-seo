@@ -5,14 +5,14 @@ description: BrightLocal poll on adoption and awareness of Apple Business Connec
 resource: https://www.brightlocal.com/research/are-businesses-using-apple-business-connect/
 publisher: BrightLocal
 published: n.d. (see source)
-accessed: 2026-06-25
+accessed: 2026-11-16
 confidence: medium
 scope: Survey of business adoption/awareness of Apple Business Connect; figures are approximate.
 tags: [reference, apple, citations]
 generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-09-25
+stale_after: 2027-02-16
 sources:
   - id: are-businesses-using-apple-business-connect
     resource: https://www.brightlocal.com/research/are-businesses-using-apple-business-connect/

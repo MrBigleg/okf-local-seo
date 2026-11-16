@@ -3,10 +3,10 @@ type: Playbook
 title: Reviews on GBP
 description: GBP-specific review mechanics — the response flow, a generation workflow with review links and QR codes, handling problematic reviews, and what measured deletion data adds.
 tags: [local-seo, gbp, reviews]
-generated: { by: iris/2026-W44, at: 2026-11-01T00:00:00Z }
-verified:  { by: human:craigburton, at: 2026-07-06T00:00:00Z }
+generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 status: stable
-stale_after: 2026-10-06
+stale_after: 2027-05-16
 sources:
   - id: reviewflowz-gone-in-7-days
     resource: /references/reviewflowz-review-deletion-2026.md
@@ -20,9 +20,9 @@ sources:
   - id: google-maps-prohibited-and-restricted-content
     resource: /references/google-review-policy.md
     title: Google Maps — Prohibited and restricted content
-  - id: ftc-consumer-review-rule
-    resource: /references/ftc-consumer-review-rule.md
-    title: "FTC — Consumer Reviews and Testimonials Rule: Questions and Answers"
+  - id: ecfr-16-cfr-part-465
+    resource: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465
+    title: "eCFR — 16 CFR Part 465, Rule on the Use of Consumer Reviews and Testimonials (accessed 2026-11-16)"
 ---
 
 This is the operational playbook for reviews on a [Google Business Profile](/gbp/google-business-profile.md). The ranking dimension — recency, thresholds, the 18-day rule — lives in [reviews & reputation](/local-seo/reviews-reputation.md); cross-platform velocity and fake-review detection live in [review intelligence](/maps/review-intelligence.md).
@@ -42,12 +42,12 @@ Industry constraints (healthcare/HIPAA, legal privilege) are noted in [reviews &
 
 # Generation workflow
 
-Google explicitly supports asking for reviews — it provides each verified profile with a shareable **review link and QR code** for exactly this purpose. What it prohibits is filtering who you ask and paying for outcomes (see [review gating](/gbp/review-gating.md)).
+Google explicitly supports asking for reviews — it provides a shareable **review link and QR code** for exactly this purpose. What it prohibits is filtering who you ask and paying for outcomes (see [review gating](/gbp/review-gating.md)).
 
-1. **Get the short link / QR code** from the profile's "Ask for reviews" facility.
+1. **Get the short link / QR code** from the Business Profile.
 2. **Ask everyone, systematically** — build the ask into the moment the job finishes or the order completes, not an occasional campaign. Asking all customers is both the policy-safe pattern and what keeps velocity steady.
 3. **Match the channel to the customer**: SMS or email follow-up with the link for remote customers; the QR code on receipts, invoices, packaging, table cards or the van for in-person ones.
-4. **Never offer incentives.** Google treats free or discounted goods in exchange for reviews as fake and misleading content, and incentives conditioned on sentiment breach the FTC rule — details in [review gating](/gbp/review-gating.md).
+4. **Never offer incentives.** Google treats free or discounted goods in exchange for reviews as fake and misleading content, and incentives conditioned on a review's sentiment breach the FTC's review rule (16 CFR §465.4)[^ecfr-16-cfr-part-465] — details in [review gating](/gbp/review-gating.md).
 5. **Respond as they arrive** — the response flow above is part of generation: visible responses raise the perceived value of leaving a review.
 
 # Handling problematic reviews
@@ -55,7 +55,7 @@ Google explicitly supports asking for reviews — it provides each verified prof
 * **Policy-violating content** (spam, off-topic, conflict of interest, harassment, fake) — report it through the profile's review-reporting flow against Google's prohibited-content policy, and document what you reported. Removal is Google's decision; report and move on rather than replying in kind.
 * **Genuine negatives** — not removable and not worth fighting: respond with the flow above. A visible, calm owner response is read by prospects as a trust signal.
 * **Suspected fake attacks** — the detection heuristics (timing, account history, text similarity) are in [review intelligence](/maps/review-intelligence.md); report matches through the same flow.
-* **Never pay for removal or revision.** Offering money, discounts or goods for changing or deleting a negative review breaches Google policy, and the FTC has stated that such incentives can be an unfair practice under the FTC Act.
+* **Never pay for removal or revision.** Offering money, discounts or goods for changing or deleting a negative review breaches Google policy.
 
 # What measured deletion data adds
 

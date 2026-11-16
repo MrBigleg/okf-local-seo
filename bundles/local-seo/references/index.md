@@ -48,7 +48,6 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 # Policy & enforcement
 
-* [FTC — Consumer Reviews and Testimonials Rule](/references/ftc-consumer-review-rule.md) - 16 CFR Part 465, the gating Q&A, and the December 2025 warning letters.
 * [US DOJ — B.E.S.T. GDR / Premium Home Service complaint](/references/doj-best-gdr-2026.md) - The May 2026 fake-listings enforcement action; press release and filed complaint.
 * [Google — Prohibited and restricted content (contribution policy)](/references/google-review-policy.md) - Bars incentivised and selectively solicited reviews.
 
@@ -63,6 +62,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 # Bundle governance
 
+* [Verification report — 2026-11-16, reviews, spam and remaining references](/references/verification-report-2026-11-16-reviews-and-references.md) - ftc.gov citations removed; three GBP pages and eleven reference pages reviewed claim by claim.
 * [Verification report — 2026-11-16, GBP core pages](/references/verification-report-2026-11-16-gbp-core.md) - Claim-by-claim review of four GBP pages and seven reference pages; wording aligned to live sources.
 * [Verification report — 2026-11-16, agentic](/references/verification-report-2026-11-16-agentic.md) - Claim-by-claim review of the seven agentic documents and their seven reference pages; unsupported claims pruned.
 * [Verification report — 2026-11-16, Google Posts](/references/verification-report-2026-11-16-google-posts.md) - Claim-by-claim review of the Google Posts page; resolves the weekly-posting contradiction with two GBP 2026 playbooks.

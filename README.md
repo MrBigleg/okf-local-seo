@@ -195,7 +195,9 @@ python tool/okf_build.py bundles/local-seo --name "Local SEO OKF"
 
 The first command is the hard structural and provenance gate. URL probing is
 a review signal because publishers sometimes block automated requests. The
-graph must be regenerated whenever concept content or links change.
+third command builds the interactive graph and writes `viz.html` into the
+bundle. That file is git-ignored, so there is nothing to commit; CI runs the
+same build to confirm it still succeeds.
 
 ## Contribute
 

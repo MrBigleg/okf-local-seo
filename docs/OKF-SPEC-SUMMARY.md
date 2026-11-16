@@ -162,7 +162,7 @@ The bundle root `index.md` declares `okf_version: "0.2"`.
 
 Two tools in this repo:
 
-- `tool/okf_build.py` — checks conformance, prints a concept-type breakdown and any broken links, and regenerates `viz.html` (which renders `sources` and the trust tier per concept).
+- `tool/okf_build.py` — checks conformance, prints a concept-type breakdown and any broken links, and writes `viz.html` into the bundle (it renders `sources` and the trust tier per concept). `viz.html` is a build output: it is git-ignored and never committed, so build it whenever you want to view the graph.
 - `tool/okf_verify.py` — a stricter, dependency-free quality gate. Hard failures exit non-zero.
 
 ```bash

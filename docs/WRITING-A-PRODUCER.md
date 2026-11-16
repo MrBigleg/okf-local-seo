@@ -64,4 +64,7 @@ consumer classifies the output as machine-generated. Reserve `human:<id>` for pe
 python3 tool/okf_build.py bundles/example --name "Example"
 ```
 
+The build writes `bundles/example/viz.html`. It is git-ignored: a producer
+commits Markdown only, never the generated graph.
+
 See [`OKF-SPEC-SUMMARY.md`](OKF-SPEC-SUMMARY.md) for the conformance rules and a standalone check.

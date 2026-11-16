@@ -15,4 +15,8 @@ Thumbs.db
 # Scrape cache (firecrawl)
 .firecrawl/
 
+# Weekly review working files (run locally, see bundles/local-seo/maintenance.md)
+reviews/weekly/
+weekly-url-check.txt
+
 # Note: bundle/viz.html IS committed on purpose — it's a shareable artifact.

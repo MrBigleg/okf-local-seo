@@ -3,7 +3,7 @@ type: Playbook
 title: GBP Optimisation Quick-Wins Checklist
 description: The fastest high-impact local SEO fixes to run on a new client engagement.
 tags: [playbook, gbp, local-seo, onboarding]
-generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
+generated: { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
 verified:  { by: human:craigburton, at: 2026-07-27T00:00:00Z }
 status: stable
 stale_after: 2027-01-27
@@ -37,7 +37,7 @@ A short, high-leverage checklist for the first pass on a new local client. Pair 
 # Medium effort
 
 1. Create a dedicated page for each core service (one of the strongest local organic signals — see [local on-page SEO](/local-seo/local-onpage.md)).
-2. Build a review-generation cadence that never breaks the [18-day rule](/local-seo/reviews-reputation.md).
+2. Build a steady review-generation cadence that avoids gaps of more than two to three weeks. The [18-day rule](/local-seo/reviews-reputation.md) behind this is a case-study observation, not a Google deadline.
 3. Submit to the main data aggregators (e.g. Data Axle, Foursquare).
 4. Claim industry-specific directories for the detected [vertical](/local-seo/industry-vertical-detection.md).
 

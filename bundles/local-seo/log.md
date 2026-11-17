@@ -2,7 +2,7 @@
 
 ## 2026-11-17
 
-* Removed six unverified Sterling Sky video-reference drafts after auditing inbound links: none supported a guidance page. Removed their index entries and retained historical log descriptions as plain text. The general Sterling Sky reference remains. No source-backed guidance was deleted.
+* Removed six unverified Sterling Sky video-reference drafts (PR #33) after auditing inbound links: none supported a guidance page. Removed their index entries and retained historical log descriptions as plain text. The general Sterling Sky reference remains. No source-backed guidance was deleted.
 
 ## 2026-11-17
 

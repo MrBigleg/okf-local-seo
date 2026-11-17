@@ -3,7 +3,7 @@ type: Ranking Dimension
 title: Local Schema Markup
 description: LocalBusiness JSON-LD with the correct industry subtype — not a ranking factor, but it helps search and AI parse the business.
 tags: [local-seo, schema, json-ld, ranking-factors]
-generated: { by: human:craigburton, at: 2026-06-25T00:00:00Z }
+generated: { by: google/gemini-4-hydrogen, at: 2026-11-17T00:00:00Z }
 verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
 status: stable
 stale_after: 2027-02-27
@@ -27,7 +27,7 @@ Structured data is **not** a direct ranking factor (Google's own line), but it c
 * Required: `name`, `address` with `PostalAddress` sub-properties.
 * Recommended: `geo` (use real lat/long with several decimal places), `openingHoursSpecification`, `telephone`, `url`, `image`, and `aggregateRating` where genuine.
 * **Correct subtype for the industry** (see [industry vertical detection](/local-seo/industry-vertical-detection.md)) — e.g. `Restaurant`, `LegalService`, `Dentist`, `AutoDealer`, rather than a generic `LocalBusiness`.
-* Service-area businesses: use `areaServed` with named places instead of a street address.
+* Service-area businesses: use `areaServed` with named places instead of a street address (see [business type detection](/local-seo/business-type-detection.md#service-area-business-schema)).
 * Multi-location: each page gets its own LocalBusiness with a unique `@id`, linked via `branchOf` to the Organization on the homepage.
 
 # Scoring guide

@@ -1,7 +1,7 @@
 ---
 type: Concept
 title: Maps Capability Tiers and Free Tools
-description: Three-tier capability model for maps intelligence: what free Tier 0 tools and data sources can analyse without a paid DataForSEO or Google Maps account.
+description: "Three-tier capability model for maps intelligence: what free Tier 0 tools and data sources can analyse without a paid DataForSEO or Google Maps account."
 tags: [maps, dataforseo, tiers, free-tools]
 generated: { by: google/gemini-4-hydrogen, at: 2026-11-17T00:00:00Z }
 verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }

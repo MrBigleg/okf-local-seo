@@ -1,5 +1,12 @@
 # Knowledge Base Update Log
 
+## 2026-11-17
+
+* **Retrieval fixes for SAB schema and free maps tools**:
+  * Expanded [Business Type Detection](/local-seo/business-type-detection.md) with a dedicated `# Service-area business schema` section explaining how service-area businesses with no public street address use `areaServed` with named cities/regions aligned to their GBP service areas (citing [Google's service-area help page](/references/google-gbp-service-areas.md) and `schema.org/areaServed`), updated its `description` and `tags` so "service area", "schema", and "no street address" are findable, and dropped `verified` because the new section has not yet been through a dated verification report. Cross-linked from [Local Schema Markup](/local-seo/local-schema.md).
+  * Reworded the `title`, `description`, and `tags` of [Maps Capability Tiers and Free Tools](/maps/capability-tiers.md) so "free" and "tools" (and "without a paid DataForSEO or Google Maps account") are findable without changing any of the page's claims; its existing `verified` entry is unchanged.
+* **Freshness check**: Confirmed `python3 tool/okf_verify.py bundles/local-seo` reports zero stale pages on `main` (the backlog present at `ee3f3e6a` was already resolved in PRs #29, #30, and #31 on 2026-11-16).
+
 ## 2026-11-16
 
 * **`Report` pages no longer carry `stale_after`** (PR #31): Eleven verification reports were sitting in the weekly freshness queue, including two that predate this bundle's tier scheme, and each pass could only re-date them. A report is a dated record of a pass that happened, so it cannot go stale or be re-verified; the tier logic covers knowledge documents only. The key was removed from all eleven reports, and [maintenance.md](/maintenance.md) now says so explicitly. No knowledge claim changed. The freshness queue is empty for the first time since the bundles were split.

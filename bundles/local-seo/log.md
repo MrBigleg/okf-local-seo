@@ -1,5 +1,9 @@
 # Knowledge Base Update Log
 
+## 2026-11-26
+
+* **Google Maps lists added** (draft): new concept [Google Maps lists](/maps/google-maps-lists.md) on Maps' curated Top, Trending and Gems lists and publisher lists. Two new references: [Google's March 2024 announcement](/references/google-maps-curated-lists.md), re-opened on 2026-11-26 and verified, and [CTB Digital Marketing's list tracking](/references/ctb-maps-lists-research-2026.md), first-party and observational, left `status: draft` with no `verified` entry until the article update it cites is live and re-opened. The concept page stays draft for the same reason. Linked from the [Maps index](/maps/index.md) and the [references index](/references/index.md). No existing page's claims changed.
+
 ## 2026-11-17
 
 * Removed six unverified Sterling Sky video-reference drafts (PR #33) after auditing inbound links: none supported a guidance page. Removed their index entries and retained historical log descriptions as plain text. The general Sterling Sky reference remains. No source-backed guidance was deleted.

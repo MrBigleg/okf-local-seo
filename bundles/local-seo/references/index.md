@@ -21,6 +21,8 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Agentic & maps AI (primary sources)
 
 * [Google — Ask Maps announcement](/references/google-ask-maps.md) - Primary announcement of the Gemini-powered Ask Maps experience.
+* [Google — curated lists in Google Maps](/references/google-maps-curated-lists.md) - March 2024 announcement of the Trending, Top and Gems city lists and publisher lists.
+* [CTB Digital Marketing — Google Maps lists tracking](/references/ctb-maps-lists-research-2026.md) - First-party observation of 14 lists over six months. Draft, not yet verified.
 * [Agentic commerce protocols](/references/agentic-commerce-protocols.md) - UCP, AP2, ACP and x402 — specs, backers and scope.
 * [Google — Maps grounding for AI](/references/google-maps-grounding.md) - Full grounding, Grounding Lite, and Places API AI summaries.
 * [Google — Get started with Business Agent](/references/google-business-agent.md) - Eligibility and data sources for Business Agent.

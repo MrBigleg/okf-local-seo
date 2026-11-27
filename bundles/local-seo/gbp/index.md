@@ -15,3 +15,4 @@ GBP depth: what the profile is, how each surface works, and the operational play
 * [Google Posts](/gbp/google-posts.md) - Update, Offer and Event posts: mechanics, cadence, and what posts do for visibility.
 * [Verification](/gbp/verification.md) - The verification methods, how Google assigns them, timing, claiming, and SAB edge cases.
 * [Profile shielding](/gbp/profile-shielding.md) - Detecting and reverting unauthorised profile edits, as a generic monitoring pattern.
+* [Multi-location appeals](/gbp/multi-location-appeals.md) - Evidence, regional routing and bulk reinstatement.

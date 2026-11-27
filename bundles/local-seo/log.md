@@ -1,5 +1,8 @@
 # Knowledge Base Update Log
 
+## 2026-11-27
+
+* Added [multi-location GBP appeals](/gbp/multi-location-appeals.md) with an audit checklist, training steps and a head-office recommendation. [Google's appeals reference](/references/google-gbp-appeals.md) documents the November evidence-before-submission workflow, bulk prompt and regional routing.
 ## 2026-11-17
 
 * Removed six unverified Sterling Sky video-reference drafts (PR #33) after auditing inbound links: none supported a guidance page. Removed their index entries and retained historical log descriptions as plain text. The general Sterling Sky reference remains. No source-backed guidance was deleted.

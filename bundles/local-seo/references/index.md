@@ -21,17 +21,19 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Agentic & maps AI (primary sources)
 
 * [Google — Ask Maps announcement](/references/google-ask-maps.md) - Primary announcement of the Gemini-powered Ask Maps experience.
-* [Google — curated lists in Google Maps](/references/google-maps-curated-lists.md) - March 2024 announcement of the Trending, Top and Gems city lists and publisher lists.
-* [CTB Digital Marketing — Google Maps lists tracking](/references/ctb-maps-lists-research-2026.md) - First-party tracking of 14 lists, including comparisons with May captures for 13 lists.
 * [Agentic commerce protocols](/references/agentic-commerce-protocols.md) - UCP, AP2, ACP and x402 — specs, backers and scope.
 * [Google — Maps grounding for AI](/references/google-maps-grounding.md) - Full grounding, Grounding Lite, and Places API AI summaries.
 * [Google — Get started with Business Agent](/references/google-business-agent.md) - Eligibility and data sources for Business Agent.
 * [Lastmile Retail high-dollar purchase survey](/references/lastmile-high-dollar-survey.md) - Consumer demand for real-time local availability.
+* [Google — curated lists in Google Maps](/references/google-maps-curated-lists.md) - March 2024 announcement of the Trending, Top and Gems city lists and publisher lists.
+* [CTB Digital Marketing — Google Maps lists tracking](/references/ctb-maps-lists-research-2026.md) - First-party tracking of 14 lists, including comparisons with May captures for 13 lists.
 
 # Google Business Profile (primary sources)
 
 * [Google — Tips to improve your local ranking](/references/google-local-ranking.md) - Relevance, distance and prominence, as Google defines them.
 * [Google — Verify your business on Google](/references/google-gbp-verification.md) - Verification methods, auto-assignment, and timelines.
+* [Google Business Profile APIs — Check edit status](/references/google-gbp-api-edit-status.md) - Merchant and public values, edit lifecycle and policy rejection reasons.
+* [Google Business Profile APIs — Notification topic ownership](/references/google-gbp-api-notifications.md) - Same-project topic requirement and cross-project delivery.
 * [Google — Manage Google Updates](/references/google-manage-google-updates.md) - hasGoogleUpdated, diffMask, and patch-based accept/reject.
 * [Google — GMB to GBP rename announcement](/references/google-gbp-rename-2021.md) - The 4 November 2021 blog.google post; primary source for the rename.
 * [Google — Guidelines for representing your business on Google](/references/google-gbp-categories-description.md) - Category-selection and business-description content rules.
@@ -45,6 +47,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 # Policy & enforcement
 
 * [US DOJ — B.E.S.T. GDR / Premium Home Service complaint](/references/doj-best-gdr-2026.md) - The May 2026 fake-listings enforcement action; press release and filed complaint.
+* [Google — Appeal Business Profile restrictions](/references/google-gbp-appeals.md) - Evidence before submission, bulk reinstatement and regional appeal routes.
 * [Google — Prohibited and restricted content (contribution policy)](/references/google-review-policy.md) - Bars incentivised and selectively solicited reviews.
 
 # Paid local advertising (primary sources)

@@ -31,3 +31,5 @@ Google's primary-source announcement for **Ask Maps**, its Gemini-powered conver
 # What it does not establish
 
 Google has not published Ask Maps ranking factors. Profile-completeness and media practices are data-quality measures, not guaranteed optimisation levers. See [Generative Engine Optimization](/agentic/generative-engine-optimization.md).
+
+This reference is scoped to the March 2026 announcement. Current availability and the November 2026 agentic appointment capability are recorded on the concept page [Ask Maps](/agentic/ask-maps.md), cited to Google's own 16 November 2026 posts.

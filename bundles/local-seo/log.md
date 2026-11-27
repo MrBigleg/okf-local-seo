@@ -1,5 +1,10 @@
 # Knowledge Base Update Log
 
+## 2026-11-27
+
+* **GBP appeals evidence and bulk reinstatement**: Google's English Help pages now put supporting evidence inside the appeal before submission. Recorded the previous 60-minute linked-form instructions still visible in the British-English variant, the bulk prompt and spreadsheet requirements, and market-specific routing. Added a network audit, training and client advice checklist to the [multi-location appeals playbook](/gbp/multi-location-appeals.md), linked from the [GBP master playbook](/playbooks/gbp-2026/master-overview.md) and a [primary-source reference](/references/google-gbp-appeals.md). Google announced the revised process on 5 November without a separate effective date. Current Help wording observed 27 November.
+* **GBP policy diagnostics and notifications**: Added [edit status](/references/google-gbp-api-edit-status.md) (announced 2 November) and [notification topic ownership](/references/google-gbp-api-notifications.md) (13 November changelog and 25 November setup guidance). Updated [Profile Shielding](/gbp/profile-shielding.md) with audit, triage and client guidance for authorised API integrations. The edited playbooks await human review.
+
 ## 2026-11-17
 
 * Removed six unverified Sterling Sky video-reference drafts (PR #33) after auditing inbound links: none supported a guidance page. Removed their index entries and retained historical log descriptions as plain text. The general Sterling Sky reference remains. No source-backed guidance was deleted.

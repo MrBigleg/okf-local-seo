@@ -3,7 +3,7 @@ type: Playbook
 title: Google Business Profile 2026 Master Playbook (Universal Best Practices)
 description: RIM's learning adaptation of Google's 2026 Google Business Profile playbook, with official guidance separated from research and RIM coaching practices.
 tags: [playbook, gbp, local-seo, gbp-2026, master-guide, rim-adaptation]
-generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+generated: { by: openai/gpt-6, at: 2026-11-27T02:23:00Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13
@@ -40,6 +40,9 @@ sources:
     title: We Analyzed 8,186 Businesses in 200 Cities - Near Me Ranking Observations
     resource: https://www.sterlingsky.ca/what-gets-you-ranking-for-near-me-2025/
     publisher: Sterling Sky
+  - id: google-gbp-appeals
+    title: Google Business Profile Help — Appeal Business Profile restrictions
+    resource: /references/google-gbp-appeals.md
   - id: google-posts-policy
     title: Business Profile photos, videos and posts content policy
     resource: https://support.google.com/business/answer/7213077?hl=en
@@ -159,7 +162,7 @@ When profile disruptions occur, follow Google's prescribed escalation pathways [
 | Issue | Google Prescribed Action | Resolution Pathway |
 | :--- | :--- | :--- |
 | **Lost Profile Access** | Request ownership | Submit ownership transfer request via `business.google.com/add` [1]. |
-| **Suspended / Disabled Profile** | File appeal | Use official Google Business Profile Appeals Tool [1]. |
+| **Suspended / Disabled Profile** | File appeal | Follow the [multi-location appeals playbook](/gbp/multi-location-appeals.md) and [Google's current appeal guidance](/references/google-gbp-appeals.md). |
 | **Duplicate Listing** | Support ticket | Submit merge/removal ticket via Google Support [1]. |
 | **Hacked Profile / Unauthorized Edit** | Security ticket | File an emergency account compromise ticket [1]. |
 | **Fake Reviews / Extortion** | Flag & report | Flag review against review content policy, then report extortion to Google Support [1]. |

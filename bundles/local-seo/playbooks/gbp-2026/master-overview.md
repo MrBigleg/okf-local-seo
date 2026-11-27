@@ -3,7 +3,7 @@ type: Playbook
 title: Google Business Profile 2026 Master Playbook (Universal Best Practices)
 description: RIM's learning adaptation of Google's 2026 Google Business Profile playbook, with official guidance separated from research and RIM coaching practices.
 tags: [playbook, gbp, local-seo, gbp-2026, master-guide, rim-adaptation]
-generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
+generated: { by: openai/gpt-6, at: 2026-11-27T02:23:00Z }
 verification_scope: source-and-policy-review; no human approval or live learner acceptance recorded
 status: stable
 stale_after: 2027-04-13
@@ -40,6 +40,9 @@ sources:
     title: We Analyzed 8,186 Businesses in 200 Cities - Near Me Ranking Observations
     resource: https://www.sterlingsky.ca/what-gets-you-ranking-for-near-me-2025/
     publisher: Sterling Sky
+  - id: google-gbp-appeals
+    title: Google Business Profile Help — Appeal Business Profile restrictions
+    resource: /references/google-gbp-appeals.md
   - id: google-posts-policy
     title: Business Profile photos, videos and posts content policy
     resource: https://support.google.com/business/answer/7213077?hl=en
@@ -159,10 +162,18 @@ When profile disruptions occur, follow Google's prescribed escalation pathways [
 | Issue | Google Prescribed Action | Resolution Pathway |
 | :--- | :--- | :--- |
 | **Lost Profile Access** | Request ownership | Submit ownership transfer request via `business.google.com/add` [1]. |
-| **Suspended / Disabled Profile** | File appeal | Use official Google Business Profile Appeals Tool [1]. |
+| **Suspended / Disabled Profile** | File appeal | Use the official Google Business Profile appeals tool. See [current appeals instructions](/references/google-gbp-appeals.md). |
 | **Duplicate Listing** | Support ticket | Submit merge/removal ticket via Google Support [1]. |
 | **Hacked Profile / Unauthorized Edit** | Security ticket | File an emergency account compromise ticket [1]. |
 | **Fake Reviews / Extortion** | Flag & report | Flag review against review content policy, then report extortion to Google Support [1]. |
+
+### Network reinstatement checklist
+
+Google's current English Help pages, checked 27 November 2026, document attaching evidence in the appeal before submitting it. Some language variants still describe an older linked form. Train staff to assemble the evidence first and follow the sequence the tool shows.
+
+* **Audit:** Record each affected profile's Business Profile ID, market, restriction and reason. Check name and address against registration, licence or utility evidence. If access is restricted at Google Account level, get that restriction lifted first, then handle suspended profiles.
+* **SOP:** Sign in with the account associated with the profile. For bulk reinstatement, use the bulk option when offered, select an affected profile and attach a spreadsheet of all suspended profile IDs and supporting files before confirming submission. Keep a separate location tracker because the tool and decision email cover the selected profile. Keep a single submission for the issue pending a decision.
+* **Client advice:** Ask head office or franchisees for current site-specific evidence before anyone starts the appeal. For rejected profile edits or restricted media, use the appeals tool in the UK and EEA and Google Support elsewhere. See [Google's appeal instructions and bulk criteria](/references/google-gbp-appeals.md).
 
 ---
 

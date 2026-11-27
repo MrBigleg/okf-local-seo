@@ -19,7 +19,7 @@ sources:
     title: Google — New Ask Maps features to help with holiday travel and prep (16 November 2026; accessed 2026-11-22)
   - id: google-ask-maps-europe-2026-11-16
     resource: https://blog.google/products-and-platforms/products/maps/ask-maps-is-coming-to-europe/
-    title: Google — Ask Maps is coming to Europe (16 November 2026 per Maps RSS; accessed 2026-11-22)
+    title: Google — Ask Maps is coming to Europe (16 November 2026; accessed 2026-11-27)
 ---
 
 Ask Maps is Google's Gemini-powered conversational experience in Google Maps. A user taps the **Ask Maps** button, asks a complex place-based question, and receives a conversational answer with a customised map.
@@ -28,7 +28,7 @@ Ask Maps is Google's Gemini-powered conversational experience in Google Maps. A 
 
 Google announced Ask Maps on 12 March 2026, starting to roll out on Android and iOS in the United States and India, with desktop "coming soon."
 
-**Current state, 16 November 2026.** Google said Ask Maps "starts expanding to 30 countries across Europe — including Spain, Germany, and the U.K. — bringing Ask Maps to more than 200 countries and territories globally"; the companion post gives the European figure as "30+ countries across Europe."[^google-ask-maps-holiday-features-2026-11-16][^google-ask-maps-europe-2026-11-16] The March announcement remains the record of the launch; it is no longer the current availability statement. Google publishes no per-country list, so treat the country-level answer as "ask Google's own page for that market" rather than as a list this document can assert.
+**Current state, 16 November 2026.** Google said Ask Maps "starts expanding to 30 countries across Europe — including Spain, Germany, and the U.K. — bringing Ask Maps to more than 200 countries and territories globally"; the companion post gives the European figure as "30+ countries across Europe."[^google-ask-maps-holiday-features-2026-11-16][^google-ask-maps-europe-2026-11-16] The March announcement remains the record of the launch; it is no longer the current availability statement. The two announcements name examples and give aggregate counts. Check market-specific availability before using this in client advice.
 
 Feature-level availability differs and should not be flattened into one answer:
 
@@ -58,14 +58,14 @@ Google has not published a separate set of Ask Maps ranking factors. Treat recom
 
 On 16 November 2026 Google added a capability that changes what the surface is. In its words, "with new agentic capabilities, you can choose to have Ask Maps find beauty, pet care, auto and home repair appointments online and call local businesses for you." A user asking "Find me a 4 p.m. nail appointment near me" is then shown "open slots across nearby businesses so it's easy to decide what to book."[^google-ask-maps-holiday-features-2026-11-16]
 
-This is the first documented case of the assistant **acting on the phone line** rather than presenting a booking link. Google states none of the mechanics:
+Ask Maps can use phone calls as part of finding an appointment. The announcement leaves several details open:
 
 * no rule for which businesses are approached, or how a slot is identified as open;
 * no list of supported booking or scheduling systems, and no eligibility criteria for a business to be called;
 * no statement about whether a human, an automated caller or an agent places the call;
 * no claim, in either direction, about ranking, visibility or conversion.
 
-Those are unknown, not merely absent from this document. Do not infer a preparation requirement from them. The one operational point the capability does support is generic and already covered elsewhere: published hours, phone handling and stated service availability matter more when a third party is trying to reach the business on a customer's behalf.
+For US locations in the announced sectors, check that published hours and location phone numbers are accurate and that staff can confirm service availability when callers ask.
 
 The same release added three lower-stakes features — day-by-day **trip itineraries** with insider tips, numbered pins, live traffic and export to Google Docs on desktop; **saved-list search** ("Which spots saved in my lists have availability for 5 in 30 minutes?"); and "Know before you go" **route tips** covering parking, charging, weather, delays and tolls.[^google-ask-maps-holiday-features-2026-11-16]
 
@@ -86,6 +86,6 @@ For a business, this moves one part of the contribution surface from a form into
 
 * Google Maps Help — [Contribute to Google Maps with Tell Maps](https://support.google.com/maps/answer/17515915) (US-only; accessed 2026-10-04).
 * Google — [New Ask Maps features to help with holiday travel and prep](https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/) (dated 16 November 2026; accessed 2026-11-22).
-* Google — [Ask Maps is coming to Europe.](https://blog.google/products-and-platforms/products/maps/ask-maps-is-coming-to-europe/) (no date in the page body; 16 November 2026 in Google's Maps RSS feed; accessed 2026-11-22).
+* Google — [Ask Maps is coming to Europe.](https://blog.google/products-and-platforms/products/maps/ask-maps-is-coming-to-europe/) (dated 16 November 2026; accessed 2026-11-27; accessed 2026-11-22).
 
 Source provenance for the March 2026 launch lives in the reference page [Google — Ask Maps announcement](/references/google-ask-maps.md).

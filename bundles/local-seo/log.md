@@ -2,7 +2,7 @@
 
 ## 2026-11-26
 
-* **Google Maps lists added** (draft): new concept [Google Maps lists](/maps/google-maps-lists.md) on Maps' curated Top, Trending and Gems lists and publisher lists. Two new references: [Google's March 2024 announcement](/references/google-maps-curated-lists.md), re-opened on 2026-11-26 and verified, and [CTB Digital Marketing's list tracking](/references/ctb-maps-lists-research-2026.md), first-party and observational, left `status: draft` with no `verified` entry until the article update it cites is live and re-opened. The concept page stays draft for the same reason. Linked from the [Maps index](/maps/index.md) and the [references index](/references/index.md). No existing page's claims changed.
+* Added a [Google Maps lists concept](/maps/google-maps-lists.md) and two references covering [Google’s March 2024 announcement](/references/google-maps-curated-lists.md) and [CTB Digital Marketing’s observational list tracking](/references/ctb-maps-lists-research-2026.md). The CTB reference figures were checked against the published November research update on 27 November.
 
 ## 2026-11-17
 

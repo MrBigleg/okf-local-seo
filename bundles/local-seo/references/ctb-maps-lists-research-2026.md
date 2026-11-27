@@ -5,21 +5,21 @@ description: First-party observation of 14 Google Maps lists (332 places) tracke
 resource: https://www.ctbmarketing.com/blog/google-maps-lists
 publisher: CTB Digital Marketing
 published: 2026-05-27
+accessed: 2026-11-27
 confidence: low
-scope: 14 lists, 332 places, almost all restaurants; 10 lists in Thailand, plus London, New York (2) and Denver. Daily captures 22 October to 25 November 2026, compared with captures from 13 May 2026. Observational counts, no causal claims. The publisher maintains this bundle.
+scope: 14 lists, 332 places, almost all restaurants; Lists across Bangkok, Pattaya, London, New York and Denver. Daily checks began 22 October 2026, and 13 lists had May captures to compare against. Observational counts, no causal claims. The publisher maintains this bundle.
 tags: [reference, google-maps, lists, first-party-research]
 generated: { by: anthropic/claude-opus-5-5, at: 2026-11-26T00:00:00Z }
-status: draft
+verified: { by: openai/codex, at: 2026-11-27T00:00:00Z }
+status: stable
 stale_after: 2027-02-26
 sources:
   - id: ctb-google-maps-lists
     resource: https://www.ctbmarketing.com/blog/google-maps-lists
-    title: "CTB Digital Marketing — Why Google Maps Lists Demand Evidence Optimization (updated 26 November 2026)"
+    title: "CTB Digital Marketing — Why Google Maps Lists Demand Evidence Optimization (November 2026 research update)"
 ---
 
 First-party research published as an update to CTB Digital Marketing's Google Maps lists article. Cited in [Google Maps lists](/maps/google-maps-lists.md).
-
-> Not yet verified. The figures below are the ones prepared for the article's 26 November 2026 update. Re-open the article once that update is live, confirm each figure, set `accessed`, and only then add `verified`.
 
 # What the source reports
 
@@ -36,9 +36,9 @@ First-party research published as an update to CTB Digital Marketing's Google Ma
 
 * On Trending lists, 81% of places opened in the last six months.
 * On Top Lists, the average place moved half a position over five weeks, and 29 of the 30 places in the top five stayed there.
-* Across 386 cited links from 103 sites, Time Out (25%) and The Infatuation (24%) account for about half, then Eater across its city editions (8%) and The New York Times (5%). By URL wording, roughly 44% of links are "best of" roundups, about a third single-venue pages, and about 7% Michelin or award pages.
+* Across 386 cited links from 103 sites, Time Out and The Infatuation account for about half, then Eater across its city editions (8%) and The New York Times (5%). Roughly 44% of links are "best of" roundups, about a third single-venue pages, and about 7% Michelin or award pages.
 * The same lists fetched with Thai, US English, UK English and Thailand-English settings returned the same places in the same order.
 
 # Limits
 
-Small, Thailand-heavy sample of food and drink places over one season. The research describes what list entries contain and how membership changes; it does not establish why Google includes a place. Page types were classified from URL wording only.
+Small, Thailand-heavy sample of food and drink places over one season. The research describes what list entries contain and how membership changes; it does not establish why Google includes a place.

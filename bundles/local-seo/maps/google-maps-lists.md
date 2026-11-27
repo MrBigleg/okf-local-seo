@@ -4,7 +4,7 @@ title: Google Maps lists
 description: Google Maps' curated city lists — Top, Trending and Gems (Local Gems), plus publisher lists — what each list entry shows, how the list types differ, and what a business can check.
 tags: [maps, google-maps, lists, local-discovery, ask-maps]
 generated: { by: anthropic/claude-opus-5-5, at: 2026-11-26T00:00:00Z }
-status: draft
+status: stable
 stale_after: 2027-02-26
 sources:
   - id: google-maps-curated-lists
@@ -29,10 +29,10 @@ Publisher lists sit alongside them. Google's announcement names The Infatuation,
 
 # What tracking shows (observational)
 
-One first-party study tracked 14 lists daily for five weeks and compared them with captures from six months earlier ([reference](/references/ctb-maps-lists-research-2026.md), not yet verified). Its observations, which do not establish why Google includes a place:
+One first-party study tracked 14 lists daily for five weeks and compared 13 of those lists with May captures ([reference](/references/ctb-maps-lists-research-2026.md)). Its observations, which do not establish why Google includes a place:
 
-* **Top Lists** nearly always cite two articles and barely change week to week, but about half of their places were replaced over six months.
-* **Trending lists** are mostly new places: most opened in the last six months, few entries cite a source, and almost none of a list's places last more than a few weeks.
+* **Top Lists** cited a source in 93% of entries, usually two articles and barely change week to week, but about half of their places were replaced over six months.
+* **Trending lists** are mostly new places: most opened in the last six months, few entries cite a source, and 16% were still listed after five weeks.
 * **Local Gems** sit in between and lean on the business's own description and opening date.
 * Cited sources are concentrated: Time Out and The Infatuation account for about half of all cited links in that sample.
 

@@ -25,6 +25,8 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 * [Google — Maps grounding for AI](/references/google-maps-grounding.md) - Full grounding, Grounding Lite, and Places API AI summaries.
 * [Google — Get started with Business Agent](/references/google-business-agent.md) - Eligibility and data sources for Business Agent.
 * [Lastmile Retail high-dollar purchase survey](/references/lastmile-high-dollar-survey.md) - Consumer demand for real-time local availability.
+* [Google — curated lists in Google Maps](/references/google-maps-curated-lists.md) - March 2024 announcement of the Trending, Top and Gems city lists and publisher lists.
+* [CTB Digital Marketing — Google Maps lists tracking](/references/ctb-maps-lists-research-2026.md) - First-party tracking of 14 lists, including comparisons with May captures for 13 lists.
 
 # Google Business Profile (primary sources)
 

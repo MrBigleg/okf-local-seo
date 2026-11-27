@@ -10,3 +10,7 @@
 * [Competitor radius mapping](/maps/competitor-radius.md) - Identify and analyse competitors within a defined radius.
 * [Cross-platform NAP verification](/maps/nap-verification.md) - Check listing consistency across Google, Bing, Apple, and OSM.
 * [Schema generation](/maps/schema-generation.md) - Build LocalBusiness JSON-LD from collected data.
+
+# Maps Discovery
+
+* [Google Maps lists](/maps/google-maps-lists.md) - Top, Trending and Gems city lists and publisher lists: what entries show, how the types differ, what a business can check. Draft.

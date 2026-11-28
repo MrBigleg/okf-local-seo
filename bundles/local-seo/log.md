@@ -1,5 +1,9 @@
 # Knowledge Base Update Log
 
+## 2026-11-28
+
+* **Google Maps merchant advertising rules**: Added the merchant-specific wording to the [policy reference](/references/google-review-policy.md), the [Google Posts playbook](/gbp/google-posts.md) and the [GBP profile audit](/maps/gbp-profile-audit.md). Networks should remove promotional prices, limited-time offers and direct calls to action from permanent listing copy, and check branch eligibility and destinations before publishing promotions as Posts. Compared [Google's current policy](https://support.google.com/contributionpolicy/answer/7400114) with the earlier Google wording captured in [6 October reporting](https://www.seroundtable.com/google-maps-policy-listings-or-posts-42228.html). Confirmed on 28 November 2026. Google states no effective date or market limitation in the section.
+
 ## 2026-11-27
 
 * **GBP appeals evidence and bulk reinstatement**: Google's English Help pages now put supporting evidence inside the appeal before submission. Recorded the previous 60-minute linked-form instructions still visible in the British-English variant, the bulk prompt and spreadsheet requirements, and market-specific routing. Added a network audit, training and client advice checklist to the [multi-location appeals playbook](/gbp/multi-location-appeals.md), linked from the [GBP master playbook](/playbooks/gbp-2026/master-overview.md) and a [primary-source reference](/references/google-gbp-appeals.md). Google announced the revised process on 5 November without a separate effective date. Current Help wording observed 27 November.

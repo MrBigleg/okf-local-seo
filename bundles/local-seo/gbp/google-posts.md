@@ -3,17 +3,19 @@ type: Playbook
 title: Google Posts
 description: Update, Offer and Event posts on a Business Profile — mechanics, cadence, advanced tactics, and the visibility evidence.
 tags: [local-seo, gbp, posts, content]
-generated: { by: iris/2026-W47, at: 2026-11-16T00:00:00Z }
-verified:  { by: anthropic/claude-fable-5-2, at: 2026-11-16T00:00:00Z }
+generated: { by: openai/gpt-6, at: 2026-11-28T02:39:39Z }
 status: stable
 stale_after: 2027-05-16
 sources:
   - id: google-create-and-manage-posts-on
     resource: https://support.google.com/business/answer/7342169
-    title: Google — Create and manage posts on your Business Profile (accessed 2026-11-16)
+    title: Google — Create and manage posts on your Business Profile (accessed 2026-11-28)
+  - id: google-maps-merchant-advertising
+    resource: /references/google-review-policy.md
+    title: Google Maps — Advertising and solicitation
   - id: google-posts-content-policy
     resource: https://support.google.com/business/answer/7213077
-    title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-11-16)
+    title: Google — Business Profile photos, videos & posts content policy (Posts including contact information; accessed 2026-11-28)
   - id: google-posts-content-policy-archive-2026-08-31
     resource: https://web.archive.org/web/20260831185738/https://support.google.com/business/answer/7213077
     title: Internet Archive — capture of Google's posts content policy on 31 August 2026 (accessed 2026-11-16)
@@ -37,6 +39,14 @@ Posts are the publishing surface of a [Google Business Profile](/gbp/google-busi
 | **Event** | Title, start/end dates and times | Description, photo/video, action button | Without times, the event shows as lasting 24 hours on the event dates. |
 
 Content rules worth knowing before drafting: contact details in post text are subject to Google's verification rule (see below), and the usual content policies apply (no misspellings-as-style, explicit material, or product-level content for regulated goods such as alcohol or tobacco).
+
+# Publishing promotions across a network
+
+Google's [merchant advertising policy](/references/google-review-policy.md#merchant-advertising-and-solicitation) explicitly prohibits promotional or commercial copy containing limited-time offers, pricing or direct calls to action in the listing. Promotional Offers and Updates are permitted in Posts where eligible. The listing rule applies to promotional copy. Keep legitimate prices in supported structured fields such as menus and services where those fields allow them. Google specifies no market limitation for this wording.[^google-maps-merchant-advertising]
+
+* **Audit:** Compare the headquarters template and branch or franchise overrides with the live listings. Flag sale prices, expiry dates and commands such as “book today” in permanent copy. Check recent Posts for business relevance, verifiable contact details and the correct destination for each branch.
+* **Training and SOP:** Keep permanent listing templates factual. Route eligible campaigns through Posts. Before a bulk publish, confirm which locations are taking part, the local dates and whether the landing page serves that branch. Use the post's action button with the relevant business destination, or **Call now** with the verified profile number. The dedicated Posts policy bars hotel Offers and Posts that mention or link to deals, promotions, special offers or discounts.[^google-posts-content-policy]
+* **Client advice:** Remove seasonal sales copy from permanent fields. Publish eligible campaign copy as dated Posts for participating locations and give customers the correct local landing page.
 
 # Contact information in posts
 

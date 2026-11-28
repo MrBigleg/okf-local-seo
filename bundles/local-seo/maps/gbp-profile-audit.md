@@ -4,14 +4,16 @@ title: GBP Profile Audit
 description: Score the 25 Google Business Profile fields that affect quality and ranking, with industry weighting.
 tags: [maps, gbp, audit]
 tier: 1
-generated: { by: human:craigburton, at: 2026-06-24T00:00:00Z }
-verified:  { by: anthropic/claude-sonnet-5, at: 2026-08-27T00:00:00Z }
+generated: { by: openai/gpt-6, at: 2026-11-28T02:39:39Z }
 status: stable
 stale_after: 2027-02-27
 sources:
   - id: dataforseo
     resource: /references/dataforseo.md
     title: DataForSEO
+  - id: google-maps-merchant-advertising
+    resource: /references/google-review-policy.md
+    title: Google Maps — Advertising and solicitation
 ---
 
 Audits the 25 fields that affect GBP quality and ranking. Tier 1 uses live API data; [Tier 0](/maps/capability-tiers.md) falls back to detectable on-page signals. Complements the on-page view in [GBP signals](/local-seo/gbp-signals.md).
@@ -23,6 +25,10 @@ Audits the 25 fields that affect GBP quality and ranking. Tier 1 uses live API d
 3. Score each field: Present + Optimised = 2pts, Present = 1pt, Missing = 0pts.
 4. Apply industry-specific weight multipliers.
 5. Normalise to a 0–100 scale.
+
+# Merchant content check for networks
+
+Inspect the public listing and recent Posts for each location in scope, alongside the shared templates and local overrides. Record the profile URL, field or post, observed date and suggested correction. Flag promotional prices, limited-time offers and direct calls to action in permanent copy. For Posts, check eligibility by business category and confirm the offer dates, branch participation and destination. Mark any surface you cannot see as unknown. Use the [Google Posts publishing checklist](/gbp/google-posts.md#publishing-promotions-across-a-network) for the remediation steps.[^google-maps-merchant-advertising]
 
 # Tier 0 workflow
 

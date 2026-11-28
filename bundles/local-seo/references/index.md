@@ -48,7 +48,7 @@ Primary sources cited across this bundle. Every claim in the concept docs is ver
 
 * [US DOJ — B.E.S.T. GDR / Premium Home Service complaint](/references/doj-best-gdr-2026.md) - The May 2026 fake-listings enforcement action; press release and filed complaint.
 * [Google — Appeal Business Profile restrictions](/references/google-gbp-appeals.md) - Evidence before submission, bulk reinstatement and regional appeal routes.
-* [Google — Prohibited and restricted content (contribution policy)](/references/google-review-policy.md) - Bars incentivised and selectively solicited reviews.
+* [Google — Prohibited and restricted content (contribution policy)](/references/google-review-policy.md) - Review manipulation rules and merchant advertising rules for listings and Posts.
 
 # Paid local advertising (primary sources)
 
